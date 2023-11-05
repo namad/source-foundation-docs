@@ -2124,6 +2124,12 @@ video {
   padding-right: var(--padding-r);
 }
 
+.py-md {
+  --padding-y: var(--spacing-md);
+  padding-top: var(--padding-y);
+  padding-bottom: var(--padding-y);
+}
+
 .border {
   --border-width: 1px;
 }
