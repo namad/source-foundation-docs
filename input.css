@@ -26,6 +26,35 @@ a:hover {
     text-decoration: underline;;
 }
 
+#controls {
+    min-width: 220px;
+}
+
+body {
+    @apply bg-fill-base-300 p-lg color-text-base-600 text-base flex flex-row gap-md items-start;
+}
+
+@media (max-width: 1280px) {
+    #controls {
+        position: static;
+        flex-flow: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #main {
+        width: 100%;
+    }
+
+    #icons .icon-frame{
+        width: 33%;
+    }
+
+   body {
+        flex-flow: column;
+   }
+}
+
 @layer components {
     .button-default {
         @apply ui-element
