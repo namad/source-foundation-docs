@@ -2077,6 +2077,11 @@ video {
   padding: var(--padding);
 }
 
+.pr-xs {
+  --padding-r: var(--spacing-xs);
+  padding-right: var(--padding-r);
+}
+
 .px-base {
   --padding-x: var(--spacing-base);
   padding-left: var(--padding-x);
@@ -2101,6 +2106,12 @@ video {
   padding-bottom: var(--padding-y);
 }
 
+.py-md {
+  --padding-y: var(--spacing-md);
+  padding-top: var(--padding-y);
+  padding-bottom: var(--padding-y);
+}
+
 .py-minor-base {
   --padding-y: var(--spacing-minor-base);
   padding-top: var(--padding-y);
@@ -2115,17 +2126,6 @@ video {
 
 .py-sm {
   --padding-y: var(--spacing-sm);
-  padding-top: var(--padding-y);
-  padding-bottom: var(--padding-y);
-}
-
-.pr-xs {
-  --padding-r: var(--spacing-xs);
-  padding-right: var(--padding-r);
-}
-
-.py-md {
-  --padding-y: var(--spacing-md);
   padding-top: var(--padding-y);
   padding-bottom: var(--padding-y);
 }
@@ -3075,6 +3075,10 @@ video {
   background-color: color-mix(in srgb, var(--bg-color), transparent 10%);
 }
 
+.border-opacity-90 {
+  border-color: color-mix(in srgb, var(--border-color), transparent 10%);
+}
+
 .color-opacity-50 {
   color: color-mix(in srgb, var(--text-color), transparent 50%);
 }
@@ -3133,14 +3137,6 @@ video {
 
 .tint-50 {
   background-image: linear-gradient(180deg, hsla(0deg 0% 100% / 0.5), hsla(0deg 0% 100% / 0.5));
-}
-
-.border-opacity-90 {
-  border-color: color-mix(in srgb, var(--border-color), transparent 10%);
-}
-
-.tint-90 {
-  background-image: linear-gradient(180deg, hsla(0deg 0% 100% / 0.9), hsla(0deg 0% 100% / 0.9));
 }
 
 .icon-activity {
@@ -5320,6 +5316,7 @@ body {
 
   body {
     flex-flow: column;
+    padding: var(--spacing-base);
   }
 }
 

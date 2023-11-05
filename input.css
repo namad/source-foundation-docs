@@ -52,6 +52,7 @@ body {
 
    body {
         flex-flow: column;
+        padding: var(--spacing-base);
    }
 }
 
