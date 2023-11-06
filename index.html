@@ -108,9 +108,6 @@
 
         <div class="p-md bg-fill-base-100 rounded-lg flex-1 flex flex-col gap-base" id="intro">
             <h1 class="text-xl3 font-bold color-primary-500">Source Design System Foundation</h1>
-            <p>
-                Foundation is made with TailwindCSS.
-            </p>
             <div class="flex flex-1 flex-row gap-base">
                 <div class="p-xs bg-fill-contrast-100 gradient-tint-50 shadow-4 color-text-contrast-600 rounded"
                     title="Colors"><span class="block icon before:block icon-md"
@@ -128,6 +125,101 @@
                     title="Elevation"><span class="block icon before:block icon-md"
                         style="--icon-src: var(--ads-elevation)"></span></div>
             </div>
+            <ul class="flex flex-1 flex-row">
+                <li>
+                    <a href="./index.html"  class="block rounded px-sm py-minor-xs hover:decoration-none bg-primary-100">TailwindCSS</a>
+                </li>
+                <li>
+                    <a href="./index.html"  class="block rounded px-sm py-minor-xs hover:decoration-none hover:bg-alt-base-100">CLI CSS Generator</a>
+                </li>
+                <li>
+                    <a href="./index.html"  class="block rounded px-sm py-minor-xs hover:decoration-none hover:bg-alt-base-100">Figma Tools</a>
+                </li>
+                <li class="flex flex-1 justify-end">
+                    <a href="./index.html"  class="block rounded px-sm py-minor-xs hover:decoration-none hover:bg-alt-base-100">Color System Practical Guide</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="p-md bg-fill-base-100 rounded-lg flex-1 flex flex-col gap-base" id="tilwind">
+            <h2 class="text-xl2 font-bold ">Design system on TailwindCSS</h2>
+            <h3 class="text-xl font-bold ">Install packages</h3>
+            <div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm ">
+                <pre class="block whitespace-pre">npm i -D source-foundation-cli</pre>
+                <pre class="block whitespace-pre">npm i -D source-tailwindcss</pre>
+            </div>
+
+            <h3 class="text-xl font-bold mt-sm">Create source.config.json</h3>
+            <div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm ">
+                <pre class="block whitespace-pre">npx src-tokens init</pre>
+            </div>
+            <div>
+                Create your
+                <pre class="inline text-sm bg-alt-base-200 p-xs3 rounded-sm">./source.config.json</pre> 
+            </div>
+
+            <h3 class="text-xl font-bold mt-sm">Create CSS variables</h3>
+            <div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm ">
+                <pre class="block whitespace-pre">npx src-tokens ./css/variables.css</pre>
+            </div>
+            <div>
+                This command will read your 
+                <pre class="inline text-sm bg-alt-base-200 p-xs3 rounded-sm">./source.config.json</pre> 
+                and ouputs CSS variables into file you specify, 
+                default it  <pre class="inline text-sm bg-alt-base-200 p-xs3 rounded-sm">./css/variables.css</pre>.
+            </div>
+
+            <h3 class="text-xl font-bold mt-sm">Import CSS variables</h3>
+            <div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm ">
+                <pre class="block whitespace-pre text-xs color-text-base-500 mb-minor-xs">main.css</pre>
+                <pre class="block whitespace-pre">@import "./css/variables.css";</pre>
+                <pre class="block whitespace-pre">...</pre>
+                <pre class="block whitespace-pre">@tailwind base;</pre>
+                <pre class="block whitespace-pre">@tailwind components;</pre>
+                <pre class="block whitespace-pre">@tailwind utilities;</pre>
+            </div>
+
+            <h3 class="text-xl font-bold mt-sm">Configure TailwindCSS</h3>
+            <h4 class="text-lg font-bold">Option 1. Import preset</h4>
+            <p>
+                Preset brings all bits together in the most simple way
+            </p>
+            <a href="https://tailwindcss.com/docs/presets" target="_blank">TailwindCSS Presets →</a>
+            <div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm ">
+                <pre class="block whitespace-pre text-xs color-text-base-500 mb-minor-xs">tailwind.config.js</pre>
+                <pre class="block whitespace-pre">module.exports = {</pre>
+                <pre class="block whitespace-pre">    theme: {},</pre>
+                <pre class="block whitespace-pre">    ...</pre>
+                <pre class="block whitespace-pre">    presets: [</pre>
+                <pre class="block whitespace-pre">        require('source-tailwindcss')</pre>
+                <pre class="block whitespace-pre">    ]</pre>
+                <pre class="block whitespace-pre">}</pre>
+            </div>
+            <h4 class="text-lg font-bold mt-sm">Option 2. Use theme</h4>
+            <p>
+                Theme gives you more control over plugins, but somehow it compromises Tailwind CSS IntelliSense
+            </p>
+            <a href="https://tailwindcss.com/docs/theme" target="_blank">TailwindCSS Themes →</a>
+            <div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm ">
+                <pre class="block whitespace-pre text-xs color-text-base-500 mb-minor-xs">tailwind.config.js</pre>
+                <pre class="block whitespace-pre">module.exports = {</pre>
+                <pre class="block whitespace-pre">    ...</pre>
+                <pre class="block whitespace-pre">    theme: require('source-tailwindcss/source-theme'),</pre>
+                <pre class="block whitespace-pre">    ...</pre>
+                <pre class="block whitespace-pre">    plugins: [</pre>
+                <pre class="block whitespace-pre">        require('source-tailwindcss/plugins/border'),</pre>
+                <pre class="block whitespace-pre">        require('source-tailwindcss/plugins/colors'),</pre>
+                <pre class="block whitespace-pre">        require('source-tailwindcss/plugins/components'),</pre>
+                <pre class="block whitespace-pre">        require('source-tailwindcss/plugins/elevation'),</pre>
+                <pre class="block whitespace-pre">        require('source-tailwindcss/plugins/gradients'),</pre>
+                <pre class="block whitespace-pre">        require('source-tailwindcss/plugins/icons'),</pre>
+                <pre class="block whitespace-pre">        require('source-tailwindcss/plugins/padding'),</pre>
+                <pre class="block whitespace-pre">    ]</pre>
+                <pre class="block whitespace-pre">}</pre>
+            </div>
+            <p>
+                Now you shuld be able to run your build normally
+            </p>
         </div>
 
         <div class="p-md bg-fill-base-100 rounded-lg flex-1 flex flex-col gap-base" id="colors">

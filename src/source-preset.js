@@ -272,12 +272,12 @@ module.exports = {
         }
     },
     plugins: [
-        require('./plugins/padding'),
-        require('./plugins/border-width'),
+        require('./plugins/border'),
+        require('./plugins/components'),
+        require('./plugins/colors'),
         require('./plugins/elevation'),
-        require('./plugins/css-colors'),
-        require('./plugins/icons'),
         require('./plugins/gradients'),
-        require('./plugins/components')
+        require('./plugins/icons'),
+        require('./plugins/padding'),
     ],
 }

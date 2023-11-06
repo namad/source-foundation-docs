@@ -1,8 +1,18 @@
-@import "./tw/source-variables.css";
+@import "./src/source-variables.css";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .decoration-underline {
+        text-decoration: underline;
+    }
+
+    .decoration-none {
+        text-decoration: none;
+    }
+}
 
 :root {
     --ads-elevation: url('data:image/svg+xml,<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30.9185 4.69557C31.5773 4.27205 32.4227 4.27205 33.0815 4.69557L57.383 20.318C58.6076 21.1052 58.6076 22.8954 57.383 23.6827L33.0815 39.3051C32.4227 39.7286 31.5773 39.7286 30.9185 39.3051L6.61697 23.6827C5.39233 22.8954 5.39232 21.1052 6.61697 20.318L30.9185 4.69557Z" fill="white"/><path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M32 26.7555L11.397 40.0003L32 53.2451L52.6029 40.0003L32 26.7555ZM33.0815 22.6956C32.4227 22.272 31.5773 22.272 30.9185 22.6956L6.61697 38.318C5.39232 39.1052 5.39233 40.8954 6.61697 41.6827L30.9185 57.3051C31.5773 57.7286 32.4227 57.7286 33.0815 57.3051L57.383 41.6827C58.6076 40.8954 58.6076 39.1052 57.383 38.318L33.0815 22.6956Z" fill="white"/></svg>');
@@ -25,6 +35,8 @@ a {
 a:hover {
     text-decoration: underline;;
 }
+
+
 
 #controls {
     min-width: 220px;
@@ -62,7 +74,7 @@ body {
    }
 }
 
-@layer components {
+/* @layer components {
     .button-default {
         @apply ui-element
                 inline-flex
@@ -190,4 +202,4 @@ body {
                     bg-cover;
         }
     }   
-}
+} */
