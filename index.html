@@ -231,22 +231,30 @@
             <p>
                 Alt or alternative colours are semi-transparent ones and could be applied both as fills and strokes.
             </p>
+            <h5 class="text-md font-bold mt-sm">Light surface tints</h5>
+            <div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm">
+                &lt;div class="border-alt-base-{shade} ..." /&gt;
+            </div>
             <div class="flex flex-row text-xs color-text-base-500 font-mono rounded overflow-hidden">
-                <div class="bg-alt-base-100 flex-1 py-md text-center">--alt-base-100</div>
-                <div class="bg-alt-base-200 flex-1 py-md text-center">--alt-base-200</div>
-                <div class="bg-alt-base-300 flex-1 py-md text-center">--alt-base-300</div>
-                <div class="bg-alt-base-400 flex-1 py-md text-center">--alt-base-400</div>
-                <div class="bg-alt-base-500 flex-1 py-md text-center">--alt-base-500</div>
-                <div class="bg-alt-base-600 flex-1 py-md text-center">--alt-base-600</div>
+                <div class="bg-alt-base-100 flex-1 py-md text-center" title="--alt-base-100">100</div>
+                <div class="bg-alt-base-200 flex-1 py-md text-center" title="--alt-base-200">200</div>
+                <div class="bg-alt-base-300 flex-1 py-md text-center" title="--alt-base-300">300</div>
+                <div class="bg-alt-base-400 flex-1 py-md text-center" title="--alt-base-400">400</div>
+                <div class="bg-alt-base-500 flex-1 py-md text-center" title="--alt-base-500">500</div>
+                <div class="bg-alt-base-600 flex-1 py-md text-center" title="--alt-base-600">600</div>
+            </div>
+            <h5 class="text-md font-bold mt-sm">Dark surface tints</h5>
+            <div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm">
+                &lt;div class="border-alt-contrast-{shade} ..." /&gt;
             </div>
             <div
                 class="flex flex-row bg-fill-contrast-300 text-xs color-text-contrast-500 font-mono rounded overflow-hidden">
-                <div class="bg-alt-contrast-100 flex-1 py-md text-center">--alt-contrast-100</div>
-                <div class="bg-alt-contrast-200 flex-1 py-md text-center">--alt-contrast-200</div>
-                <div class="bg-alt-contrast-300 flex-1 py-md text-center">--alt-contrast-300</div>
-                <div class="bg-alt-contrast-400 flex-1 py-md text-center">--alt-contrast-400</div>
-                <div class="bg-alt-contrast-500 flex-1 py-md text-center">--alt-contrast-500</div>
-                <div class="bg-alt-contrast-600 flex-1 py-md text-center">--alt-contrast-600</div>
+                <div class="bg-alt-contrast-100 flex-1 py-md text-center" title="--alt-contrast-100">100</div>
+                <div class="bg-alt-contrast-200 flex-1 py-md text-center" title="--alt-contrast-200">200</div>
+                <div class="bg-alt-contrast-300 flex-1 py-md text-center" title="--alt-contrast-300">300</div>
+                <div class="bg-alt-contrast-400 flex-1 py-md text-center" title="--alt-contrast-400">400</div>
+                <div class="bg-alt-contrast-500 flex-1 py-md text-center" title="--alt-contrast-500">500</div>
+                <div class="bg-alt-contrast-600 flex-1 py-md text-center" title="--alt-contrast-600">600</div>
             </div>
 
             <h3 class="text-xl font-bold mt-sm">Primary / Brand Color</h3>
@@ -336,109 +344,115 @@
                 The accent palette brings life and meaning to your product. The colour spots can guide user attention,
                 emphasise brand connection or communicate a system state. There are ten accents to work with.
             </p>
-            <div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm">
-                &lt;div class="bg-accent-{name}-{shade} ..." /&gt;
+            <div class="font-mono bg-alt-base-200 rounded px-base py-minor-sm text-sm mt-sm">
+                &lt;div class="bg-accent-red-{shade} ..." /&gt;
             </div>
-            <div class="flex flex-row text-xs color-text-base-500 font-mono rounded overflow-hidden">
-                <div class="bg-accent-red-100 flex-1 p-md text-center">--accent-red-100</div>
-                <div class="bg-accent-red-200 flex-1 p-md text-center">--accent-red-200</div>
-                <div class="bg-accent-red-300 flex-1 p-md text-center color-text-contrast-500">--accent-red-300</div>
-                <div class="bg-accent-red-400 flex-1 p-md text-center color-text-contrast-500">--accent-red-400</div>
-                <div class="bg-accent-red-500 flex-1 p-md text-center color-fill-base-100">--accent-red-500</div>
-                <div class="bg-accent-red-600 flex-1 p-md text-center color-fill-contrast-100">--accent-red-600</div>
+            <div class="accent-color flex flex-row text-xs color-text-base-500 font-mono rounded overflow-hidden">
+                <div class="bg-accent-red-100 flex-1 p-md text-center">100</div>
+                <div class="bg-accent-red-200 flex-1 p-md text-center">200</div>
+                <div class="bg-accent-red-300 flex-1 p-md text-center color-text-contrast-500">300</div>
+                <div class="bg-accent-red-400 flex-1 p-md text-center color-text-contrast-500">400</div>
+                <div class="bg-accent-red-500 flex-1 p-md text-center color-fill-base-100">500</div>
+                <div class="bg-accent-red-600 flex-1 p-md text-center color-fill-contrast-100">600</div>
             </div>
-            <div class="flex flex-row text-xs color-text-base-500 font-mono rounded overflow-hidden">
-                <div class="bg-accent-amber-100 flex-1 p-md text-center">--accent-amber-100</div>
-                <div class="bg-accent-amber-200 flex-1 p-md text-center">--accent-amber-200</div>
-                <div class="bg-accent-amber-300 flex-1 p-md text-center color-text-contrast-500">--accent-amber-300
-                </div>
-                <div class="bg-accent-amber-400 flex-1 p-md text-center color-text-contrast-500">--accent-amber-400
-                </div>
-                <div class="bg-accent-amber-500 flex-1 p-md text-center color-fill-base-100">--accent-amber-500</div>
-                <div class="bg-accent-amber-600 flex-1 p-md text-center color-fill-contrast-100">--accent-amber-600
-                </div>
+            <div class="font-mono bg-alt-base-200 rounded px-base py-minor-sm text-sm mt-sm">
+                &lt;div class="bg-accent-amber-{shade} ..." /&gt;
             </div>
-            <div class="flex flex-row text-xs color-text-base-500 font-mono rounded overflow-hidden">
-                <div class="bg-accent-brown-100 flex-1 p-md text-center">--accent-brown-100</div>
-                <div class="bg-accent-brown-200 flex-1 p-md text-center">--accent-brown-200</div>
-                <div class="bg-accent-brown-300 flex-1 p-md text-center color-text-contrast-500">--accent-brown-300
-                </div>
-                <div class="bg-accent-brown-400 flex-1 p-md text-center color-text-contrast-500">--accent-brown-400
-                </div>
-                <div class="bg-accent-brown-500 flex-1 p-md text-center color-fill-base-100">--accent-brown-500</div>
-                <div class="bg-accent-brown-600 flex-1 p-md text-center color-fill-contrast-100">--accent-brown-600
-                </div>
+            <div class="accent-color flex flex-row text-xs color-text-base-500 font-mono rounded overflow-hidden">
+                <div class="bg-accent-amber-100 flex-1 p-md text-center">100</div>
+                <div class="bg-accent-amber-200 flex-1 p-md text-center">200</div>
+                <div class="bg-accent-amber-300 flex-1 p-md text-center color-text-contrast-500">300</div>
+                <div class="bg-accent-amber-400 flex-1 p-md text-center color-text-contrast-500">400</div>
+                <div class="bg-accent-amber-500 flex-1 p-md text-center color-fill-base-100">500</div>
+                <div class="bg-accent-amber-600 flex-1 p-md text-center color-fill-contrast-100">600</div>
             </div>
-            <div class="flex flex-row text-xs color-text-base-500 font-mono rounded overflow-hidden">
-                <div class="bg-accent-green-100 flex-1 p-md text-center">--accent-green-100</div>
-                <div class="bg-accent-green-200 flex-1 p-md text-center">--accent-green-200</div>
-                <div class="bg-accent-green-300 flex-1 p-md text-center color-text-contrast-500">--accent-green-300
-                </div>
-                <div class="bg-accent-green-400 flex-1 p-md text-center color-text-contrast-500">--accent-green-400
-                </div>
-                <div class="bg-accent-green-500 flex-1 p-md text-center color-fill-base-100">--accent-green-500</div>
-                <div class="bg-accent-green-600 flex-1 p-md text-center color-fill-contrast-100">--accent-green-600
-                </div>
+            <div class="font-mono bg-alt-base-200 rounded px-base py-minor-sm text-sm mt-sm">
+                &lt;div class="bg-accent-brown-{shade} ..." /&gt;
             </div>
-            <div class="flex flex-row text-xs color-text-base-500 font-mono rounded overflow-hidden">
-                <div class="bg-accent-teal-100 flex-1 p-md text-center">--accent-teal-100</div>
-                <div class="bg-accent-teal-200 flex-1 p-md text-center">--accent-teal-200</div>
-                <div class="bg-accent-teal-300 flex-1 p-md text-center color-text-contrast-500">--accent-teal-300</div>
-                <div class="bg-accent-teal-400 flex-1 p-md text-center color-text-contrast-500">--accent-teal-400</div>
-                <div class="bg-accent-teal-500 flex-1 p-md text-center color-fill-base-100">--accent-teal-500</div>
-                <div class="bg-accent-teal-600 flex-1 p-md text-center color-fill-contrast-100">--accent-teal-600</div>
+            <div class="accent-color flex flex-row text-xs color-text-base-500 font-mono rounded overflow-hidden">
+                <div class="bg-accent-brown-100 flex-1 p-md text-center">100</div>
+                <div class="bg-accent-brown-200 flex-1 p-md text-center">200</div>
+                <div class="bg-accent-brown-300 flex-1 p-md text-center color-text-contrast-500">300</div>
+                <div class="bg-accent-brown-400 flex-1 p-md text-center color-text-contrast-500">400</div>
+                <div class="bg-accent-brown-500 flex-1 p-md text-center color-fill-base-100">500</div>
+                <div class="bg-accent-brown-600 flex-1 p-md text-center color-fill-contrast-100">600</div>
             </div>
-            <div class="flex flex-row text-xs color-text-base-500 font-mono rounded overflow-hidden">
-                <div class="bg-accent-blue-100 flex-1 p-md text-center">--accent-blue-100</div>
-                <div class="bg-accent-blue-200 flex-1 p-md text-center">--accent-blue-200</div>
-                <div class="bg-accent-blue-300 flex-1 p-md text-center color-text-contrast-500">--accent-blue-300</div>
-                <div class="bg-accent-blue-400 flex-1 p-md text-center color-text-contrast-500">--accent-blue-400</div>
-                <div class="bg-accent-blue-500 flex-1 p-md text-center color-fill-base-100">--accent-blue-500</div>
-                <div class="bg-accent-blue-600 flex-1 p-md text-center color-fill-contrast-100">--accent-blue-600</div>
+            <div class="font-mono bg-alt-base-200 rounded px-base py-minor-sm text-sm mt-sm">
+                &lt;div class="bg-accent-green-{shade} ..." /&gt;
             </div>
-            <div class="flex flex-row text-xs color-text-base-500 font-mono rounded overflow-hidden">
-                <div class="bg-accent-indigo-100 flex-1 p-md text-center">--accent-indigo-100</div>
-                <div class="bg-accent-indigo-200 flex-1 p-md text-center">--accent-indigo-200</div>
-                <div class="bg-accent-indigo-300 flex-1 p-md text-center color-text-contrast-500">--accent-indigo-300
-                </div>
-                <div class="bg-accent-indigo-400 flex-1 p-md text-center color-text-contrast-500">--accent-indigo-400
-                </div>
-                <div class="bg-accent-indigo-500 flex-1 p-md text-center color-fill-base-100">--accent-indigo-500</div>
-                <div class="bg-accent-indigo-600 flex-1 p-md text-center color-fill-contrast-100">--accent-indigo-600
-                </div>
+            <div class="accent-color flex flex-row text-xs color-text-base-500 font-mono rounded overflow-hidden">
+                <div class="bg-accent-green-100 flex-1 p-md text-center">100</div>
+                <div class="bg-accent-green-200 flex-1 p-md text-center">200</div>
+                <div class="bg-accent-green-300 flex-1 p-md text-center color-text-contrast-500">300</div>
+                <div class="bg-accent-green-400 flex-1 p-md text-center color-text-contrast-500">400</div>
+                <div class="bg-accent-green-500 flex-1 p-md text-center color-fill-base-100">500</div>
+                <div class="bg-accent-green-600 flex-1 p-md text-center color-fill-contrast-100">600</div>
             </div>
-            <div class="flex flex-row text-xs color-text-base-500 font-mono rounded overflow-hidden">
-                <div class="bg-accent-violet-100 flex-1 p-md text-center">--accent-violet-100</div>
-                <div class="bg-accent-violet-200 flex-1 p-md text-center">--accent-violet-200</div>
-                <div class="bg-accent-violet-300 flex-1 p-md text-center color-text-contrast-500">--accent-violet-300
-                </div>
-                <div class="bg-accent-violet-400 flex-1 p-md text-center color-text-contrast-500">--accent-violet-400
-                </div>
-                <div class="bg-accent-violet-500 flex-1 p-md text-center color-fill-base-100">--accent-violet-500</div>
-                <div class="bg-accent-violet-600 flex-1 p-md text-center color-fill-contrast-100">--accent-violet-600
-                </div>
+            <div class="font-mono bg-alt-base-200 rounded px-base py-minor-sm text-sm mt-sm">
+                &lt;div class="bg-accent-teal-{shade} ..." /&gt;
             </div>
-            <div class="flex flex-row text-xs color-text-base-500 font-mono rounded overflow-hidden">
-                <div class="bg-accent-purple-100 flex-1 p-md text-center">--accent-purple-100</div>
-                <div class="bg-accent-purple-200 flex-1 p-md text-center">--accent-purple-200</div>
-                <div class="bg-accent-purple-300 flex-1 p-md text-center color-text-contrast-500">--accent-purple-300
-                </div>
-                <div class="bg-accent-purple-400 flex-1 p-md text-center color-text-contrast-500">--accent-purple-400
-                </div>
-                <div class="bg-accent-purple-500 flex-1 p-md text-center color-fill-base-100">--accent-purple-500</div>
-                <div class="bg-accent-purple-600 flex-1 p-md text-center color-fill-contrast-100">--accent-purple-600
-                </div>
+            <div class="accent-color flex flex-row text-xs color-text-base-500 font-mono rounded overflow-hidden">
+                <div class="bg-accent-teal-100 flex-1 p-md text-center">100</div>
+                <div class="bg-accent-teal-200 flex-1 p-md text-center">200</div>
+                <div class="bg-accent-teal-300 flex-1 p-md text-center color-text-contrast-500">300</div>
+                <div class="bg-accent-teal-400 flex-1 p-md text-center color-text-contrast-500">400</div>
+                <div class="bg-accent-teal-500 flex-1 p-md text-center color-fill-base-100">500</div>
+                <div class="bg-accent-teal-600 flex-1 p-md text-center color-fill-contrast-100">600</div>
             </div>
-            <div class="flex flex-row text-xs color-text-base-500 font-mono rounded overflow-hidden">
-                <div class="bg-accent-pink-100 flex-1 p-md text-center">--accent-pink-100</div>
-                <div class="bg-accent-pink-200 flex-1 p-md text-center">--accent-pink-200</div>
-                <div class="bg-accent-pink-300 flex-1 p-md text-center color-text-contrast-500">--accent-pink-300</div>
-                <div class="bg-accent-pink-400 flex-1 p-md text-center color-text-contrast-500">--accent-pink-400</div>
-                <div class="bg-accent-pink-500 flex-1 p-md text-center color-fill-base-100">--accent-pink-500</div>
-                <div class="bg-accent-pink-600 flex-1 p-md text-center color-fill-contrast-100">--accent-pink-600</div>
+            <div class="font-mono bg-alt-base-200 rounded px-base py-minor-sm text-sm">
+                &lt;div class="bg-accent-blue-{.." /&gt;
             </div>
-
-            <h3 class="text-xl font-bold mt-sm">Text Colors</h3>
+            <div class="accent-color flex flex-row text-xs color-text-base-500 font-mono rounded overflow-hidden">
+                <div class="bg-accent-blue-100 flex-1 p-md text-center">100</div>
+                <div class="bg-accent-blue-200 flex-1 p-md text-center">200</div>
+                <div class="bg-accent-blue-300 flex-1 p-md text-center color-text-contrast-500">300</div>
+                <div class="bg-accent-blue-400 flex-1 p-md text-center color-text-contrast-500">400</div>
+                <div class="bg-accent-blue-500 flex-1 p-md text-center color-fill-base-100">500</div>
+                <div class="bg-accent-blue-600 flex-1 p-md text-center color-fill-contrast-100">600</div>
+            </div>
+            <div class="font-mono bg-alt-base-200 rounded px-base py-minor-sm text-sm">
+                &lt;div class="bg-accent-indigo-{.." /&gt;
+            </div>
+            <div class="accent-color flex flex-row text-xs color-text-base-500 font-mono rounded overflow-hidden">
+                <div class="bg-accent-indigo-100 flex-1 p-md text-center">100</div>
+                <div class="bg-accent-indigo-200 flex-1 p-md text-center">200</div>
+                <div class="bg-accent-indigo-300 flex-1 p-md text-center color-text-contrast-500">300</div>
+                <div class="bg-accent-indigo-400 flex-1 p-md text-center color-text-contrast-500">400</div>
+                <div class="bg-accent-indigo-500 flex-1 p-md text-center color-fill-base-100">500</div>
+                <div class="bg-accent-indigo-600 flex-1 p-md text-center color-fill-contrast-100">600</div>
+            </div>
+            <div class="font-mono bg-alt-base-200 rounded px-base py-minor-sm text-sm mt-sm">
+                &lt;div class="bg-accent-violet-{shade} ..." /&gt;
+            </div>
+            <div class="accent-color flex flex-row text-xs color-text-base-500 font-mono rounded overflow-hidden">
+                <div class="bg-accent-violet-100 flex-1 p-md text-center">100</div>
+                <div class="bg-accent-violet-200 flex-1 p-md text-center">200</div>
+                <div class="bg-accent-violet-300 flex-1 p-md text-center color-text-contrast-500">300</div>
+                <div class="bg-accent-violet-400 flex-1 p-md text-center color-text-contrast-500">400</div>
+                <div class="bg-accent-violet-500 flex-1 p-md text-center color-fill-base-100">500</div>
+                <div class="bg-accent-violet-600 flex-1 p-md text-center color-fill-contrast-100">600</div>
+            </div>
+            <div class="font-mono bg-alt-base-200 rounded px-base py-minor-sm text-sm mt-sm">
+                &lt;div class="bg-accent-purple-{shade} ..." /&gt;
+            </div>
+            <div class="accent-color flex flex-row text-xs color-text-base-500 font-mono rounded overflow-hidden">
+                <div class="bg-accent-purple-100 flex-1 p-md text-center">100</div>
+                <div class="bg-accent-purple-200 flex-1 p-md text-center">200</div>
+                <div class="bg-accent-purple-300 flex-1 p-md text-center color-text-contrast-500">300</div>
+                <div class="bg-accent-purple-400 flex-1 p-md text-center color-text-contrast-500">400</div>
+                <div class="bg-accent-purple-500 flex-1 p-md text-center color-fill-base-100">500</div>
+                <div class="bg-accent-purple-600 flex-1 p-md text-center color-fill-contrast-100">600</div>
+            </div>
+            <div class="font-mono bg-alt-base-200 rounded px-base py-minor-sm text-sm mt-sm">
+                &lt;div class="bg-accent-pink-{shade} ..." /&gt;
+            </div>
+            <div class="accent-color flex flex-row text-xs color-text-base-500 font-mo-hidden">
+                <div class="bg-accent-pink-100 flex-1 p-md text-center">100</div>
+                <div class="bg-accent-pink-200 flex-1 p-md text-center">200</div>
+                <div class="bg-accent-pink-300 flex-1 p-md text-center color-text-contrast-500">--accent-pink-300</div><div class="bg-accent-pink-400 flex-1 p-md text-center color-text-contrast-500">400</div>
+                <div class="bg-accent-pink-500 flex-1 p-md text-center color-fill-base-100">--accent-pink-500</div><div class="bg-accent-pink-600 flex-1 p-md text-center color-fill-contrast-100">600</div>
+            </div>
+            <h3 class="text-xl font-bold mt-sm">Text colors</h3>
             <div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm">
                 color-{color}
             </div>
@@ -1016,111 +1030,144 @@
         <div class="p-md bg-fill-base-100 rounded-lg flex-1 flex flex-col gap-base" id="spacing">
             <h2 class="text-xl2 font-bold ">Spacing</h2>
 
-            <div class="flex flex-row flex-wrap gap-xs">
-                <div class="min-w-[400px] flex flex-col gap-xs font-mono text-xs flex-1">
+            <div class="flex flex-row flex-wrap gap-md">
+                <div class="min-w-[400px] flex flex-col gap-sm font-mono text-xs flex-1">
+                    <div class="flex-1 font-sans text-base"> 
+                        Primary spacing scale. Use for evenly spaced containers or pair with minor value for optically balanced results
+                    </div>
+                    <hr class="border-alt-base-300">
                     <div class="flex flex-row flex-1 items-center">
                         <div class="w-1/3">--spacing-xs4</div>
                         <div class="w-xs4 rounded-sm bg-primary-300 h-6"></div>
                     </div>
+                    <hr class="border-alt-base-300">
                     <div class="flex flex-row flex-1 items-center">
                         <div class="w-1/3">--spacing-xs3</div>
                         <div class="w-xs3 rounded-sm bg-primary-300 h-6"></div>
                     </div>
+                    <hr class="border-alt-base-300">
                     <div class="flex flex-row flex-1 items-center">
                         <div class="w-1/3">--spacing-xs2</div>
                         <div class="w-xs2 rounded-sm bg-primary-300 h-6"></div>
                     </div>
+                    <hr class="border-alt-base-300">
                     <div class="flex flex-row flex-1 items-center">
                         <div class="w-1/3">--spacing-xs</div>
                         <div class="w-xs rounded-sm bg-primary-300 h-6"></div>
                     </div>
+                    <hr class="border-alt-base-300">
                     <div class="flex flex-row flex-1 items-center">
                         <div class="w-1/3">--spacing-sm</div>
                         <div class="w-sm rounded-sm bg-primary-300 h-6"></div>
                     </div>
+                    <hr class="border-alt-base-300">
                     <div class="flex flex-row flex-1 items-center">
                         <div class="w-1/3">--spacing-base</div>
                         <div class="w-base rounded-sm bg-primary-300 h-6"></div>
                     </div>
+                    <hr class="border-alt-base-300">
                     <div class="flex flex-row flex-1 items-center">
                         <div class="w-1/3">--spacing-md</div>
                         <div class="w-md rounded-sm bg-primary-300 h-6"></div>
                     </div>
+                    <hr class="border-alt-base-300">
                     <div class="flex flex-row flex-1 items-center">
                         <div class="w-1/3">--spacing-lg</div>
                         <div class="w-lg rounded-sm bg-primary-300 h-6"></div>
                     </div>
+                    <hr class="border-alt-base-300">
                     <div class="flex flex-row flex-1 items-center">
                         <div class="w-1/3">--spacing-xl</div>
                         <div class="w-xl rounded-sm bg-primary-300 h-6"></div>
                     </div>
+                    <hr class="border-alt-base-300">
                     <div class="flex flex-row flex-1 items-center">
                         <div class="w-1/3">--spacing-xl2</div>
                         <div class="w-xl2 rounded-sm bg-primary-300 h-6"></div>
                     </div>
+                    <hr class="border-alt-base-300">
                     <div class="flex flex-row flex-1 items-center">
                         <div class="w-1/3">--spacing-xl3</div>
                         <div class="w-xl3 rounded-sm bg-primary-300 h-6"></div>
                     </div>
+                    <hr class="border-alt-base-300">
                     <div class="flex flex-row flex-1 items-center">
                         <div class="w-1/3">--spacing-xl4</div>
                         <div class="w-xl4 rounded-sm bg-primary-300 h-6"></div>
                     </div>
+                    <hr class="border-alt-base-300">
                     <div class="flex flex-row flex-1 items-center">
                         <div class="w-1/3">--spacing-xl5</div>
                         <div class="w-xl5 rounded-sm bg-primary-300 h-6"></div>
                     </div>
                 </div>
 
-                <div class="min-w-[400px] flex flex-col gap-xs font-mono text-xs flex-1">
+                <div class="min-w-[400px] flex flex-col gap-sm font-mono text-xs flex-1">
+                    <div class="flex-1 font-sans text-base"> 
+                        Additional spacing scale. Use for vertical spacing and pair with primary value for optically balanced results
+                    </div>
+
+                    <hr class="border-alt-base-300">
                     <div class="flex flex-row flex-1 items-center">
                         <div class="w-1/3">--spacing-minor-xs4</div>
                         <div class="w-minor-xs4 rounded-sm bg-primary-300 h-6"></div>
                     </div>
+                    <hr class="border-alt-base-300">
                     <div class="flex flex-row flex-1 items-center">
                         <div class="w-1/3">--spacing-minor-xs3</div>
                         <div class="w-minor-xs3 rounded-sm bg-primary-300 h-6"></div>
                     </div>
+                    <hr class="border-alt-base-300">
                     <div class="flex flex-row flex-1 items-center">
                         <div class="w-1/3">--spacing-minor-xs2</div>
                         <div class="w-minor-xs2 rounded-sm bg-primary-300 h-6"></div>
                     </div>
+                    <hr class="border-alt-base-300">
                     <div class="flex flex-row flex-1 items-center">
                         <div class="w-1/3">--spacing-minor-xs</div>
                         <div class="w-minor-xs rounded-sm bg-primary-300 h-6"></div>
                     </div>
+                    <hr class="border-alt-base-300">
                     <div class="flex flex-row flex-1 items-center">
                         <div class="w-1/3">--spacing-minor-sm</div>
                         <div class="w-minor-sm rounded-sm bg-primary-300 h-6"></div>
                     </div>
+                    <hr class="border-alt-base-300">
                     <div class="flex flex-row flex-1 items-center">
                         <div class="w-1/3">--spacing-minor-base</div>
                         <div class="w-minor-base rounded-sm bg-primary-300 h-6"></div>
                     </div>
+                    <hr class="border-alt-base-300">
                     <div class="flex flex-row flex-1 items-center">
                         <div class="w-1/3">--spacing-minor-md</div>
                         <div class="w-minor-md rounded-sm bg-primary-300 h-6"></div>
                     </div>
+                    <hr class="border-alt-base-300">
                     <div class="flex flex-row flex-1 items-center">
                         <div class="w-1/3">--spacing-minor-lg</div>
                         <div class="w-minor-lg rounded-sm bg-primary-300 h-6"></div>
                     </div>
+                    <hr class="border-alt-base-300">
                     <div class="flex flex-row flex-1 items-center">
                         <div class="w-1/3">--spacing-minor-xl</div>
                         <div class="w-minor-xl rounded-sm bg-primary-300 h-6"></div>
                     </div>
+                    <hr class="border-alt-base-300">
                     <div class="flex flex-row flex-1 items-center">
                         <div class="w-1/3">--spacing-minor-xl2</div>
                         <div class="w-minor-xl2 rounded-sm bg-primary-300 h-6"></div>
                     </div>
+                    <hr class="border-alt-base-300">
                     <div class="flex flex-row flex-1 items-center">
                         <div class="w-1/3">--spacing-minor-xl3</div>
                         <div class="w-minor-xl3 rounded-sm bg-primary-300 h-6"></div>
                     </div>
+                    <hr class="border-alt-base-300">
                     <div class="flex flex-row flex-1 items-center">
                         <div class="w-1/3">--spacing-minor-xl4</div>
                         <div class="w-minor-xl4 rounded-sm bg-primary-300 h-6"></div>
                     </div>
+                    <hr class="border-alt-base-300">
                     <div class="flex flex-row flex-1 items-center">
                         <div class="w-1/3">--spacing-minor-xl5</div>
                         <div class="w-minor-xl5 rounded-sm bg-primary-300 h-6"></div>
@@ -1133,72 +1180,85 @@
         <div class="p-md bg-fill-base-100 rounded-lg flex-1 flex flex-col gap-base" id="typography">
             <h2 class="text-xl2 font-bold ">Typography</h2>
             <div class="flex flex-row w-[100%] overflow-hidden">
-                <div class="flex flex-col gap-2 font-mono text-xs flex-1 overflow-hidden w-[100%]">
-                    <div class="flex flex-row w-[100%] overflow-hidden items-center">
-                        <div class="w-1/6">--font-size-xs2</div>
+                <div class="flex flex-col gap-sm font-mono text-xs flex-1 overflow-hidden w-[100%]">
+                    <div class="flex flex-col w-[100%] overflow-hidden items-start gap-minor-xs">
+                        <div class="size-height color-text-base-500">--font-size-xs2 / --line-height-xs2</div>
                         <div class="font-sans text-xs2 w-5/6 overflow-hidden text-ellipsis whitespace-nowrap">Quick
                             brown fox jumps over the lazy dog</div>
                     </div>
-                    <div class="flex flex-row w-[100%] overflow-hidden items-center">
-                        <div class="w-1/6">--font-size-xs</div>
+                    <hr class="border-alt-base-300">
+                    <div class="flex flex-col w-[100%] overflow-hidden items-start gap-minor-xs">
+                        <div class="size-height color-text-base-500">--font-size-xs / --line-height-xs</div>
                         <div class="font-sans text-xs w-5/6 overflow-hidden text-ellipsis whitespace-nowrap">Quick brown
                             fox jumps over the lazy dog</div>
                     </div>
-                    <div class="flex flex-row w-[100%] overflow-hidden items-center">
-                        <div class="w-1/6">--font-size-sm</div>
+                    <hr class="border-alt-base-300">
+                    <div class="flex flex-col w-[100%] overflow-hidden items-start gap-minor-xs">
+                        <div class="size-height color-text-base-500">--font-size-sm / --line-height-sm</div>
                         <div class="font-sans text-sm w-5/6 overflow-hidden text-ellipsis whitespace-nowrap">Quick brown
                             fox jumps over the lazy dog</div>
                     </div>
-                    <div class="flex flex-row w-[100%] overflow-hidden items-center">
-                        <div class="w-1/6">--font-size-base</div>
+                    <hr class="border-alt-base-300">
+                    <div class="flex flex-col w-[100%] overflow-hidden items-start gap-minor-xs">
+                        <div class="size-height color-text-base-500">--font-size-base / --line-height-base</div>
                         <div class="font-sans text-base w-5/6 overflow-hidden text-ellipsis whitespace-nowrap">Quick
                             brown fox jumps over the lazy dog</div>
                     </div>
-                    <div class="flex flex-row w-[100%] overflow-hidden items-center">
-                        <div class="w-1/6">--font-size-md</div>
+                    <hr class="border-alt-base-300">
+                    <div class="flex flex-col w-[100%] overflow-hidden items-start gap-minor-xs">
+                        <div class="size-height color-text-base-500">--font-size-md / --line-height-md</div>
                         <div class="font-sans text-md w-5/6 overflow-hidden text-ellipsis whitespace-nowrap">Quick brown
                             fox jumps over the lazy dog</div>
                     </div>
-                    <div class="flex flex-row w-[100%] overflow-hidden items-center">
-                        <div class="w-1/6">--font-size-lg</div>
+                    <hr class="border-alt-base-300">
+                    <div class="flex flex-col w-[100%] overflow-hidden items-start gap-minor-xs">
+                        <div class="size-height color-text-base-500">--font-size-lg / --line-height-lg</div>
                         <div class="font-sans text-lg w-5/6 overflow-hidden text-ellipsis whitespace-nowrap">Quick brown
                             fox jumps over the lazy dog</div>
                     </div>
-                    <div class="flex flex-row w-[100%] overflow-hidden items-center">
-                        <div class="w-1/6">--font-size-xl</div>
+                    <hr class="border-alt-base-300">
+                    <div class="flex flex-col w-[100%] overflow-hidden items-start gap-minor-xs">
+                        <div class="size-height color-text-base-500">--font-size-xl / --line-height-xl</div>
                         <div class="font-sans text-xl w-5/6 overflow-hidden text-ellipsis whitespace-nowrap">Quick brown
                             fox jumps over the lazy dog</div>
                     </div>
-                    <div class="flex flex-row w-[100%] overflow-hidden items-center">
-                        <div class="w-1/6">--font-size-xl2</div>
+                    <hr class="border-alt-base-300">
+                    <div class="flex flex-col w-[100%] overflow-hidden items-start gap-minor-xs">
+                        <div class="size-height color-text-base-500">--font-size-xl2 / --line-height-xl2</div>
                         <div class="font-sans text-xl2 w-5/6 overflow-hidden text-ellipsis whitespace-nowrap">Quick
                             brown fox jumps over the lazy dog</div>
                     </div>
-                    <div class="flex flex-row w-[100%] overflow-hidden items-center">
-                        <div class="w-1/6">--font-size-xl3</div>
+                    <hr class="border-alt-base-300">
+                    <div class="flex flex-col w-[100%] overflow-hidden items-start gap-minor-xs">
+                        <div class="size-height color-text-base-500">--font-size-xl3 / --line-height-xl3</div>
                         <div class="font-sans text-xl3 w-5/6 overflow-hidden text-ellipsis whitespace-nowrap">Quick
                             brown fox jumps over the lazy dog</div>
                     </div>
-                    <div class="flex flex-row w-[100%] overflow-hidden items-center">
-                        <div class="w-1/6">--font-size-xl4</div>
+                    <hr class="border-alt-base-300">
+                    <div class="flex flex-col w-[100%] overflow-hidden items-start gap-minor-xs">
+                        <div class="size-height color-text-base-500">--font-size-xl4 / --line-height-xl4</div>
                         <div class="font-sans text-xl4 w-5/6 overflow-hidden text-ellipsis whitespace-nowrap">Quick
                             brown fox jumps over the lazy dog</div>
                     </div>
-                    <div class="flex flex-row w-[100%] overflow-hidden items-center">
-                        <div class="w-1/6">--font-size-xl5</div>
+                    <hr class="border-alt-base-300">
+                    <div class="flex flex-col w-[100%] overflow-hidden items-start gap-minor-xs">
+                        <div class="size-height color-text-base-500">--font-size-xl5 / --line-height-xl5</div>
                         <div class="font-sans text-xl5 w-5/6 overflow-hidden text-ellipsis whitespace-nowrap">Quick
                             brown fox jumps over the lazy dog</div>
                     </div>
-                    <div class="flex flex-row w-[100%] overflow-hidden items-center">
-                        <div class="w-1/6">--font-size-xl6</div>
+                    <hr class="border-alt-base-300">
+                    <div class="flex flex-col w-[100%] overflow-hidden items-start gap-minor-xs">
+                        <div class="size-height color-text-base-500">--font-size-xl6 / --line-height-xl6</div>
                         <div class="font-sans text-xl6 w-5/6 overflow-hidden text-ellipsis whitespace-nowrap">Quick
                             brown fox jumps over the lazy dog</div>
                     </div>
-                    <div class="flex flex-row w-[100%] overflow-hidden items-center">
-                        <div class="w-1/6">--font-size-xl7</div>
+                    <hr class="border-alt-base-300">
+                    <div class="flex flex-col w-[100%] overflow-hidden items-start gap-minor-xs">
+                        <div class="size-height color-text-base-500">--font-size-xl7 / --line-height-xl7</div>
                         <div class="font-sans text-xl7 w-5/6 overflow-hidden text-ellipsis whitespace-nowrap">Quick
                             brown fox jumps over the lazy dog</div>
                     </div>
+                    <hr class="border-alt-base-300">
                 </div>
             </div>
 
@@ -1258,33 +1318,66 @@
 
             <h3 class="text-xl font-bold mt-sm">Sizes</h3>
              <div class="flex flex-row flex-wrap flex-1 gap-4" id="iconSet">
-                <div class="icon-size-frame py-sm flex flex-1 flex-col gap-2 items-center justify-between overflow-hidden border border-alt-base-200 rounded">
-                    <span class="opacity-90 icon icon-sm icon-zoom-out-filled min-h-[--line-height-xl]"></span>
+                <div class="icon-size-frame py-sm min-w-[20%] flex-1 flex flex-col gap-2 items-center justify-between overflow-hidden border border-alt-base-200 rounded">
+                    <span class="opacity-90 icon icon-sm icon-monitor min-h-[--icon-size-lg]"></span>
                     <span class="text-xs text-center font-mono color-text-base-500 whitespace-nowrap text-ellipsis overflow-hidden">
                         --icon-size-sm
                     </span>
                 </div>
-                <div class="icon-size-frame py-sm flex flex-1 flex-col gap-2 items-center justify-between overflow-hidden border border-alt-base-200 rounded">
-                    <span class="opacity-90 icon icon-zoom-out-filled min-h-[--line-height-xl]"></span>
+                <div class="icon-size-frame py-sm min-w-[20%] flex-1 flex flex-col gap-2 items-center justify-between overflow-hidden border border-alt-base-200 rounded">
+                    <span class="opacity-90 icon icon-base icon-monitor min-h-[--icon-size-lg]"></span>
                     <span class="text-xs text-center font-mono color-text-base-500 whitespace-nowrap text-ellipsis overflow-hidden">
                         --icon-size-base
                     </span>
                 </div>
-                <div class="icon-size-frame py-sm flex flex-1 flex-col gap-2 items-center justify-between overflow-hidden border border-alt-base-200 rounded">
-                    <span class="opacity-90 icon icon-md icon-zoom-out-filled min-h-[--line-height-xl]"></span>
+                <div class="icon-size-frame py-sm min-w-[20%] flex-1 flex flex-col gap-2 items-center justify-between overflow-hidden border border-alt-base-200 rounded">
+                    <span class="opacity-90 icon icon-md icon-monitor min-h-[--icon-size-lg]"></span>
                     <span class="text-xs text-center font-mono color-text-base-500 whitespace-nowrap text-ellipsis overflow-hidden">
                         --icon-size-md
                     </span>
                 </div>
-                <div class="icon-size-frame py-sm flex flex-1 flex-col gap-2 items-center justify-between overflow-hidden border border-alt-base-200 rounded">
-                    <span class="opacity-90 icon icon-lg icon-zoom-out-filled min-h-[--line-height-xl]"></span>
+                <div class="icon-size-frame py-sm min-w-[20%] flex-1 flex flex-col gap-2 items-center justify-between overflow-hidden border border-alt-base-200 rounded">
+                    <span class="opacity-90 icon icon-lg icon-monitor min-h-[--icon-size-lg]"></span>
                     <span class="text-xs text-center font-mono color-text-base-500 whitespace-nowrap text-ellipsis overflow-hidden">
                         --icon-size-lg
                     </span>
                 </div>
+
+                <div class="icon-size-frame py-sm min-w-[20%] flex-1 flex flex-col gap-2 items-center justify-between overflow-hidden border border-alt-base-200 rounded">
+                    <span class="opacity-90 icon icon-xl icon-monitor min-h-[--icon-size-xl4]"></span>
+                    <span class="text-xs text-center font-mono color-text-base-500 whitespace-nowrap text-ellipsis overflow-hidden">
+                        --icon-size-xl
+                    </span>
+                </div>
+                <div class="icon-size-frame py-sm min-w-[20%] flex-1 flex flex-col gap-2 items-center justify-between overflow-hidden border border-alt-base-200 rounded">
+                    <span class="opacity-90 icon icon-xl2 icon-monitor min-h-[--icon-size-xl4]"></span>
+                    <span class="text-xs text-center font-mono color-text-base-500 whitespace-nowrap text-ellipsis overflow-hidden">
+                        --icon-size-xl2
+                    </span>
+                </div>
+                <div class="icon-size-frame py-sm min-w-[20%] flex-1 flex flex-col gap-2 items-center justify-between overflow-hidden border border-alt-base-200 rounded">
+                    <span class="opacity-90 icon icon-xl3 icon-monitor min-h-[--icon-size-xl4]"></span>
+                    <span class="text-xs text-center font-mono color-text-base-500 whitespace-nowrap text-ellipsis overflow-hidden">
+                        --icon-size-xl3
+                    </span>
+                </div>
+                <div class="icon-size-frame py-sm min-w-[20%] flex-1 flex flex-col gap-2 items-center justify-between overflow-hidden border border-alt-base-200 rounded">
+                    <span class="opacity-90 icon icon-xl4 icon-monitor min-h-[--icon-size-xl4]"></span>
+                    <span class="text-xs text-center font-mono color-text-base-500 whitespace-nowrap text-ellipsis overflow-hidden">
+                        --icon-size-xl4
+                    </span>
+                </div>
+                <div class="icon-size-frame py-sm min-w-[20%] flex-1 flex flex-col gap-2 items-center justify-between overflow-hidden border border-alt-base-200 rounded">
+                    <span class="opacity-90 icon icon-xl5 icon-monitor min-h-[--line-height-xl4]"></span>
+                    <span class="text-xs text-center font-mono color-text-base-500 whitespace-nowrap text-ellipsis overflow-hidden">
+                        --icon-size-xl5
+                    </span>
+                </div>
+
+               
              </div>
 
-            <h3 class="text-xl font-bold mt-sm">All Icons</h3>
+            <h3 class="text-xl font-bold mt-sm">Names</h3>
             <div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm">
                 &lt;span class="icon icon-md icon-{name}..." />
             </div>
