@@ -28,10 +28,15 @@ a:hover {
 
 #controls {
     min-width: 220px;
+    max-width: 280px;
 }
 
 body {
-    @apply bg-fill-base-300 p-lg color-text-base-600 text-base flex flex-row gap-md items-start;
+    @apply bg-fill-base-300 p-lg color-text-base-600 text-base flex flex-row gap-md items-start justify-center;
+}
+
+#main {
+    max-width: 1200px;
 }
 
 @media (max-width: 1280px) {
@@ -40,6 +45,7 @@ body {
         flex-flow: row;
         flex-wrap: wrap;
         width: 100%;
+        max-width: 100%;
     }
 
     #main {

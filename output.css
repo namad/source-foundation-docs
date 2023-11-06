@@ -1617,6 +1617,38 @@ video {
   height: 1.5rem;
 }
 
+.h-32 {
+  height: 8rem;
+}
+
+.h-48 {
+  height: 12rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.min-h-\[\] {
+  min-height: ;
+}
+
+.min-h-\[var\] {
+  min-height: var;
+}
+
+.min-h-\[--line-\] {
+  min-height: var(--line-);
+}
+
+.min-h-\[--line-height-base\] {
+  min-height: var(--line-height-base);
+}
+
+.min-h-\[--line-height-xl\] {
+  min-height: var(--line-height-xl);
+}
+
 .w-1\/3 {
   width: 33.333333%;
 }
@@ -1741,6 +1773,14 @@ video {
   width: var(--spacing-xs4);
 }
 
+.w-48 {
+  width: 12rem;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
 .min-w-\[400px\] {
   min-width: 400px;
 }
@@ -1774,12 +1814,28 @@ video {
   flex-wrap: wrap;
 }
 
+.content-between {
+  align-content: space-between;
+}
+
+.content-around {
+  align-content: space-around;
+}
+
 .items-center {
   align-items: center;
 }
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .justify-stretch {
@@ -1812,6 +1868,10 @@ video {
 
 .gap-xs2 {
   gap: var(--spacing-xs2);
+}
+
+.gap-lg {
+  gap: var(--spacing-lg);
 }
 
 .overflow-auto {
@@ -1985,6 +2045,14 @@ video {
 
 .italic {
   font-style: italic;
+}
+
+.leading-xl2 {
+  line-height: var(--line-height-xl2);
+}
+
+.leading-xl {
+  line-height: var(--line-height-xl);
 }
 
 .underline {
@@ -5179,6 +5247,30 @@ video {
   --icon-size: var(--icon-size-xl);
 }
 
+.icon-sm {
+  --icon-size: var(--icon-size-sm);
+}
+
+.icon-lg {
+  --icon-size: var(--icon-size-lg);
+}
+
+.icon-xl2 {
+  --icon-size: var(--icon-size-xl2);
+}
+
+.icon-xl3 {
+  --icon-size: var(--icon-size-xl3);
+}
+
+.icon-xl4 {
+  --icon-size: var(--icon-size-xl4);
+}
+
+.icon-xl5 {
+  --icon-size: var(--icon-size-xl5);
+}
+
 .gradient-shade-50 {
   --angle: 0deg;
   --bg-image: linear-gradient(var(--angle), rgba(0 0 0 / 0.5), transparent);
@@ -5281,12 +5373,14 @@ a:hover {
 
 #controls {
   min-width: 220px;
+  max-width: 280px;
 }
 
 body {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  justify-content: center;
   gap: var(--spacing-md);
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
@@ -5298,12 +5392,17 @@ body {
   color: var(--text-color);
 }
 
+#main {
+  max-width: 1200px;
+}
+
 @media (max-width: 1280px) {
   #controls {
     position: static;
     flex-flow: row;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 100%;
   }
 
   #main {
