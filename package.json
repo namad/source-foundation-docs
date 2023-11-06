@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "watch": "npx tailwindcss -i ./input.css -o ./output.css --watch"
+    "watch": "npx tailwindcss -i ./input.css -o ./output.css --watch",
+    "watch-docs": "npx tailwindcss -i ./input.css -o ./docs/styles/main.css --watch"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
@@ -9,7 +10,7 @@
     "tailwindcss": "^3.3.5"
   },
   "dependencies": {
-    "source-foundation-cli": "file:~/source-foundation-cli-1.0.3.tgz",
+    "source-foundation-cli": "file:~/source-foundation-cli-1.0.4.tgz",
     "source-tailwindcss": "file:~/source-tailwindcss-1.0.4.tgz"
   }
 }

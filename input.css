@@ -1,4 +1,4 @@
-@import "./src/source-variables.css";
+@import "source-tailwindcss/source-variables.css";
 
 @tailwind base;
 @tailwind components;
@@ -74,7 +74,7 @@ body {
    }
 }
 
-/* @layer components {
+@layer components {
     .button-default {
         @apply ui-element
                 inline-flex
@@ -201,5 +201,23 @@ body {
                     inner-shadow-primary-400
                     bg-cover;
         }
-    }   
-} */
+    }
+
+    code {
+        @apply inline text-sm bg-alt-base-200 p-xs3 rounded-sm;
+    }
+
+    .code {
+        color: var(--accent-blue-500);
+    }
+    .code-string {
+        color: var(--accent-brown-500);
+    }
+    .code-boolean {
+        color: var(--accent-brown-500);
+    }
+    .code-module {
+        color: var(--accent-green-500)
+    }
+}
+

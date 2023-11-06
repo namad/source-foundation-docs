@@ -1541,6 +1541,17 @@ video {
   }
 }
 
+code {
+  display: inline;
+  border-radius: var(--radii-sm);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+  --bg-color: var(--alt-base-200);
+  background-color: var(--bg-color);
+  --padding: var(--spacing-xs3);
+  padding: var(--padding);
+}
+
 .code {
   color: var(--accent-blue-500);
 }
@@ -5441,3 +5452,4 @@ body {
 .hover\:decoration-none:hover {
   text-decoration: none;
 }
+

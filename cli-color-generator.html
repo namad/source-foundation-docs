@@ -1,7 +1,25 @@
----
-title: Home Page
-layout: base
----
+<!doctype html>
+<html data-theme="light" data-radii="base" data-spacing="base" data-typography="base" data-icons="base">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="output.css" rel="stylesheet">
+    <!-- For all browsers -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/source-icon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/source-icon-16.png">
+
+    <!-- For Google and Android -->
+    <link rel="icon" type="image/png" sizes="48x48" href="./favicon/source-icon-48.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon/source-icon-192.png">
+
+    <!-- For iPad -->
+    <link rel="apple-touch-icon" type="image/png" sizes="167x167" href="./favicon/source-icon-167.png">
+    <!-- For iPhone -->
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="./favicon/source-icon-180.png">
+</head>
+
+<body>
     <div class="p-md bg-fill-base-100 rounded-lg border border-alt-base-300 bg-clip-padding flex flex-col gap-md w-1/5 sticky top-md shadow-5 shadow-utility-shade-100"
         id="controls">
         <div class="flex flex-col gap-minor-sm">
@@ -123,9 +141,106 @@ layout: base
             </ul>
         </div>
 
-        {% include section-start.html title='Get started' %}
-        {% include home/get-started.html %}
-        {% include section-end.html %}
+        <div class="p-md bg-fill-base-100 rounded-lg flex-1 flex flex-col gap-base" id="tilwind">   
+            <h2 class="text-xl2 font-bold ">Design system on TailwindCSS</h2>
+            <h3 class="text-xl font-bold ">Install packages</h3>
+            <div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm ">
+                <pre class="block whitespace-pre">npm i -D source-foundation-cli</pre>
+                <pre class="block whitespace-pre">npm i -D source-tailwindcss</pre>
+            </div>
+
+            <h3 class="text-xl font-bold mt-sm">Create source.config.json</h3>
+            <div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm ">
+                <pre class="block whitespace-pre">npx source-css init</pre>
+            </div>
+            <div>
+                Create your
+                <pre class="inline text-sm bg-alt-base-200 p-xs3 rounded-sm">./source.config.json</pre>
+                This file lists all the parameters to generate color palettes, typography, radii and spacing tokens
+            </div>
+
+            <h3 class="text-xl font-bold mt-sm">Create CSS variables</h3>
+            <div>
+                Now you need add CSS file with custom properties. You can either build from your custom
+                <pre class="inline text-sm bg-alt-base-200 p-xs3 rounded-sm">./source.config.json</pre>
+                Or you can use defauls from 
+                <pre class="inline text-sm bg-alt-base-200 p-xs3 rounded-sm">source-tailwindcss/source-variables.css</pre>
+            </div>
+            <div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm ">
+                <pre class="block whitespace-pre">npx source-css ./css/variables.css</pre>
+            </div>
+            <div>
+                This command will read your 
+                <pre class="inline text-sm bg-alt-base-200 p-xs3 rounded-sm">./source.config.json</pre> 
+                and ouput CSS variables into the CSS file 
+            </div>
+
+            <h3 class="text-xl font-bold mt-sm">Import CSS variables</h3>
+            <div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm ">
+                <pre class="block whitespace-pre text-xs color-text-base-500 mb-minor-xs">main.css</pre>
+                <pre class="block whitespace-pre"><span class="code">@import</span> <span class="code-string">"./css/variables.css"</span>;</pre>
+                <pre class="block whitespace-pre">...</pre>
+                <pre class="block whitespace-pre"><span class="code">@tailwind</span> base;</pre>
+                <pre class="block whitespace-pre"><span class="code">@tailwind</span> components;</pre>
+                <pre class="block whitespace-pre"><span class="code">@tailwind</span> utilities;</pre>
+            </div>
+
+            <h3 class="text-xl font-bold mt-sm">Configure TailwindCSS</h3>
+            <h4 class="text-lg font-bold">Option 1. Import preset</h4>
+            <p>
+                <a href="https://github.com/namad/source-tw-playground/blob/main/src/source-preset.js" target="_blank">Source Preset</a> brings all bits together in the most simple way
+            </p>
+            <div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm ">
+                <pre class="block whitespace-pre text-xs color-text-base-500 mb-minor-xs">tailwind.config.js</pre>
+                <pre class="block whitespace-pre"><span class="code-module">module.exports</span> = {</pre>
+                <pre class="block whitespace-pre">    theme: {},</pre>
+                <pre class="block whitespace-pre">    ...</pre>
+                <pre class="block whitespace-pre">    presets: [</pre>
+                <pre class="block whitespace-pre">        require(<span class="inline code-string">'source-tailwindcss'</span>)</pre>
+                <pre class="block whitespace-pre">    ]</pre>
+                <pre class="block whitespace-pre">}</pre>
+            </div>
+            <div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm ">
+                <pre class="block whitespace-pre text-xs color-text-base-500 mb-minor-xs">node_moduiles/source-tailwindcss/source-preset.js</pre>            
+                <pre class="block whitespace-pre"><span class="code-module">module.exports</span> = {</pre>
+                <pre class="block whitespace-pre">    <span class="code-string">"colors"</span>: {</pre>
+                <pre class="block whitespace-pre">        ...</pre>
+                <pre class="block whitespace-pre">        <span class="code-string">"primary-600"</span>: "<span class="code-string">var(--primary-600)</span>",</pre>
+                <pre class="block whitespace-pre">        <span class="code-string">"fill-base-600"</span>: <span class="code-string">"var(--fill-base-600)</span>",</pre>
+                <pre class="block whitespace-pre">        <span class="code-string">"text-base-600"</span>: "<span class="code-string">var(--text-base-600)</span>",</pre>
+                <pre class="block whitespace-pre">        ...</pre>
+                <pre class="block whitespace-pre">    }</pre>
+                <pre class="block whitespace-pre">}</pre>
+            </div>
+            <div class="flex flex-row gap-base">
+                <a href="https://tailwindcss.com/docs/presets" target="_blank">TailwindCSS Presets →</a>
+            </div>
+            <h4 class="text-lg font-bold mt-sm">Option 2. Use theme</h4>
+            <p>
+                Theme gives you more control over plugins, but somehow it compromises Tailwind CSS IntelliSense
+            </p>
+            <a href="https://tailwindcss.com/docs/theme" target="_blank">TailwindCSS Themes →</a>
+            <div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm ">
+                <pre class="block whitespace-pre text-xs color-text-base-500 mb-minor-xs">tailwind.config.js</pre>
+                <pre class="block whitespace-pre"><span class="code-module">module.exports</span> = {</pre>
+                <pre class="block whitespace-pre">    ...</pre>
+                <pre class="block whitespace-pre">    theme: require(<span class="code-string">'source-tailwindcss/source-theme'</span>),</pre>
+                <pre class="block whitespace-pre">    ...</pre>
+                <pre class="block whitespace-pre">    plugins: [</pre>
+                <pre class="block whitespace-pre">        require(<span class="code-string">'source-tailwindcss/plugins/border'</span>),</pre>
+                <pre class="block whitespace-pre">        require(<span class="code-string">'source-tailwindcss/plugins/colors'</span>),</pre>
+                <pre class="block whitespace-pre">        require(<span class="code-string">'source-tailwindcss/plugins/components'</span>),</pre>
+                <pre class="block whitespace-pre">        require(<span class="code-string">'source-tailwindcss/plugins/elevation'</span>),</pre>
+                <pre class="block whitespace-pre">        require(<span class="code-string">'source-tailwindcss/plugins/gradients'</span>),</pre>
+                <pre class="block whitespace-pre">        require(<span class="code-string">'source-tailwindcss/plugins/icons'</span>),</pre>
+                <pre class="block whitespace-pre">        require(<span class="code-string">'source-tailwindcss/plugins/padding'</span>),</pre>
+                <pre class="block whitespace-pre">    ]</pre>
+                <pre class="block whitespace-pre">}</pre>
+            </div>
+            <p>
+                Now you shuld be able to run your build normally
+            </p>
+        </div>
 
         <div class="p-md bg-fill-base-100 rounded-lg flex-1 flex flex-col gap-base" id="colors">
             <h2 class="text-xl2 font-bold ">Color System</h2>
@@ -5041,6 +5156,7 @@ layout: base
 
         </div>
     </div>
+</body>
 
 <script>
     document.getElementById('controls').querySelectorAll('input[type=radio]').forEach(el => {
@@ -5070,3 +5186,5 @@ layout: base
         })
     })
 </script>
+
+</html>
