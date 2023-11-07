@@ -106,46 +106,8 @@ module.exports = {
 </div>
 {% include color-shades.html color="bg-danger" %}
 
-<h3 class="text-xl font-bold mt-sm">Accents</h3>
-<p>
-    The accent palette brings life and meaning to your product. The colour spots can guide user attention,
-    emphasise brand connection or communicate a system state. There are ten accents to work with.
-</p>
-{% include code-block-oneliner.html class="" content="&lt;div class='bg-accent-red-{shade} ...' />"%}
-{% include color-shades.html color="bg-accent-red" %}
-
-{% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-amber-{shade} ...' />"%}
-{% include color-shades.html color="bg-accent-amber" %}
-
-{% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-brown-{shade} ...' />"%}
-{% include color-shades.html color="bg-accent-brown" %}
-
-{% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-green-{shade} ...' />"%}
-{% include color-shades.html color="bg-accent-green" %}
-
-{% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-teal-{shade} ...' />"%}
-{% include color-shades.html color="bg-accent-teal" %}
-
-{% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-blue-{shade} ...' />"%}
-{% include color-shades.html color="bg-accent-blue" %}
-
-{% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-indigo-{shade} ...' />"%}
-{% include color-shades.html color="bg-accent-indigo" %}
-
-{% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-violet-{shade} ...' />"%}
-{% include color-shades.html color="bg-accent-violet" %}
-
-{% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-purple-{shade} ...' />"%}
-{% include color-shades.html color="bg-accent-purple" %}
-
-{% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-pink-{shade} ...' />"%}
-{% include color-shades.html color="bg-accent-pink" %}
-
-
 <h3 class="text-xl font-bold mt-sm">Text colors</h3>
-<div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm">
-    color-{color}
-</div>
+{% include code-block-oneliner.html content="&lt;span class='color-{color} ...' />"%}
 <p>
     For the text, there are three shades for visual hierarchy and several colours for semantics. It is an
     independent sub-palette that makes it easier to fit into WCAG accessibility requirements.
@@ -188,3 +150,38 @@ module.exports = {
         <div class="w-1/5 p-md color-text-contrast-danger ">--text-contrast-danger</div>
     </div>
 </div>
+
+<h3 class="text-xl font-bold mt-sm">Accents</h3>
+<p>
+    The accent palette brings life and meaning to your product. The colour spots can guide user attention,
+    emphasise brand connection or communicate a system state. There are ten accents to work with.
+</p>
+{% include code-block-oneliner.html class="" content="&lt;div class='bg-accent-red-{shade} ...' />"%}
+{% include color-shades.html color="bg-accent-red" %}
+
+{% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-amber-{shade} ...' />"%}
+{% include color-shades.html color="bg-accent-amber" %}
+
+{% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-brown-{shade} ...' />"%}
+{% include color-shades.html color="bg-accent-brown" %}
+
+{% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-green-{shade} ...' />"%}
+{% include color-shades.html color="bg-accent-green" %}
+
+{% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-teal-{shade} ...' />"%}
+{% include color-shades.html color="bg-accent-teal" %}
+
+{% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-blue-{shade} ...' />"%}
+{% include color-shades.html color="bg-accent-blue" %}
+
+{% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-indigo-{shade} ...' />"%}
+{% include color-shades.html color="bg-accent-indigo" %}
+
+{% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-violet-{shade} ...' />"%}
+{% include color-shades.html color="bg-accent-violet" %}
+
+{% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-purple-{shade} ...' />"%}
+{% include color-shades.html color="bg-accent-purple" %}
+
+{% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-pink-{shade} ...' />"%}
+{% include color-shades.html color="bg-accent-pink" %}

@@ -2,190 +2,137 @@
 title: Home Page
 layout: base
 ---
-<div class="p-md bg-fill-base-100 rounded-lg border border-alt-base-300 bg-clip-padding flex flex-col gap-md w-1/5 sticky top-md shadow-5 shadow-utility-shade-100"
-    id="controls">
+<div class="group p-md bg-fill-base-100 rounded-lg border border-alt-base-300 bg-clip-padding flex flex-col gap-md sticky top-md shadow-5 shadow-utility-shade-100 overflow-auto" id="controls">
     <div class="flex flex-col gap-minor-sm">
-        <div class="text-base font-bold">Theme</div>
+        <div class="text-base font-bold flex justify-between items-baseline">Theme <span class="text-sm text-right font-normal color-text-base-500 color-opacity-50 group-hover:color-opacity-100">html [data-theme]</span></div>
         <div class="flex flex-col gap-xs">
-            <label class="flex flex-row gap-xs2">
-                <input type="radio" class="input" name="theme" value="light" checked />
-                <span>Light</span>
-            </label>
-            <label class="flex flex-row gap-xs2">
-                <input type="radio" class="input" name="theme" value="dark-elevated" />
-                <span>Dark Elevated</span>
-            </label>
-            <label class="flex flex-row gap-xs2">
-                <input type="radio" class="input" name="theme" value="dark-base" />
-                <span>Dark Deep</span>
-            </label>
+            {% include radio-button.html name="theme" caption="Light" value="light" checked="true" %}
+            {% include radio-button.html name="theme" caption="Dark Elevated" value="dark-elevated" %}
+            {% include radio-button.html name="theme" caption="Dark Deep" value="dark-base" %}
         </div>
     </div>
     <div class="flex flex-col gap-minor-sm">
-        <div class="text-base font-bold">Spacing</div>
+        <div class="text-base font-bold flex justify-between gap-4 items-baseline">Spacing <span class="text-sm text-right font-normal color-text-base-500 color-opacity-50 group-hover:color-opacity-100">html [data-spacing]</span></div>
         <div class="flex flex-col gap-xs">
-            <label class="flex flex-row gap-xs2">
-                <input type="radio" class="input" name="spacing" value="compact" />
-                <span>Compact</span>
-            </label>
-            <label class="flex flex-row gap-xs2">
-                <input type="radio" class="input" name="spacing" value="base" checked />
-                <span>Base</span>
-            </label>
-            <label class="flex flex-row gap-xs2">
-                <input type="radio" class="input" name="spacing" value="large" />
-                <span>Large</span>
-            </label>
+            {% include radio-button.html name="spacing" caption="Compact" value="compact"%}
+            {% include radio-button.html name="spacing" caption="Base" value="base" checked="true" %}
+            {% include radio-button.html name="spacing" caption="Large" value="large" %}
         </div>
     </div>
     <div class="flex flex-col gap-minor-sm">
-        <div class="text-base font-bold">Radii</div>
+        <div class="text-base font-bold flex justify-between gap-4 items-baseline">Radii <span class="text-sm font-normal color-text-base-500 color-opacity-50 group-hover:color-opacity-100">html [data-radii]</span></div>
         <div class="flex flex-col gap-xs">
-            <label class="flex flex-row gap-xs2">
-                <input type="radio" class="input" name="radii" value="compact" />
-                <span>Compact</span>
-            </label>
-            <label class="flex flex-row gap-xs2">
-                <input type="radio" class="input" name="radii" value="base" checked />
-                <span>Base</span>
-            </label>
-            <label class="flex flex-row gap-xs2">
-                <input type="radio" class="input" name="radii" value="large" />
-                <span>Large</span>
-            </label>
+            {% include radio-button.html name="radii" caption="Compact" value="compact"%}
+            {% include radio-button.html name="radii" caption="Base" value="base" checked="true" %}
+            {% include radio-button.html name="radii" caption="Large" value="large" %}        
         </div>
     </div>
     <div class="flex flex-col gap-minor-sm">
-        <div class="text-base font-bold">Text Size</div>
+        <div class="text-base font-bold flex justify-between gap-4 items-baseline">Text Size <span class="text-sm text-right font-normal color-text-base-500 color-opacity-50 group-hover:color-opacity-100">html [data-typography]</span></div>
         <div class="flex flex-col gap-xs">
-            <label class="flex flex-row gap-xs2">
-                <input type="radio" class="input" name="typography" value="compact" />
-                <span>Compact</span>
-            </label>
-            <label class="flex flex-row gap-xs2">
-                <input type="radio" class="input" name="typography" value="base" checked />
-                <span>Base</span>
-            </label>
-            <label class="flex flex-row gap-xs2">
-                <input type="radio" class="input" name="typography" value="large" />
-                <span>Large</span>
-            </label>
+            {% include radio-button.html name="typography" caption="Compact" value="compact"%}
+            {% include radio-button.html name="typography" caption="Base" value="base" checked="true" %}
+            {% include radio-button.html name="typography" caption="Large" value="large" %}           
         </div>
     </div>
     <div class="flex flex-col gap-minor-sm">
-        <div class="text-base font-bold">Icon Size</div>
+    <div class="text-base font-bold flex justify-between gap-4 items-baseline">Icon Size <span class="text-sm text-right font-normal color-text-base-500 color-opacity-50 group-hover:color-opacity-100">html [data-icons]</span></div>
         <div class="flex flex-col gap-xs">
-            <label class="flex flex-row gap-xs2">
-                <input type="radio" class="input" name="icons" value="base" checked />
-                <span>Base</span>
-            </label>
-            <label class="flex flex-row gap-xs2">
-                <input type="radio" class="input" name="icons" value="touch" />
-                <span>Touch</span>
-            </label>
+            {% include radio-button.html name="icons" caption="Base" value="base" checked="true" %}
+            {% include radio-button.html name="icons" caption="Touch" value="touch" %}      
         </div>
     </div>
 </div>
 <div class="flex-1 flex flex-col gap-md overflow-hidden" id="main">
 
     {% include section-start.html %}
-    <h1 class="h1 color-primary-500">Source Design System Foundation</h1>
-    <div class="flex flex-1 flex-row gap-base">
-        <div class="p-xs bg-fill-contrast-100 gradient-tint-50 shadow-4 color-text-contrast-600 rounded"
-            title="Colors"><span class="block icon before:block icon-md"
-                style="--icon-src: var(--ads-colors)"></span></div>
-        <div class="p-xs bg-fill-contrast-100 gradient-tint-50 shadow-4 color-text-contrast-600 rounded"
-            title="Spacing"><span class="block icon before:block icon-md"
-                style="--icon-src: var(--ads-spacing)"></span></div>
-        <div class="p-xs bg-fill-contrast-100 gradient-tint-50 shadow-4 color-text-contrast-600 rounded"
-            title="Typography"><span class="block icon before:block icon-md"
-                style="--icon-src: var(--ads-typography)"></span></div>
-        <div class="p-xs bg-fill-contrast-100 gradient-tint-50 shadow-4 color-text-contrast-600 rounded"
-            title="Radii"><span class="block icon before:block icon-md"
-                style="--icon-src: var(--ads-radii)"></span></div>
-        <div class="p-xs bg-fill-contrast-100 gradient-tint-50 shadow-4 color-text-contrast-600 rounded"
-            title="Elevation"><span class="block icon before:block icon-md"
-                style="--icon-src: var(--ads-elevation)"></span></div>
-    </div>
-    <ul class="flex flex-1 flex-row">
-        <li>
-            <a href="./index.html"  class="block rounded px-sm py-minor-xs hover:decoration-none bg-primary-100">TailwindCSS</a>
-        </li>
-        <li>
-            <a href="./index.html"  class="block rounded px-sm py-minor-xs hover:decoration-none hover:bg-alt-base-100">CLI Theme Generator</a>
-        </li>
-        <li>
-            <a href="./index.html"  class="block rounded px-sm py-minor-xs hover:decoration-none hover:bg-alt-base-100">Figma Theme Generator</a>
-        </li>
-        <li class="flex flex-1 justify-end">
-            <a href="./index.html"  class="block rounded px-sm py-minor-xs hover:decoration-none hover:bg-alt-base-100">Color System Practical Guide</a>
-        </li>
-    </ul>
-    {% include section-end.html %}
+            <h1 class="h1 color-primary-500">Source Design System Foundation</h1>
+            <div class="flex flex-1 flex-row gap-base">
+                <div class="p-xs bg-fill-contrast-100 gradient-tint-50 shadow-4 color-text-contrast-600 rounded" title="Colors"><span class="block icon before:block icon-md" style="--icon-src: var(--ads-colors)"></span></div>
+                <div class="p-xs bg-fill-contrast-100 gradient-tint-50 shadow-4 color-text-contrast-600 rounded" title="Spacing"><span class="block icon before:block icon-md" style="--icon-src: var(--ads-spacing)"></span></div>
+                <div class="p-xs bg-fill-contrast-100 gradient-tint-50 shadow-4 color-text-contrast-600 rounded" title="Typography"><span class="block icon before:block icon-md" style="--icon-src: var(--ads-typography)"></span></div>
+                <div class="p-xs bg-fill-contrast-100 gradient-tint-50 shadow-4 color-text-contrast-600 rounded" title="Radii"><span class="block icon before:block icon-md" style="--icon-src: var(--ads-radii)"></span></div>
+                <div class="p-xs bg-fill-contrast-100 gradient-tint-50 shadow-4 color-text-contrast-600 rounded" title="Elevation"><span class="block icon before:block icon-md" style="--icon-src: var(--ads-elevation)"></span></div>
+            </div>
+            <ul class="flex flex-1 flex-row flex-wrap">
+                <li>
+                    <a href="./index.html" class="block rounded px-sm py-minor-xs hover:decoration-none bg-primary-100">TailwindCSS</a>
+                </li>
+                <li>
+                    <a href="./index.html" class="block rounded px-sm py-minor-xs hover:decoration-none hover:bg-alt-base-100">CLI Theme Generator</a>
+                </li>
+                <li>
+                    <a href="./index.html" class="block rounded px-sm py-minor-xs hover:decoration-none hover:bg-alt-base-100">Figma Theme Generator</a>
+                </li>
+                <li class="flex flex-1 justify-end">
+                    <a href="./index.html" class="block rounded px-sm py-minor-xs hover:decoration-none hover:bg-alt-base-100">Color System Practical Guide</a>
+                </li>
+            </ul>
+            {% include section-end.html %}
 
-    {% include section-start.html title='Get started' %}
-    {% include home/get-started.html %}
-    {% include section-end.html %}
+            {% include section-start.html title='Get started' %}
+            {% include home/get-started.html %}
+            {% include section-end.html %}
 
-    {% include section-start.html title='Color System' %}
-    {% include home/color-system.html %}
-    {% include section-end.html %}
+            {% include section-start.html title='Color System' %}
+            {% include home/color-system.html %}
+            {% include section-end.html %}
 
-    {% include section-start.html title='Color Adjustments' %}
-    {% include home/color-adjustments.html %}
-    {% include section-end.html %}
+            {% include section-start.html title='Color Adjustments' %}
+            {% include home/color-adjustments.html %}
+            {% include section-end.html %}
 
-    {% include section-start.html title='Gradients' %}
-    {% include home/gradients.html %}
-    {% include section-end.html %}
+            {% include section-start.html title='Gradients' %}
+            {% include home/gradients.html %}
+            {% include section-end.html %}
 
-    {% include section-start.html title='Shadows' %}
-    {% include home/shadows.html %}
-    {% include section-end.html %}
+            {% include section-start.html title='Shadows' %}
+            {% include home/shadows.html %}
+            {% include section-end.html %}
 
-    {% include section-start.html title='Spacing' %}
-    {% include home/spacing.html %}
-    {% include section-end.html %}
+            {% include section-start.html title='Spacing' %}
+            {% include home/spacing.html %}
+            {% include section-end.html %}
 
-    {% include section-start.html title='Typography' %}
-    {% include home/typography.html %}
-    {% include section-end.html %}
+            {% include section-start.html title='Typography' %}
+            {% include home/typography.html %}
+            {% include section-end.html %}
 
-    {% include section-start.html title='Radii' %}
-    {% include home/radii.html %}
-    {% include section-end.html %}
+            {% include section-start.html title='Radii' %}
+            {% include home/radii.html %}
+            {% include section-end.html %}
 
-    {% include section-start.html title='Icons' %}
-    {% include home/icons.html %}
-    {% include section-end.html %}
+            {% include section-start.html title='Icons' %}
+            {% include home/icons.html %}
+            {% include section-end.html %}
 
-</div>
+        </div>
 
-<script>
-document.getElementById('controls').querySelectorAll('input[type=radio]').forEach(el => {
-    el.addEventListener('click', (e) => {
-        const name = el.name;
-        const value = el.value;
-        document.documentElement.dataset[name] = value;
-    })
-});
+        <script>
+            document.getElementById('controls').querySelectorAll('input[type=radio]').forEach(el => {
+                el.addEventListener('click', (e) => {
+                    const name = el.name;
+                    const value = el.value;
+                    document.documentElement.dataset[name] = value;
+                })
+            });
 
-document.querySelectorAll('[data-theme-switch]').forEach(el => {
-    el.addEventListener('click', (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        const currentTheme = document.documentElement.dataset['theme'];
-        let value = 'light';
+            document.querySelectorAll('[data-theme-switch]').forEach(el => {
+                el.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const currentTheme = document.documentElement.dataset['theme'];
+                    let value = 'light';
 
-        if (currentTheme == 'light') {
-            value = 'dark-elevated'
-        }
+                    if (currentTheme == 'light') {
+                        value = 'dark-elevated'
+                    }
 
-        document.documentElement.dataset['theme'] = value;
-        //document.querySelector(`input[name=theme][value=${currentTheme}]`).checked = false;
-        document.querySelector(`input[name=theme][value=${value}]`).checked = true;
+                    document.documentElement.dataset['theme'] = value;
+                    //document.querySelector(`input[name=theme][value=${currentTheme}]`).checked = false;
+                    document.querySelector(`input[name=theme][value=${value}]`).checked = true;
 
-        return false;
-    })
-})
-</script>
+                    return false;
+                })
+            })
+        </script>

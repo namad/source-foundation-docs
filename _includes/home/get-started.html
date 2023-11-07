@@ -1,4 +1,4 @@
-<h3 class="text-xl font-bold ">Install packages</h3>
+<h3 class="">Install packages</h3>
 
 
 {% include code-block-start.html %}
@@ -9,7 +9,7 @@ npm i -D source-tailwindcss
 {% include code-block-end.html %}
 
 
-<h3 class="text-xl font-bold mt-sm">Create source.config.json</h3>
+<h3 class="mt-sm">Create source.config.json</h3>
 {% include code-block-start.html %}
 {% highlight en %}
 npx source-css init
@@ -21,7 +21,7 @@ npx source-css init
     This file lists all the parameters to generate color palettes, typography, radii and spacing tokens
 </div>
 
-<h3 class="text-xl font-bold mt-sm">Create CSS variables</h3>
+<h3 class="mt-sm">Create CSS variables</h3>
 <div>
     Now you need add CSS file with custom properties. You can either build from your custom
     <span class="code">./source.config.json</span>
@@ -37,7 +37,7 @@ npx source-css init
     and ouput CSS variables into the CSS file
 </div>
 
-<h3 class="text-xl font-bold mt-sm">Import CSS variables</h3>
+<h3 class="mt-sm">Import CSS variables</h3>
 {% include code-block-start.html caption="main.css" %}
 {% highlight css %}
 @import "./css/variables.css";
@@ -48,7 +48,7 @@ npx source-css init
 {% endhighlight %}
 {% include code-block-end.html %}
 
-<h3 class="text-xl font-bold mt-sm">Configure TailwindCSS</h3>
+<h3 class="mt-sm">Configure TailwindCSS</h3>
 <h4 class="text-lg font-bold">Option 1. Import preset</h4>
 <p>
     <a href="https://github.com/namad/source-tw-playground/blob/main/src/source-preset.js" target="_blank">Source
@@ -57,11 +57,11 @@ npx source-css init
 {% include code-block-start.html caption="tailwind.config.js" %}
 {% highlight js %}
 module.exports = {
-    theme: { ... },
-    ...
-    presets: [
-        require('source-tailwindcss')
-    ]
+theme: { ... },
+...
+presets: [
+require('source-tailwindcss')
+]
 }
 {% endhighlight %}
 {% include code-block-end.html %}
@@ -69,14 +69,14 @@ module.exports = {
 {% include code-block-start.html caption="node_moduiles/source-tailwindcss/source-preset.js" %}
 {% highlight js %}
 module.exports = {
-    theme: { ... },
-    colors: [
-        //...
-        "primary-600": "var(--primary-600)",
-        "fill-base-600": "var(--fill-base-600)",
-        "text-base-600": "var(--text-base-600)",
-        //...
-    ]
+theme: { ... },
+colors: [
+//...
+"primary-600": "var(--primary-600)",
+"fill-base-600": "var(--fill-base-600)",
+"text-base-600": "var(--text-base-600)",
+//...
+]
 }
 {% endhighlight %}
 {% include code-block-end.html %}
@@ -84,7 +84,7 @@ module.exports = {
 <div class="flex flex-row gap-base">
     <a href="https://tailwindcss.com/docs/presets" target="_blank">TailwindCSS Presets →</a>
 </div>
-<h4 class="text-lg font-bold mt-sm">Option 2. Use theme</h4>
+<h4 class="mt-sm">Option 2. Use theme</h4>
 <p>
     Theme gives you more control over plugins, but somehow it compromises Tailwind CSS IntelliSense
 </p>
@@ -105,6 +105,64 @@ module.exports = {
 }
 {% endhighlight %}
 {% include code-block-end.html %}
+
+<h3 class="mt-sm">Set up HTML</h3>
+<p>
+    All the values are set with <span class="code">[data]</span> atribute.
+</p>
+{% include code-block-start.html caption="index.html" %}
+{% highlight html %}
+<html data-theme="light" data-radii="base" data-spacing="base" data-typography="base" data-icons="base">
+...
+
+</html>
+{% endhighlight %}
+{% include code-block-end.html %}
+
+{% include code-block-start.html caption="[data] attribute variants" %}
+<div class="flex flex-row gap-md">
+    <div class="flex flex-col flex-1 gap-xs4">
+        <div class="font-bold whitespace-nowrap">theme</div>
+        <div class="flex flex-col">
+            <div class="pl-sm">light</div>
+            <div class="pl-sm">dark-elevated</div>
+            <div class="pl-sm">dark-base</div>
+        </div>
+    </div>
+    <div class="flex flex-col flex-1 gap-xs4">
+        <div class ="font-bold whitespace-nowrap">spacing</div>
+        <div class="flex flex-col">
+            <div class="pl-sm">compact</div>
+            <div class="pl-sm">base</div>
+            <div class="pl-sm">large</div>
+        </div>
+    </div>
+    <div class="flex flex-col flex-1 gap-xs4">
+        <div class ="font-bold whitespace-nowrap">typography</div>
+        <div class="flex flex-col">
+            <div class="pl-sm">compact</div>
+            <div class="pl-sm">base</div>
+            <div class="pl-sm">large</div>
+        </div>
+    </div>
+    <div class="flex flex-col flex-1 gap-xs4">
+        <div class ="font-bold whitespace-nowrap">radii</div>
+        <div class="flex flex-col">
+            <div class="pl-sm">compact</div>
+            <div class="pl-sm">base</div>
+            <div class="pl-sm">large</div>
+        </div>
+    </div>
+    <div class="flex flex-col flex-1 gap-xs4">
+        <div class ="font-bold whitespace-nowrap">icons</div>
+        <div class="flex flex-col">
+            <div class="pl-sm">base</div>
+            <div class="pl-sm">touch</div>
+        </div>
+    </div>
+</div>
+{% include code-block-end.html %}
+
 <p>
     Now you shuld be able to run your build normally
 </p>

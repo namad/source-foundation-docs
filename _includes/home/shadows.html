@@ -1,37 +1,29 @@
 <h3 class="">Drop Shadows</h3>
-<div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm">
-    &lt;div class="shadow-{elevation} shadow-{color} shadow-opacity-{opacity} ..." />
-</div>
+{% include code-block-onetag.html tag="div" content="shadow-{elevation} shadow-{color} shadow-opacity-{opacity}" %}
+
 <p class="text-base ">
     Shadow utility offers six elevation levels. examples below use
-    <span
-        class="text-sm text-sm font-mono bg-alt-base-200 rounded-sm px-xs2 py-minor-xs3">shadow-utility-shade-300</span>
+    <span class="text-sm text-sm font-mono bg-alt-base-200 rounded-sm px-xs2 py-minor-xs3">shadow-utility-shade-300</span>
     color
 </p>
 
 <div class="flex flex-row flex-wrap flex-1 gap-md ">
-    <div
-        class="min-w-fit p-md bg-fill-base-100 shadow-1 shadow-utility-shade-300 rounded-md flex-1 items-center justify-center flex">
+    <div class="min-w-fit p-md bg-fill-base-100 shadow-1 shadow-utility-shade-300 rounded-md flex-1 items-center justify-center flex">
         <span class="font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">shadow-1</span>
     </div>
-    <div
-        class="min-w-fit p-md bg-fill-base-100 shadow-2 shadow-utility-shade-300 rounded-md flex-1 items-center justify-center flex">
+    <div class="min-w-fit p-md bg-fill-base-100 shadow-2 shadow-utility-shade-300 rounded-md flex-1 items-center justify-center flex">
         <span class="font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">shadow-2</span>
     </div>
-    <div
-        class="min-w-fit p-md bg-fill-base-100 shadow-3 shadow-utility-shade-300 rounded-md flex-1 items-center justify-center flex">
+    <div class="min-w-fit p-md bg-fill-base-100 shadow-3 shadow-utility-shade-300 rounded-md flex-1 items-center justify-center flex">
         <span class="font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">shadow-3</span>
     </div>
-    <div
-        class="min-w-fit p-md bg-fill-base-100 shadow-4 shadow-utility-shade-300 rounded-md flex-1 items-center justify-center flex">
+    <div class="min-w-fit p-md bg-fill-base-100 shadow-4 shadow-utility-shade-300 rounded-md flex-1 items-center justify-center flex">
         <span class="font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">shadow-4</span>
     </div>
-    <div
-        class="min-w-fit p-md bg-fill-base-100 shadow-5 shadow-utility-shade-300 rounded-md flex-1 items-center justify-center flex">
+    <div class="min-w-fit p-md bg-fill-base-100 shadow-5 shadow-utility-shade-300 rounded-md flex-1 items-center justify-center flex">
         <span class="font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">shadow-5</span>
     </div>
-    <div
-        class="min-w-fit p-md bg-fill-base-100 shadow-6 shadow-utility-shade-300 rounded-md flex-1 items-center justify-center flex">
+    <div class="min-w-fit p-md bg-fill-base-100 shadow-6 shadow-utility-shade-300 rounded-md flex-1 items-center justify-center flex">
         <span class="font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">shadow-6</span>
     </div>
 </div>
@@ -39,36 +31,29 @@
 <h3 class="mt-sm">Color Bleed Shadows</h3>
 <p class="text-base ">
     You can apply any color and set shadow opacity with
-    <span
-        class="text-sm text-sm font-mono bg-alt-base-200 rounded-sm px-xs2 py-minor-xs3">shadow-{color}</span>
+    <span class="text-sm text-sm font-mono bg-alt-base-200 rounded-sm px-xs2 py-minor-xs3">shadow-{color}</span>
     and
-    <span
-        class="text-sm text-sm font-mono bg-alt-base-200 rounded-sm px-xs2 py-minor-xs3">shadow-opacity-{opacity}</span>
+    <span class="text-sm text-sm font-mono bg-alt-base-200 rounded-sm px-xs2 py-minor-xs3">shadow-opacity-{opacity}</span>
     utilities
 </p>
 <div class="flex flex-row flex-wrap gap-md flex-1 justify-center">
-    <div
-        class="min-w-fit flex-1 text-center px-sm py-base bg-accent-green-400 gradient-tint-50 shadow-accent-green-300 shadow-opacity-60 shadow-4 rounded-md">
+    <div class="min-w-fit flex-1 text-center px-sm py-base bg-accent-green-400 gradient-tint-50 shadow-accent-green-300 shadow-opacity-60 shadow-4 rounded-md">
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-accent-green-300</div>
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-opacity-60</div>
     </div>
-    <div
-        class="min-w-fit flex-1 text-center px-sm py-base bg-accent-teal-400 gradient-tint-50 shadow-accent-teal-300 shadow-opacity-60 shadow-4 rounded-md">
+    <div class="min-w-fit flex-1 text-center px-sm py-base bg-accent-teal-400 gradient-tint-50 shadow-accent-teal-300 shadow-opacity-60 shadow-4 rounded-md">
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-accent-teal-300</div>
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-opacity-60</div>
     </div>
-    <div
-        class="min-w-fit flex-1 text-center px-sm py-base bg-accent-blue-400 gradient-tint-50 shadow-accent-blue-300 shadow-opacity-60 shadow-4 rounded-md">
+    <div class="min-w-fit flex-1 text-center px-sm py-base bg-accent-blue-400 gradient-tint-50 shadow-accent-blue-300 shadow-opacity-60 shadow-4 rounded-md">
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-accent-blue-300</div>
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-opacity-60</div>
     </div>
-    <div
-        class="min-w-fit flex-1 text-center px-sm py-base bg-accent-indigo-400 gradient-tint-50 shadow-accent-indigo-300 shadow-opacity-60 shadow-4 rounded-md">
+    <div class="min-w-fit flex-1 text-center px-sm py-base bg-accent-indigo-400 gradient-tint-50 shadow-accent-indigo-300 shadow-opacity-60 shadow-4 rounded-md">
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-accent-indigo-300</div>
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-opacity-60</div>
     </div>
-    <div
-        class="min-w-fit flex-1 text-center px-sm py-base bg-accent-purple-400 gradient-tint-50 shadow-accent-purple-300 shadow-opacity-60 shadow-4 rounded-md">
+    <div class="min-w-fit flex-1 text-center px-sm py-base bg-accent-purple-400 gradient-tint-50 shadow-accent-purple-300 shadow-opacity-60 shadow-4 rounded-md">
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-accent-purple-300</div>
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-opacity-60</div>
     </div>
@@ -77,8 +62,7 @@
 <h3 class="mt-sm">Multiply Shadows</h3>
 <p class="text-base ">
     Utility class
-    <span
-        class="text-sm text-sm font-mono bg-alt-base-200 rounded-sm px-xs2 py-minor-xs3">shadow-multiply</span>
+    <span class="text-sm text-sm font-mono bg-alt-base-200 rounded-sm px-xs2 py-minor-xs3">shadow-multiply</span>
     enables
     <span class="text-sm text-sm font-mono bg-alt-base-200 rounded-sm px-xs2 py-minor-xs3">blend-mode:
         multiply</span>
@@ -88,59 +72,43 @@
     </a> to see the difference
 </p>
 <div class="flex flex-row flex-wrap gap-md flex-1 justify-center">
-    <div
-        class="min-w-fit flex-1 text-center px-sm py-base bg-accent-green-400 gradient-tint-50 shadow-accent-green-300 shadow-opacity-60 shadow-4 shadow-multiply rounded-md">
+    <div class="min-w-fit flex-1 text-center px-sm py-base bg-accent-green-400 gradient-tint-50 shadow-accent-green-300 shadow-opacity-60 shadow-4 shadow-multiply rounded-md">
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-accent-green-300</div>
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-opacity-60</div>
     </div>
-    <div
-        class="min-w-fit flex-1 text-center px-sm py-base bg-accent-teal-400 gradient-tint-50 shadow-accent-teal-300 shadow-opacity-60 shadow-4 shadow-multiply rounded-md">
+    <div class="min-w-fit flex-1 text-center px-sm py-base bg-accent-teal-400 gradient-tint-50 shadow-accent-teal-300 shadow-opacity-60 shadow-4 shadow-multiply rounded-md">
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-accent-teal-300</div>
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-opacity-60</div>
     </div>
-    <div
-        class="min-w-fit flex-1 text-center px-sm py-base bg-accent-blue-400 gradient-tint-50 shadow-accent-blue-300 shadow-opacity-60 shadow-4 shadow-multiply rounded-md">
+    <div class="min-w-fit flex-1 text-center px-sm py-base bg-accent-blue-400 gradient-tint-50 shadow-accent-blue-300 shadow-opacity-60 shadow-4 shadow-multiply rounded-md">
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-accent-blue-300</div>
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-opacity-60</div>
     </div>
-    <div
-        class="min-w-fit flex-1 text-center px-sm py-base bg-accent-indigo-400 gradient-tint-50 shadow-accent-indigo-300 shadow-opacity-60 shadow-4 shadow-multiply rounded-md">
+    <div class="min-w-fit flex-1 text-center px-sm py-base bg-accent-indigo-400 gradient-tint-50 shadow-accent-indigo-300 shadow-opacity-60 shadow-4 shadow-multiply rounded-md">
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-accent-indigo-300</div>
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-opacity-60</div>
     </div>
-    <div
-        class="min-w-fit flex-1 text-center px-sm py-base bg-accent-purple-400 gradient-tint-50 shadow-accent-purple-300 shadow-opacity-60 shadow-4 shadow-multiply rounded-md">
+    <div class="min-w-fit flex-1 text-center px-sm py-base bg-accent-purple-400 gradient-tint-50 shadow-accent-purple-300 shadow-opacity-60 shadow-4 shadow-multiply rounded-md">
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-accent-purple-300</div>
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-opacity-60</div>
     </div>
 </div>
 
 <h3 class="mt-sm">Inner Shadows</h3>
-<div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm">
-    &lt;div class="inner-shadow-{elevation} inner-shadow-{color} inner-shadow-opacity-{opacity}
-    ..." />
-</div>
+{% include code-block-onetag.html tag="div" content="inner-shadow-{elevation} inner-shadow-{color} inner-shadow-opacity-{opacity}" %}
 
 <div class="flex flex-row flex-1 flex-wrap gap-md ">
-    <div
-        class="min-w-fit py-base px-sm bg-fill-base-100 border border-solid border-alt-base-200 inner-shadow-1 shadow-utility-shade-300 rounded-md flex-1 items-center justify-center flex">
-        <span
-            class="font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">inner-shadow-1</span>
+    <div class="min-w-fit py-base px-sm bg-fill-base-100 border border-solid border-alt-base-200 inner-shadow-1 shadow-utility-shade-300 rounded-md flex-1 items-center justify-center flex">
+        <span class="font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">inner-shadow-1</span>
     </div>
-    <div
-        class="min-w-fit py-base px-sm bg-fill-base-100 border border-solid border-alt-base-200 inner-shadow-2 shadow-utility-shade-300 rounded-md flex-1 items-center justify-center flex">
-        <span
-            class="font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">inner-shadow-2</span>
+    <div class="min-w-fit py-base px-sm bg-fill-base-100 border border-solid border-alt-base-200 inner-shadow-2 shadow-utility-shade-300 rounded-md flex-1 items-center justify-center flex">
+        <span class="font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">inner-shadow-2</span>
     </div>
-    <div
-        class="min-w-fit py-base px-sm bg-fill-base-100 border border-solid border-alt-base-200 inner-shadow-3 shadow-utility-shade-300 rounded-md flex-1 items-center justify-center flex">
-        <span
-            class="font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">inner-shadow-3</span>
+    <div class="min-w-fit py-base px-sm bg-fill-base-100 border border-solid border-alt-base-200 inner-shadow-3 shadow-utility-shade-300 rounded-md flex-1 items-center justify-center flex">
+        <span class="font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">inner-shadow-3</span>
     </div>
-    <div
-        class="min-w-fit py-base px-sm bg-fill-base-100 border border-solid border-alt-base-200 inner-shadow-4 shadow-utility-shade-300 rounded-md flex-1 items-center justify-center flex">
-        <span
-            class="font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">inner-shadow-4</span>
+    <div class="min-w-fit py-base px-sm bg-fill-base-100 border border-solid border-alt-base-200 inner-shadow-4 shadow-utility-shade-300 rounded-md flex-1 items-center justify-center flex">
+        <span class="font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">inner-shadow-4</span>
     </div>
 </div>
 <h3 class="mt-sm">Combine Drop & Inner Shadows</h3>
@@ -149,25 +117,16 @@
     &lt;div class="shadows shadow-{elevation} inner-shadow-{elevation} ..." />
 </div>
 <div class="flex flex-row flex-1 flex-wrap gap-md ">
-    <div
-        class="min-w-fit py-base px-sm bg-fill-base-100 border border-solid border-stroke-base-200 shadows inner-shadow-2 inner-shadow-utility-shade-300 shadow-3 shadow-utility-shade-300 rounded-md flex-1">
-        <span
-            class="block font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">inner-shadow-2</span>
-        <span
-            class="block font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">shadow-3</span>
+    <div class="min-w-fit py-base px-sm bg-fill-base-100 border border-solid border-stroke-base-200 shadows inner-shadow-2 inner-shadow-utility-shade-300 shadow-3 shadow-utility-shade-300 rounded-md flex-1">
+        <span class="block font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">inner-shadow-2</span>
+        <span class="block font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">shadow-3</span>
     </div>
-    <div
-        class="min-w-fit py-base px-sm bg-fill-base-100 border border-solid border-stroke-base-200 shadows inner-shadow-3 inner-shadow-utility-shade-300 shadow-2 shadow-utility-shade-300 rounded-md flex-1">
-        <span
-            class="block font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">inner-shadow-2</span>
-        <span
-            class="block font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">shadow-2</span>
+    <div class="min-w-fit py-base px-sm bg-fill-base-100 border border-solid border-stroke-base-200 shadows inner-shadow-3 inner-shadow-utility-shade-300 shadow-2 shadow-utility-shade-300 rounded-md flex-1">
+        <span class="block font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">inner-shadow-2</span>
+        <span class="block font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">shadow-2</span>
     </div>
-    <div
-        class="min-w-fit py-base px-sm bg-fill-base-100 border border-solid border-stroke-base-200 shadows inner-shadow-4 inner-shadow-utility-shade-100 shadow-4 shadow-utility-shade-300 rounded-md flex-1">
-        <span
-            class="block font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">inner-shadow-4</span>
-        <span
-            class="block font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">shadow-4</span>
+    <div class="min-w-fit py-base px-sm bg-fill-base-100 border border-solid border-stroke-base-200 shadows inner-shadow-4 inner-shadow-utility-shade-100 shadow-4 shadow-utility-shade-300 rounded-md flex-1">
+        <span class="block font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">inner-shadow-4</span>
+        <span class="block font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">shadow-4</span>
     </div>
 </div>
