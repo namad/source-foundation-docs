@@ -1,0 +1,190 @@
+<p>
+    Color system delivers seamless dark mode using CSS custom properties.
+    Source Design System completely replaces Tailwind colors with Source colors.
+    It uses plugins to support CSS variables integration with Tailwind utility classes.
+</p>
+{% include code-block-start.html caption="tailwind.config.js" %}
+{% highlight js %}
+module.exports = {
+    theme: {
+        colors: {
+            ..,
+            "primary-600": "var(--primary-600)",
+            "fill-base-600": "var(--fill-base-600)",
+            "text-base-600": "var(--text-base-600)",
+            ..,
+        }
+    }
+}
+{% endhighlight %}
+{% include code-block-end.html %}
+<p>
+    There are three visual themes that are defined under
+    <span class="text-sm font-mono bg-alt-base-200 rounded-sm px-xs2 py-minor-xs3">[data-theme]</span>
+    selector in
+    the
+    <span class="text-sm font-mono bg-alt-base-200 rounded-sm px-xs2 py-minor-xs3">source-variables.css</span>
+    file
+
+</p>
+<h3 class="text-xl font-bold mt-sm">Neutrals</h3>
+<p>
+    Neutral colours are the foundation for the visual language that defines the overall tone of your
+    application. It could be fully desaturated, slightly colder or warmer, or even tinted in a fancy way to
+    support the brand.
+</p>
+<h4 class="text-lg font-bold ">Fills</h4>
+<div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm">
+    &lt;div class="bg-{color} ..." /&gt;
+</div>
+<p>
+    Fills are the lightest shades in your arsenal and should be used as the main background colours.
+</p>
+<h5 class="text-md font-bold mt-sm">Light surface colors</h5>
+<div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm">
+    &lt;div class="bg-fill-base-{shade} ..." /&gt;
+</div>
+{% include color-shades.html color="bg-fill-base" %}
+<h5 class="text-md font-bold mt-sm">Dark surface colors</h5>
+<div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm">
+    &lt;div class="bg-fill-contrast-{shade} ..." /&gt;
+</div>
+{% include color-shades.html color="bg-fill-contrast" class="color-text-contrast-600" %}
+<h4 class="text-lg font-bold mt-sm">Strokes</h4>
+<div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm">
+    &lt;div class="border-{color} ..." /&gt;
+</div>
+<p>
+    Strokes are not supposed to fill large areas but outline or divide them.
+</p>
+<h5 class="text-md font-bold mt-sm">Light surface strokes</h5>
+{% include color-shades.html color="bg-stroke-base" %}
+
+<h5 class="text-md font-bold mt-sm">Dark surface strokes</h5>
+{% include color-shades.html color="bg-stroke-contrast" class="color-text-contrast-500" %}
+
+<h4 class="text-lg font-bold mt-sm">Alt Colors</h4>
+<p>
+    Alt or alternative colours are semi-transparent ones and could be applied both as fills and strokes.
+</p>
+<h5 class="text-md font-bold mt-sm">Light surface tints</h5>
+{% include code-block-oneliner.html content="&lt;div class='bg-alt-base-{shade} ...' />"%}
+{% include color-shades.html color="bg-alt-base" %}
+
+<h5 class="text-md font-bold mt-sm">Dark surface tints</h5>
+{% include code-block-oneliner.html content="&lt;div class='bg-alt-contrast-{shade} ...' />" %}
+{% include color-shades.html color="bg-alt-contrast" class="bg-fill-contrast-100 color-text-contrast-600"  %}
+
+<h3 class="text-xl font-bold mt-sm">Primary / Brand Color</h3>
+<p>Brand colour is key to the immediate brand recognition of your product</p>
+{% include code-block-oneliner.html content="&lt;div class='bg-primary-{shade} ...' />"%}
+{% include color-shades.html color="bg-primary" %}
+
+<h3 class="text-xl font-bold mt-sm">Semantics</h3>
+<p>These colours communicate feedback, status, or urgency and should always convey important information</p>
+
+<h4 class="text-lg font-bold">Success</h4>
+<div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm">
+    &lt;div class="bg-success-{shade} ..." /&gt;
+</div>
+{% include color-shades.html color="bg-success" %}
+
+<h4 class="text-lg font-bold mt-sm">Info</h4>
+<div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm">
+    &lt;div class="bg-info-{shade} ..." /&gt;
+</div>
+{% include color-shades.html color="bg-info" %}
+
+<h4 class="text-lg font-bold mt-sm">Warning</h4>
+<div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm">
+    &lt;div class="bg-warning-{shade} ..." /&gt;
+</div>
+{% include color-shades.html color="bg-warning" %}
+<h4 class="text-lg font-bold">Danger</h4>
+<div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm">
+    &lt;div class="bg-danger-{shade} ..." /&gt;
+</div>
+{% include color-shades.html color="bg-danger" %}
+
+<h3 class="text-xl font-bold mt-sm">Accents</h3>
+<p>
+    The accent palette brings life and meaning to your product. The colour spots can guide user attention,
+    emphasise brand connection or communicate a system state. There are ten accents to work with.
+</p>
+{% include code-block-oneliner.html class="" content="&lt;div class='bg-accent-red-{shade} ...' />"%}
+{% include color-shades.html color="bg-accent-red" %}
+
+{% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-amber-{shade} ...' />"%}
+{% include color-shades.html color="bg-accent-amber" %}
+
+{% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-brown-{shade} ...' />"%}
+{% include color-shades.html color="bg-accent-brown" %}
+
+{% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-green-{shade} ...' />"%}
+{% include color-shades.html color="bg-accent-green" %}
+
+{% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-teal-{shade} ...' />"%}
+{% include color-shades.html color="bg-accent-teal" %}
+
+{% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-blue-{shade} ...' />"%}
+{% include color-shades.html color="bg-accent-blue" %}
+
+{% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-indigo-{shade} ...' />"%}
+{% include color-shades.html color="bg-accent-indigo" %}
+
+{% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-violet-{shade} ...' />"%}
+{% include color-shades.html color="bg-accent-violet" %}
+
+{% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-purple-{shade} ...' />"%}
+{% include color-shades.html color="bg-accent-purple" %}
+
+{% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-pink-{shade} ...' />"%}
+{% include color-shades.html color="bg-accent-pink" %}
+
+
+<h3 class="text-xl font-bold mt-sm">Text colors</h3>
+<div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm">
+    color-{color}
+</div>
+<p>
+    For the text, there are three shades for visual hierarchy and several colours for semantics. It is an
+    independent sub-palette that makes it easier to fit into WCAG accessibility requirements.
+</p>
+<p>
+    Semantics are derived from accents. Shade 500 is for light backgrounds and shade 600 is for dark
+    backgrounds.
+</p>
+
+<h4 class="text-lg font-bold mt-sm">Text on light background</h4>
+<div class="bg-alt-base-100 rounded overflow-hidden">
+    <div class="flex flex-row text-xs color-text-base-500 font-mono rounded overflow-hidden">
+        <div class="w-1/5 p-md color-text-base-600">--text-base-600</div>
+        <div class="w-1/5 p-md color-text-base-500">--text-base-500</div>
+        <div class="w-1/5 p-md color-text-base-400">--text-base-400</div>
+    </div>
+
+    <div class="flex flex-row text-xs color-text-base-500 font-mono rounded overflow-hidden">
+        <div class="w-1/5 p-md color-text-base-action">--text-base-action</div>
+        <div class="w-1/5 p-md color-text-base-info">--text-base-info</div>
+        <div class="w-1/5 p-md color-text-base-success">--text-base-success</div>
+        <div class="w-1/5 p-md color-text-base-warning">--text-base-warning</div>
+        <div class="w-1/5 p-md color-text-base-danger">--text-base-danger</div>
+    </div>
+</div>
+
+<h4 class="text-lg font-bold mt-sm">Text on dark background</h4>
+<div class="bg-fill-contrast-300 rounded overflow-hidden">
+    <div class="flex flex-row text-xs color-text-base-500 font-mono rounded overflow-hidden">
+        <div class="w-1/5 p-md color-text-contrast-600 ">--text-contrast-600</div>
+        <div class="w-1/5 p-md color-text-contrast-500 ">--text-contrast-500</div>
+        <div class="w-1/5 p-md color-text-contrast-400 ">--text-contrast-400</div>
+    </div>
+
+    <div class="flex flex-row text-xs color-text-base-500 font-mono rounded overflow-hidden">
+        <div class="w-1/5 p-md color-text-contrast-action ">--text-contrast-action</div>
+        <div class="w-1/5 p-md color-text-contrast-info ">--text-contrast-info</div>
+        <div class="w-1/5 p-md color-text-contrast-success ">--text-contrast-success</div>
+        <div class="w-1/5 p-md color-text-contrast-warning ">--text-contrast-warning</div>
+        <div class="w-1/5 p-md color-text-contrast-danger ">--text-contrast-danger</div>
+    </div>
+</div>

@@ -93,6 +93,7 @@ body {
                 px-sm 
                 py-minor-xs    
     }
+
     .button-toolbar {
         @apply ui-element 
                 inline-flex
@@ -143,6 +144,7 @@ body {
                     active:bg-primary-200;
         }
     }
+
     .button-danger {
         --bg: var(--danger-400);
         --color: var(--text-base-danger); 
@@ -203,21 +205,8 @@ body {
         }
     }
 
-    code {
-        @apply inline text-sm bg-alt-base-200 p-xs3 rounded-sm;
-    }
-
     .code {
-        color: var(--accent-blue-500);
-    }
-    .code-string {
-        color: var(--accent-brown-500);
-    }
-    .code-boolean {
-        color: var(--accent-brown-500);
-    }
-    .code-module {
-        color: var(--accent-green-500)
+        @apply inline text-sm bg-alt-base-200 px-xs3 py-minor-xs3 rounded-sm font-mono;
     }
 }
 

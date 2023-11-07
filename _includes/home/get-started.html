@@ -2,7 +2,7 @@
 
 
 {% include code-block-start.html %}
-{% highlight console %}
+{% highlight en %}
 npm i -D source-foundation-cli
 npm i -D source-tailwindcss
 {% endhighlight %}
@@ -11,29 +11,29 @@ npm i -D source-tailwindcss
 
 <h3 class="text-xl font-bold mt-sm">Create source.config.json</h3>
 {% include code-block-start.html %}
-{% highlight console %}
+{% highlight en %}
 npx source-css init
 {% endhighlight %}
 {% include code-block-end.html %}
 <div>
     Create your
-    <code>./source.config.json</code>
+    <span class="code">./source.config.json</span>
     This file lists all the parameters to generate color palettes, typography, radii and spacing tokens
 </div>
 
 <h3 class="text-xl font-bold mt-sm">Create CSS variables</h3>
 <div>
     Now you need add CSS file with custom properties. You can either build from your custom
-    <code>./source.config.json</code>
+    <span class="code">./source.config.json</span>
     Or you can use defauls from
-    <code>source-tailwindcss/source-variables.css</code>
+    <span class="code">source-tailwindcss/source-variables.css</span>
 </div>
 <div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm ">
     <pre class="block whitespace-pre">npx source-css ./css/variables.css</pre>
 </div>
 <div>
     This command will read your
-    <code>./source.config.json</code>
+    <span class="code">./source.config.json</span>
     and ouput CSS variables into the CSS file
 </div>
 
@@ -46,20 +46,6 @@ npx source-css init
 @tailwind components;
 @tailwind utilities;
 {% endhighlight %}
-
-{% include code-block-end.html %}
-
-{% include code-block-start.html caption="tailwind.config.js" %}
-{% highlight js %}
-module.exports = {
-theme: { },
-...
-presets: [
-require('source-tailwindcss')
-]
-}
-{% endhighlight %}
-
 {% include code-block-end.html %}
 
 <h3 class="text-xl font-bold mt-sm">Configure TailwindCSS</h3>
@@ -71,11 +57,11 @@ require('source-tailwindcss')
 {% include code-block-start.html caption="tailwind.config.js" %}
 {% highlight js %}
 module.exports = {
-theme: Object,
-...
-presets: [
-require('source-tailwindcss')
-]
+    theme: { ... },
+    ...
+    presets: [
+        require('source-tailwindcss')
+    ]
 }
 {% endhighlight %}
 {% include code-block-end.html %}
@@ -83,14 +69,14 @@ require('source-tailwindcss')
 {% include code-block-start.html caption="node_moduiles/source-tailwindcss/source-preset.js" %}
 {% highlight js %}
 module.exports = {
-theme: Object,
-colors: [
-//...
-primary-600": "var(--primary-600)",
-fill-base-600": var(--fill-base-600)",
-text-base-600": "var(--text-base-600)",
-//...
-]
+    theme: { ... },
+    colors: [
+        //...
+        "primary-600": "var(--primary-600)",
+        "fill-base-600": "var(--fill-base-600)",
+        "text-base-600": "var(--text-base-600)",
+        //...
+    ]
 }
 {% endhighlight %}
 {% include code-block-end.html %}
@@ -106,16 +92,16 @@ text-base-600": "var(--text-base-600)",
 {% include code-block-start.html caption="node_moduiles/source-tailwindcss/source-preset.js" %}
 {% highlight js %}
 module.exports = {
-theme: require('source-tailwindcss/source-theme'),
-plugins: [
-require('source-tailwindcss/plugins/border'),
-require('source-tailwindcss/plugins/colors'),
-require('source-tailwindcss/plugins/components'),
-require('source-tailwindcss/plugins/elevation'),
-require('source-tailwindcss/plugins/gradients'),
-require('source-tailwindcss/plugins/icons'),
-require('source-tailwindcss/plugins/padding')
-]
+    theme: require('source-tailwindcss/source-theme'),
+    plugins: [
+        require('source-tailwindcss/plugins/border'),
+        require('source-tailwindcss/plugins/colors'),
+        require('source-tailwindcss/plugins/components'),
+        require('source-tailwindcss/plugins/elevation'),
+        require('source-tailwindcss/plugins/gradients'),
+        require('source-tailwindcss/plugins/icons'),
+        require('source-tailwindcss/plugins/padding')
+    ]
 }
 {% endhighlight %}
 {% include code-block-end.html %}

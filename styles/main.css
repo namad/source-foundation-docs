@@ -1542,15 +1542,19 @@ video {
 }
 
 .code {
-  color: var(--accent-blue-500);
-}
-
-.code-string {
-  color: var(--accent-brown-500);
-}
-
-.code-module {
-  color: var(--accent-green-500)
+  display: inline;
+  border-radius: var(--radii-sm);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+  --bg-color: var(--alt-base-200);
+  background-color: var(--bg-color);
+  --padding-x: var(--spacing-xs3);
+  padding-left: var(--padding-x);
+  padding-right: var(--padding-x);
+  --padding-y: var(--spacing-minor-xs3);
+  padding-top: var(--padding-y);
+  padding-bottom: var(--padding-y);
 }
 
 .visible {
@@ -5441,3 +5445,4 @@ body {
 .hover\:decoration-none:hover {
   text-decoration: none;
 }
+

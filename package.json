@@ -1,7 +1,7 @@
 {
   "scripts": {
     "watch": "npx tailwindcss -i ./input.css -o ./output.css --watch",
-    "watch-docs": "npx tailwindcss -i ./input.css -o ./docs/styles/main.css --watch"
+    "watch-docs": "npx tailwindcss -i ./input.css -o ./styles/main.css --watch"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
