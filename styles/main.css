@@ -1699,6 +1699,14 @@ h5 {
   height: 1.5rem;
 }
 
+.h-7 {
+  height: 1.75rem;
+}
+
+.h-9 {
+  height: 2.25rem;
+}
+
 .min-h-\[--icon-size-lg\] {
   min-height: var(--icon-size-lg);
 }
@@ -1880,12 +1888,20 @@ h5 {
   align-items: flex-start;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
 
 .items-baseline {
   align-items: baseline;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-end {
@@ -1950,6 +1966,18 @@ h5 {
 
 .gap-xs4 {
   gap: var(--spacing-xs4);
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.gap-0 {
+  gap: 0px;
+}
+
+.gap-0\.5 {
+  gap: 0.125rem;
 }
 
 .overflow-auto {
@@ -5457,6 +5485,75 @@ h5 {
   padding-bottom: var(--padding-y);
 }
 
+.p-minor-md {
+  --padding: var(--spacing-minor-md);
+  padding: var(--padding);
+}
+
+.py-minor-md {
+  --padding-y: var(--spacing-minor-md);
+  padding-top: var(--padding-y);
+  padding-bottom: var(--padding-y);
+}
+
+.px-lg {
+  --padding-x: var(--spacing-lg);
+  padding-left: var(--padding-x);
+  padding-right: var(--padding-x);
+}
+
+.py-minor-lg {
+  --padding-y: var(--spacing-minor-lg);
+  padding-top: var(--padding-y);
+  padding-bottom: var(--padding-y);
+}
+
+.pb-16 {
+  --padding-b: 4rem;
+  padding-bottom: var(--padding-b);
+}
+
+.px-8 {
+  --padding-x: 2rem;
+  padding-left: var(--padding-x);
+  padding-right: var(--padding-x);
+}
+
+.py-1 {
+  --padding-y: 0.25rem;
+  padding-top: var(--padding-y);
+  padding-bottom: var(--padding-y);
+}
+
+.py-8 {
+  --padding-y: 2rem;
+  padding-top: var(--padding-y);
+  padding-bottom: var(--padding-y);
+}
+
+.p-xs2 {
+  --padding: var(--spacing-xs2);
+  padding: var(--padding);
+}
+
+.py-xs {
+  --padding-y: var(--spacing-xs);
+  padding-top: var(--padding-y);
+  padding-bottom: var(--padding-y);
+}
+
+.py-xs3 {
+  --padding-y: var(--spacing-xs3);
+  padding-top: var(--padding-y);
+  padding-bottom: var(--padding-y);
+}
+
+.py-xs4 {
+  --padding-y: var(--spacing-xs4);
+  padding-top: var(--padding-y);
+  padding-bottom: var(--padding-y);
+}
+
 :root {
   --ads-elevation: url('data:image/svg+xml,<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30.9185 4.69557C31.5773 4.27205 32.4227 4.27205 33.0815 4.69557L57.383 20.318C58.6076 21.1052 58.6076 22.8954 57.383 23.6827L33.0815 39.3051C32.4227 39.7286 31.5773 39.7286 30.9185 39.3051L6.61697 23.6827C5.39233 22.8954 5.39232 21.1052 6.61697 20.318L30.9185 4.69557Z" fill="white"/><path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M32 26.7555L11.397 40.0003L32 53.2451L52.6029 40.0003L32 26.7555ZM33.0815 22.6956C32.4227 22.272 31.5773 22.272 30.9185 22.6956L6.61697 38.318C5.39232 39.1052 5.39233 40.8954 6.61697 41.6827L30.9185 57.3051C31.5773 57.7286 32.4227 57.7286 33.0815 57.3051L57.383 41.6827C58.6076 40.8954 58.6076 39.1052 57.383 38.318L33.0815 22.6956Z" fill="white"/></svg>');
   --ads-radii: url('data:image/svg+xml,<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.5"><path d="M58 52C58 26.5949 37.4051 6 12 6H0V10H12C35.196 10 54 28.804 54 52V64H58V52Z" fill="%23D9D9D9"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.25002C12.9665 6.25002 13.75 7.03353 13.75 8.00002L13.75 11.3244C13.75 12.2909 12.9665 13.0744 12 13.0744C11.0335 13.0744 10.25 12.2909 10.25 11.3244L10.25 8.00002C10.25 7.03352 11.0335 6.25002 12 6.25002ZM12 16.2231C12.9665 16.2231 13.75 17.0066 13.75 17.9731L13.75 24.6218C13.75 25.5883 12.9665 26.3718 12 26.3718C11.0335 26.3718 10.25 25.5883 10.25 24.6218L10.25 17.9731C10.25 17.0066 11.0335 16.2231 12 16.2231ZM12 29.5205C12.9665 29.5205 13.75 30.304 13.75 31.2705L13.75 37.9192C13.75 38.8857 12.9665 39.6692 12 39.6692C11.0335 39.6692 10.25 38.8857 10.25 37.9192L10.25 31.2705C10.25 30.304 11.0335 29.5205 12 29.5205ZM12 42.8179C12.9665 42.8179 13.75 43.6014 13.75 44.5679L13.75 47.8922C13.75 48.8587 12.9665 49.6422 12 49.6422C11.0335 49.6422 10.25 48.8587 10.25 47.8922L10.25 44.5679C10.25 43.6014 11.0335 42.8179 12 42.8179ZM14.25 52.0001C14.25 51.0336 15.0335 50.2501 16 50.2501L19.3333 50.2501C20.2998 50.2501 21.0833 51.0336 21.0833 52.0001C21.0833 52.9666 20.2998 53.7501 19.3333 53.7501L16 53.7501C15.0335 53.7501 14.25 52.9666 14.25 52.0001ZM24.25 52.0001C24.25 51.0336 25.0335 50.2501 26 50.2501H32.6667C33.6332 50.2501 34.4167 51.0336 34.4167 52.0001C34.4167 52.9666 33.6332 53.7501 32.6667 53.7501H26C25.0335 53.7501 24.25 52.9666 24.25 52.0001ZM37.5833 52.0001C37.5833 51.0336 38.3668 50.2501 39.3333 50.2501L46 50.2501C46.9665 50.2501 47.75 51.0336 47.75 52.0001C47.75 52.9666 46.9665 53.7501 46 53.7501H39.3333C38.3668 53.7501 37.5833 52.9666 37.5833 52.0001ZM50.9167 52.0001C50.9167 51.0336 51.7002 50.2501 52.6667 50.2501H56C56.9665 50.2501 57.75 51.0336 57.75 52.0001C57.75 52.9666 56.9665 53.7501 56 53.7501H52.6667C51.7002 53.7501 50.9167 52.9666 50.9167 52.0001Z" fill="white"/></g><path fill-rule="evenodd" clip-rule="evenodd" d="M10 8C10 6.89543 10.8954 6 12 6C18.0408 6 24.0225 7.18983 29.6034 9.50154C35.1844 11.8133 40.2554 15.2016 44.5269 19.4731C48.7984 23.7446 52.1867 28.8156 54.4985 34.3966C56.8102 39.9775 58 45.9592 58 52C58 53.1046 57.1046 54 56 54C54.8954 54 54 53.1046 54 52C54 46.4845 52.9136 41.023 50.8029 35.9273C48.6922 30.8316 45.5985 26.2016 41.6985 22.3015C37.7984 18.4015 33.1684 15.3078 28.0727 13.1971C22.977 11.0864 17.5155 10 12 10C10.8954 10 10 9.10457 10 8Z" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M11 50C9.34315 50 8 51.3431 8 53C8 54.6569 9.34315 56 11 56C12.6569 56 14 54.6569 14 53C14 51.3431 12.6569 50 11 50ZM4 53C4 49.134 7.13401 46 11 46C14.866 46 18 49.134 18 53C18 56.866 14.866 60 11 60C7.13401 60 4 56.866 4 53Z" fill="white"/></svg>');
@@ -5515,6 +5612,7 @@ body {
     flex-wrap: wrap;
     width: 100%;
     max-width: 100%;
+    height: auto;
   }
 
   #main {

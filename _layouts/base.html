@@ -22,6 +22,37 @@
 </head>
 
 <body>
+{% include options-panel.html %}
+<div class="flex-1 flex flex-col gap-md overflow-hidden" id="main">
 {{ content }}
+</div>
+<script>
+document.getElementById('controls').querySelectorAll('input[type=radio]').forEach(el => {
+    el.addEventListener('click', (e) => {
+        const name = el.name;
+        const value = el.value;
+        document.documentElement.dataset[name] = value;
+    })
+});
+
+document.querySelectorAll('[data-theme-switch]').forEach(el => {
+    el.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const currentTheme = document.documentElement.dataset['theme'];
+        let value = 'light';
+
+        if (currentTheme == 'light') {
+            value = 'dark-elevated'
+        }
+
+        document.documentElement.dataset['theme'] = value;
+        //document.querySelector(`input[name=theme][value=${currentTheme}]`).checked = false;
+        document.querySelector(`input[name=theme][value=${value}]`).checked = true;
+
+        return false;
+    })
+})
+</script>
 </body>
 </html>
