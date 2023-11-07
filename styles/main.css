@@ -1341,6 +1341,36 @@ video {
   background-blend-mode: var(--bg-blend-mode);
 }
 
+h1 {
+  font-size: var(--font-size-xl3);
+  line-height: var(--line-height-xl3);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: var(--font-size-xl2);
+  line-height: var(--line-height-xl2);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-xl);
+  font-weight: 700;
+}
+
+h4 {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-lg);
+  font-weight: 700;
+}
+
+h5 {
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-md);
+  font-weight: 700;
+}
+
 .\!input {
   border-radius: var(--radii-base);
   border-width: 1px;
