@@ -1314,6 +1314,30 @@ video {
   }
 }
 
+.ui-element:hover {
+  position: relative;
+}
+
+.ui-element:hover::before {
+  content: " ";
+  position: absolute;
+  inset: 0;
+  background-color: var(--alt-base-200);
+  border-radius: inherit;
+}
+
+.ui-element:active {
+  position: relative;
+}
+
+.ui-element:active::before {
+  content: " ";
+  position: absolute;
+  inset: 0;
+  background-color: var(--alt-base-100);
+  border-radius: inherit;
+}
+
 .icon {
   --bg-image: none;
   --icon-size: var(--icon-size-base);
@@ -1635,12 +1659,20 @@ h5 {
   display: block;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .inline {
   display: inline;
 }
 
 .flex {
   display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
 }
 
 .table {
@@ -1805,6 +1837,10 @@ h5 {
 
 .min-w-\[20\%\] {
   min-width: 20%;
+}
+
+.min-w-\[320px\] {
+  min-width: 320px;
 }
 
 .min-w-\[400px\] {
@@ -5459,6 +5495,13 @@ body {
   body {
     flex-flow: column;
     padding: var(--spacing-base);
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    padding: var(--spacing-xs2);
+    gap: var(--spacing-xs2);
   }
 }
 
