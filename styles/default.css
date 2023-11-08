@@ -1,7 +1,7 @@
 .highlight .c { color: var(--accent-teal-500); font-style: italic } /* Comment */
 .highlight .err { border: 1px solid var(--accent-red-500) } /* Error */
 .highlight .k { color: var(--text-base-success); font-weight: bold } /* Keyword */
-.highlight .o { color: var(--text-base-400) } /* Operator */
+.highlight .o { color: var(--text-base-500) } /* Operator */
 .highlight .ch { color: var(--accent-teal-500); font-style: italic } /* Comment.Hashbang */
 .highlight .cm { color: var(--accent-teal-500); font-style: italic } /* Comment.Multiline */
 .highlight .cp { color: var(--accent-brown-500) } /* Comment.Preproc */
@@ -13,7 +13,7 @@
 .highlight .gr { color: var(--accent-red-500) } /* Generic.Error */
 .highlight .gh { color: var(--accent-indigo-500); font-weight: bold } /* Generic.Heading */
 .highlight .gi { color: var(--accent-green-500) } /* Generic.Inserted */
-.highlight .go { color: var(--text-base-400) } /* Generic.Output */
+.highlight .go { color: var(--text-base-500) } /* Generic.Output */
 .highlight .gp { color: var(--accent-indigo-500); font-weight: bold } /* Generic.Prompt */
 .highlight .gs { font-weight: bold } /* Generic.Strong */
 .highlight .gu { color: var(--accent-pink-500); font-weight: bold } /* Generic.Subheading */
@@ -24,7 +24,7 @@
 .highlight .kp { color: var(--text-base-success) } /* Keyword.Pseudo */
 .highlight .kr { color: var(--text-base-success); font-weight: bold } /* Keyword.Reserved */
 .highlight .kt { color: var(--accent-pink-500) } /* Keyword.Type */
-.highlight .m { color: var(--text-base-400) } /* Literal.Number */
+.highlight .m { color: var(--text-base-500) } /* Literal.Number */
 .highlight .s { color: var(--text-base-danger) } /* Literal.String */
 .highlight .na { color: var(--text-base-success) } /* Name.Attribute */
 .highlight .nb { color: var(--text-base-success) } /* Name.Builtin */
@@ -34,17 +34,17 @@
 .highlight .ni { color: var(--text-base-500); font-weight: bold } /* Name.Entity */
 .highlight .ne { color: var(--text-base-danger); font-weight: bold } /* Name.Exception */
 .highlight .nf { color: var(--accent-blue-500) } /* Name.Function */
-.highlight .nl { color: var(--accent-brown-400) } /* Name.Label */
+.highlight .nl { color: var(--accent-brown-500) } /* Name.Label */
 .highlight .nn { color: var(--accent-blue-500); font-weight: bold } /* Name.Namespace */
 .highlight .nt { color: var(--text-base-success); font-weight: bold } /* Name.Tag */
 .highlight .nv { color: var(--accent-indigo-500) } /* Name.Variable */
 .highlight .ow { color: var(--accent-violet-500); font-weight: bold } /* Operator.Word */
-.highlight .w { color: var(--text-base-400) } /* Text.Whitespace */
-.highlight .mb { color: var(--text-base-400) } /* Literal.Number.Bin */
-.highlight .mf { color: var(--text-base-400) } /* Literal.Number.Float */
-.highlight .mh { color: var(--text-base-400) } /* Literal.Number.Hex */
-.highlight .mi { color: var(--text-base-400) } /* Literal.Number.Integer */
-.highlight .mo { color: var(--text-base-400) } /* Literal.Number.Oct */
+.highlight .w { color: var(--text-base-500) } /* Text.Whitespace */
+.highlight .mb { color: var(--text-base-500) } /* Literal.Number.Bin */
+.highlight .mf { color: var(--text-base-500) } /* Literal.Number.Float */
+.highlight .mh { color: var(--text-base-500) } /* Literal.Number.Hex */
+.highlight .mi { color: var(--text-base-500) } /* Literal.Number.Integer */
+.highlight .mo { color: var(--text-base-500) } /* Literal.Number.Oct */
 .highlight .sa { color: var(--text-base-danger) } /* Literal.String.Affix */
 .highlight .sb { color: var(--text-base-danger) } /* Literal.String.Backtick */
 .highlight .sc { color: var(--text-base-danger) } /* Literal.String.Char */
@@ -64,4 +64,4 @@
 .highlight .vg { color: var(--accent-indigo-500) } /* Name.Variable.Global */
 .highlight .vi { color: var(--accent-indigo-500) } /* Name.Variable.Instance */
 .highlight .vm { color: var(--accent-indigo-500) } /* Name.Variable.Magic */
-.highlight .il { color: var(--text-base-400) } /* Literal.Number.Integer.Long */
+.highlight .il { color: var(--text-base-500) } /* Literal.Number.Integer.Long */

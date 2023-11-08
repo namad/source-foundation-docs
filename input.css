@@ -54,6 +54,23 @@ body {
 #controls { 
     height: calc(100vh - 2 * var(--spacing-md));
 }
+
+h1, h2, h3, h4, h5, h6 {
+    @apply mt-sm;
+
+    &:first-child {
+        margin: 0;
+    }
+}
+
+h1 + h2,
+h2 + h3,
+h3 + h4,
+h4 + h5,
+h5 + h6 {
+    margin: 0;
+}
+
 @media (max-width: 1280px) {
     #controls {
         position: static;
@@ -222,6 +239,7 @@ body {
         }
     }
 
+    p code,
     .code {
         @apply inline text-sm bg-alt-base-200 px-xs3 py-minor-xs3 rounded-sm font-mono;
     }

@@ -1,11 +1,7 @@
-<h3 class="">Drop Shadows</h3>
+### Drop Shadows
 {% include code-block-onetag.html tag="div" content="shadow-{elevation} shadow-{color} shadow-opacity-{opacity}" %}
 
-<p class="text-base ">
-    Shadow utility offers six elevation levels. examples below use
-    <span class="text-sm text-sm font-mono bg-alt-base-200 rounded-sm px-xs2 py-minor-xs3">shadow-utility-shade-300</span>
-    color
-</p>
+Shadow utility offers six elevation levels. examples below use `shadow-utility-shade-300` color
 
 <div class="flex flex-row flex-wrap flex-1 gap-md ">
     <div class="min-w-fit p-md bg-fill-base-100 shadow-1 shadow-utility-shade-300 rounded-md flex-1 items-center justify-center flex">
@@ -28,14 +24,9 @@
     </div>
 </div>
 
-<h3 class="mt-sm">Color Bleed Shadows</h3>
-<p class="text-base ">
-    You can apply any color and set shadow opacity with
-    <span class="text-sm text-sm font-mono bg-alt-base-200 rounded-sm px-xs2 py-minor-xs3">shadow-{color}</span>
-    and
-    <span class="text-sm text-sm font-mono bg-alt-base-200 rounded-sm px-xs2 py-minor-xs3">shadow-opacity-{opacity}</span>
-    utilities
-</p>
+### Color Bleed Shadows
+You can apply any color with `shadow-{color}` and set shadow opacity with `shadow-opacity-{opacity}` utilities
+
 <div class="flex flex-row flex-wrap gap-md flex-1 justify-center">
     <div class="min-w-fit flex-1 text-center px-sm py-base bg-accent-green-400 gradient-tint-50 shadow-accent-green-300 shadow-opacity-60 shadow-4 rounded-md">
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-accent-green-300</div>
@@ -59,18 +50,10 @@
     </div>
 </div>
 
-<h3 class="mt-sm">Multiply Shadows</h3>
-<p class="text-base ">
-    Utility class
-    <span class="text-sm text-sm font-mono bg-alt-base-200 rounded-sm px-xs2 py-minor-xs3">shadow-multiply</span>
-    enables
-    <span class="text-sm text-sm font-mono bg-alt-base-200 rounded-sm px-xs2 py-minor-xs3">blend-mode:
-        multiply</span>
-    on shadows.
-    <a href="#" class="color-text-base-action" data-theme-switch="dark-elevated">
-        Switch theme
-    </a> to see the difference
-</p>
+### Multiply Shadows
+Utility class `shadow-multiply` enables `mix-blend-mode: multiply` on shadows.
+<a href="#" data-theme-switch="dark-elevated">Switch theme</a> to see the difference
+
 <div class="flex flex-row flex-wrap gap-md flex-1 justify-center">
     <div class="min-w-fit flex-1 text-center px-sm py-base bg-accent-green-400 gradient-tint-50 shadow-accent-green-300 shadow-opacity-60 shadow-4 shadow-multiply rounded-md">
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-accent-green-300</div>
@@ -94,7 +77,7 @@
     </div>
 </div>
 
-<h3 class="mt-sm">Inner Shadows</h3>
+### Inner Shadows
 {% include code-block-onetag.html tag="div" content="inner-shadow-{elevation} inner-shadow-{color} inner-shadow-opacity-{opacity}" %}
 
 <div class="flex flex-row flex-1 flex-wrap gap-md ">
@@ -111,11 +94,11 @@
         <span class="font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">inner-shadow-4</span>
     </div>
 </div>
-<h3 class="mt-sm">Combine Drop & Inner Shadows</h3>
-<p>Special utility combines both drop and inner shadows</p>
-<div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm">
-    &lt;div class="shadows shadow-{elevation} inner-shadow-{elevation} ..." />
-</div>
+
+### Combine Drop & Inner Shadows
+Special utility class `shadows` combines both drop and inner shadows
+{% include code-block-onetag.html tag="div" content="shadows shadow-{elevation} inner-shadow-{elevation}" %}
+
 <div class="flex flex-row flex-1 flex-wrap gap-md ">
     <div class="min-w-fit py-base px-sm bg-fill-base-100 border border-solid border-stroke-base-200 shadows inner-shadow-2 inner-shadow-utility-shade-300 shadow-3 shadow-utility-shade-300 rounded-md flex-1">
         <span class="block font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">inner-shadow-2</span>

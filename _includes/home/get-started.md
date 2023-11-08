@@ -1,4 +1,4 @@
-<h3 class="">Install packages</h3>
+### Install packages
 
 
 {% include code-block-start.html %}
@@ -9,35 +9,27 @@ npm i -D source-tailwindcss
 {% include code-block-end.html %}
 
 
-<h3 class="mt-sm">Create source.config.json</h3>
+### Create source.config.json
+
 {% include code-block-start.html %}
 {% highlight en %}
 npx source-css init
 {% endhighlight %}
 {% include code-block-end.html %}
-<div>
-    Create your
-    <span class="code">./source.config.json</span>
-    This file lists all the parameters to generate color palettes, typography, radii and spacing tokens
-</div>
 
-<h3 class="mt-sm">Create CSS variables</h3>
-<div>
-    Now you need add CSS file with custom properties. You can either build from your custom
-    <span class="code">./source.config.json</span>
-    Or you can use defauls from
-    <span class="code">source-tailwindcss/source-variables.css</span>
-</div>
-<div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm ">
-    <pre class="block whitespace-pre">npx source-css ./css/variables.css</pre>
-</div>
-<div>
-    This command will read your
-    <span class="code">./source.config.json</span>
-    and ouput CSS variables into the CSS file
-</div>
+Create your `./source.config.json` This file lists all the parameters to generate color palettes, typography, radii and spacing tokens
 
-<h3 class="mt-sm">Import CSS variables</h3>
+### Create CSS variables
+
+Now you need add CSS file with custom properties. You can either build from your custom
+`./source.config.json` Or you can use defauls from `source-tailwindcss/source-variables.css`
+
+{% include code-block-oneliner.html content="npx source-css ./css/variables.css" %}
+
+This command will read your `./source.config.json` and ouput CSS variables into the CSS file
+
+### Import CSS variables
+
 {% include code-block-start.html caption="main.css" %}
 {% highlight css %}
 @import "./css/variables.css";
@@ -48,20 +40,20 @@ npx source-css init
 {% endhighlight %}
 {% include code-block-end.html %}
 
-<h3 class="mt-sm">Configure TailwindCSS</h3>
-<h4 class="text-lg font-bold">Option 1. Import preset</h4>
-<p>
-    <a href="https://github.com/namad/source-tw-playground/blob/main/src/source-preset.js" target="_blank">Source
-        Preset</a> brings all bits together in the most simple way
-</p>
+### Configure TailwindCSS
+#### Option 1. Import preset
+
+<a href="https://github.com/namad/source-tw-playground/blob/main/src/source-preset.js" target="_blank">Source Preset</a> 
+brings all bits together in the most simple way
+
 {% include code-block-start.html caption="tailwind.config.js" %}
 {% highlight js %}
 module.exports = {
-theme: { ... },
-...
-presets: [
-require('source-tailwindcss')
-]
+    theme: { ... },
+    ...
+    presets: [
+        require('source-tailwindcss')
+    ]
 }
 {% endhighlight %}
 {% include code-block-end.html %}
@@ -69,27 +61,26 @@ require('source-tailwindcss')
 {% include code-block-start.html caption="node_moduiles/source-tailwindcss/source-preset.js" %}
 {% highlight js %}
 module.exports = {
-theme: { ... },
-colors: [
-//...
-"primary-600": "var(--primary-600)",
-"fill-base-600": "var(--fill-base-600)",
-"text-base-600": "var(--text-base-600)",
-//...
-]
+    theme: { ... },
+    colors: [
+        ...
+        "primary-600": "var(--primary-600)",
+        "fill-base-600": "var(--fill-base-600)",
+        "text-base-600": "var(--text-base-600)",
+        ...
+    ]
 }
 {% endhighlight %}
 {% include code-block-end.html %}
 
-<div class="flex flex-row gap-base">
-    <a href="https://tailwindcss.com/docs/presets" target="_blank">TailwindCSS Presets →</a>
-</div>
-<h4 class="mt-sm">Option 2. Use theme</h4>
-<p>
-    Theme gives you more control over plugins, but somehow it compromises Tailwind CSS IntelliSense
-</p>
+<a href="https://tailwindcss.com/docs/presets" target="_blank">TailwindCSS Presets →</a>
+
+#### Option 2. Use theme
+Theme gives you more control over plugins, but somehow it compromises Tailwind CSS IntelliSense
+
 <a href="https://tailwindcss.com/docs/theme" target="_blank">TailwindCSS Themes →</a>
-{% include code-block-start.html caption="node_moduiles/source-tailwindcss/source-preset.js" %}
+
+{% include code-block-start.html caption="tailwind.config.js" %}
 {% highlight js %}
 module.exports = {
     theme: require('source-tailwindcss/source-theme'),
@@ -106,15 +97,22 @@ module.exports = {
 {% endhighlight %}
 {% include code-block-end.html %}
 
-<h3 class="mt-sm">Set up HTML</h3>
-<p>
-    All the values are set with <span class="code">[data]</span> atribute.
-</p>
+### Set up HTML
+All the values are set with `[data]` atribute that you can apply to any element in your app.
+
 {% include code-block-start.html caption="index.html" %}
 {% highlight html %}
 <html data-theme="light" data-radii="base" data-spacing="base" data-typography="base" data-icons="base">
-...
-
+<head>
+    ...
+</head>
+<body>
+    ...
+    <div data-theme="dark-elevated">
+        ...
+    </div>
+    ...
+</body>
 </html>
 {% endhighlight %}
 {% include code-block-end.html %}
@@ -163,6 +161,4 @@ module.exports = {
 </div>
 {% include code-block-end.html %}
 
-<p>
-    Now you shuld be able to run your build normally
-</p>
+Now you shuld be able to run your build normally

@@ -1,23 +1,12 @@
-<h3 class="text-xl font-bold ">Gradient Tint</h3>
-<div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm">
-    &lt;div class="gradient-tint-{opacity} gradient-angle-{angle} ..."&gt;
-</div>
+### Gradient Tint
 
-<p class="text-base ">
-    Tint gradient makes a gradient on top of any color using
-    <span class="text-sm font-mono bg-alt-base-200 rounded-sm px-xs2 py-minor-xs3">
-        background-blend-mode: overlay
-    </span>
-    By default it creates tint on top of the surface, you can change graient andgle with
-    <span class="text-sm font-mono bg-alt-base-200 rounded-sm px-xs2 py-minor-xs3">
-        gradient-angle
-    </span>
-</p>
+{% include code-block-onetag.html tag="div" content="gradient-tint-{opacity} gradient-angle-{angle}" %}
 
-<p class="text-base ">Examples below demonstrate <span
-        class="text-sm font-mono bg-alt-base-200 rounded-sm px-xs2 py-minor-xs3">gradient-tint-50</span> on
-    top of
-    different accents</p>
+Tint gradient makes a gradient on top of any color using `background-blend-mode: overlay`
+By default it creates tint on top of the surface, you can change graient andgle with `gradient-angle`
+
+
+Examples below demonstrate `gradient-tint-50` on top of different accents
 
 <div class="flex flex-row flex-1 flex-wrap gap-base ">
     <div
@@ -47,15 +36,11 @@
     </div>
 </div>
 
-<h3 class="text-xl font-bold mt-sm">Gradient Shade</h3>
-<div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm">
-    &lt;div class="gradient-shade-{opacity} gradient-angle-{angle} ..." />
-</div>
-<p class="text-base ">There is another utility that shades part of the surface</p>
-<p class="text-base ">Examples below demonstrate <span
-        class="text-sm font-mono bg-alt-base-200 rounded-sm px-xs2 py-minor-xs3">gradient-shade-50</span> on
-    top of
-    different accents</p>
+### Gradient Shade
+{% include code-block-onetag.html tag="div" content="gradient-shade-{opacity} gradient-angle-{angle}" %}
+There is another utility that shades part of the surface
+Examples below demonstrate `gradient-shade-50` on top of different accents
+
 <div class="flex flex-row flex-1 flex-wrap gap-md ">
     <div
         class="min-w-fit px-sm py-base bg-accent-green-400 gradient-shade-50 rounded-md flex-1 items-center justify-center flex">
@@ -84,12 +69,10 @@
     </div>
 </div>
 
-<h3 class="text-xl font-bold mt-sm">Gradient Mix</h3>
-<div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm">
-    &lt;div class="gradient-mix-{color} gradient-angle-{angle} ..." />
-</div>
-<p class="text-base ">This utility makes a gradient using specific color. Examples below demonstrate the mix
-    of two accents</p>
+### Gradient Mix
+{% include code-block-onetag.html tag="div" content="gradient-mix-{color} gradient-angle-{angle}" %}
+This utility makes a gradient using specific color. Examples below demonstrate the mix of two accents
+
 <div class="flex flex-row flex-1 flex-wrap gap-md ">
     <div
         class="min-w-fit px-sm py-base bg-accent-green-400 gradient-mix-accent-amber-300 rounded-md flex-1 items-center justify-center flex">
@@ -118,11 +101,9 @@
     </div>
 </div>
 
-<p class="text-base ">Also you can use them with icons</p>
-<div class="font-mono bg-alt-base-200 rounded px-base py-minor-base text-sm">
-    &lt;span class="icon icon-{icon} color-{color} gradient-mix-{color} gradient-angle-{angle}
-    gradient-tint-{opacity} ..." />
-</div>
+Also you can use them with icons
+{% include code-block-onetag.html tag="span" content="icon icon-{icon} color-{color} gradient-mix-{color} gradient-angle" %}
+
 <div class="flex flex-row gap-md flex-wrap">
     <span
         class="icon icon-xl icon-user color-accent-green-300 gradient-mix-accent-blue-300 gradient-angle-135"></span>

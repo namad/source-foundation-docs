@@ -4,7 +4,9 @@ layout: base
 ---
 
 {% include section-start.html %}
-<h1 class="h1 color-primary-500">Source Design System Foundation</h1>
+
+# Source Design System Foundation
+
 <div class="flex flex-1 flex-row gap-base">
     <div class="p-xs bg-fill-contrast-100 gradient-tint-50 shadow-4 color-text-contrast-600 rounded" title="Colors"><span class="block icon before:block icon-md" style="--icon-src: var(--ads-colors)"></span></div>
     <div class="p-xs bg-fill-contrast-100 gradient-tint-50 shadow-4 color-text-contrast-600 rounded" title="Spacing"><span class="block icon before:block icon-md" style="--icon-src: var(--ads-spacing)"></span></div>
@@ -29,23 +31,23 @@ layout: base
 {% include section-end.html %}
 
 {% include section-start.html title='Get started' %}
-{% include home/get-started.html %}
+{% include home/get-started.md %}
 {% include section-end.html %}
 
 {% include section-start.html title='Color System' %}
-{% include home/color-system.html %}
+{% include home/color-system.md %}
 {% include section-end.html %}
 
 {% include section-start.html title='Color Adjustments' %}
-{% include home/color-adjustments.html %}
+{% include home/color-adjustments.md %}
 {% include section-end.html %}
 
 {% include section-start.html title='Gradients' %}
-{% include home/gradients.html %}
+{% include home/gradients.md %}
 {% include section-end.html %}
 
 {% include section-start.html title='Shadows' %}
-{% include home/shadows.html %}
+{% include home/shadows.md %}
 {% include section-end.html %}
 
 {% include section-start.html title='Spacing' %}
