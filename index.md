@@ -63,5 +63,5 @@ layout: base
 {% include section-end.html %}
 
 {% include section-start.html title='Icons' %}
-{% include home/icons.html %}
+{% include home/icons.md %}
 {% include section-end.html %}

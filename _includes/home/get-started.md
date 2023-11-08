@@ -2,19 +2,19 @@
 
 
 {% include code-block-start.html %}
-{% highlight en %}
+```en
 npm i -D source-foundation-cli
 npm i -D source-tailwindcss
-{% endhighlight %}
+```
 {% include code-block-end.html %}
 
 
 ### Create source.config.json
 
 {% include code-block-start.html %}
-{% highlight en %}
+```en
 npx source-css init
-{% endhighlight %}
+```
 {% include code-block-end.html %}
 
 Create your `./source.config.json` This file lists all the parameters to generate color palettes, typography, radii and spacing tokens
@@ -31,13 +31,13 @@ This command will read your `./source.config.json` and ouput CSS variables into 
 ### Import CSS variables
 
 {% include code-block-start.html caption="main.css" %}
-{% highlight css %}
+```css
 @import "./css/variables.css";
 ...
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-{% endhighlight %}
+```
 {% include code-block-end.html %}
 
 ### Configure TailwindCSS
@@ -47,7 +47,7 @@ This command will read your `./source.config.json` and ouput CSS variables into 
 brings all bits together in the most simple way
 
 {% include code-block-start.html caption="tailwind.config.js" %}
-{% highlight js %}
+```js
 module.exports = {
     theme: { ... },
     ...
@@ -55,11 +55,11 @@ module.exports = {
         require('source-tailwindcss')
     ]
 }
-{% endhighlight %}
+```
 {% include code-block-end.html %}
 
 {% include code-block-start.html caption="node_moduiles/source-tailwindcss/source-preset.js" %}
-{% highlight js %}
+```js
 module.exports = {
     theme: { ... },
     colors: [
@@ -70,7 +70,7 @@ module.exports = {
         ...
     ]
 }
-{% endhighlight %}
+```
 {% include code-block-end.html %}
 
 <a href="https://tailwindcss.com/docs/presets" target="_blank">TailwindCSS Presets →</a>
@@ -81,7 +81,7 @@ Theme gives you more control over plugins, but somehow it compromises Tailwind C
 <a href="https://tailwindcss.com/docs/theme" target="_blank">TailwindCSS Themes →</a>
 
 {% include code-block-start.html caption="tailwind.config.js" %}
-{% highlight js %}
+```js
 module.exports = {
     theme: require('source-tailwindcss/source-theme'),
     plugins: [
@@ -94,14 +94,14 @@ module.exports = {
         require('source-tailwindcss/plugins/padding')
     ]
 }
-{% endhighlight %}
+```
 {% include code-block-end.html %}
 
 ### Set up HTML
 All the values are set with `[data]` atribute that you can apply to any element in your app.
 
 {% include code-block-start.html caption="index.html" %}
-{% highlight html %}
+```html
 <html data-theme="light" data-radii="base" data-spacing="base" data-typography="base" data-icons="base">
 <head>
     ...
@@ -114,7 +114,7 @@ All the values are set with `[data]` atribute that you can apply to any element 
     ...
 </body>
 </html>
-{% endhighlight %}
+```
 {% include code-block-end.html %}
 
 {% include code-block-start.html caption="[data] attribute variants" %}

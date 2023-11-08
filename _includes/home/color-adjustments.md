@@ -4,7 +4,7 @@ Color opacity is adjusted with color-mix() function
 {% include code-block-onetag.html tag="div" content="bg-opacity-{opacity} border-opacity-{opacity} color-opacity-{opacity}" %}
 
 {% include code-block-start.html %}
-{% highlight css %}
+```css
 .bg-opacity-90 {
     background-color: color-mix(in srgb, var(--bg-color), transparent 10%);
 }
@@ -14,7 +14,7 @@ Color opacity is adjusted with color-mix() function
 .color-opacity-90 {
     color: color-mix(in srgb, var(--text-color), transparent 10%);
 }
-{% endhighlight %}
+```
 {% include code-block-end.html %}
 
 <div class="flex md:flex-row flex-col flex-1 rounded overflow-hidden">

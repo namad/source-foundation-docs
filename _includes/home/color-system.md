@@ -3,7 +3,7 @@ Source Design System completely replaces Tailwind colors with Source colors.
 It uses plugins to support CSS variables integration with Tailwind utility classes.
 
 {% include code-block-start.html caption="tailwind.config.js" %}
-{% highlight js %}
+```js
 module.exports = {
     theme: {
         colors: {
@@ -15,7 +15,7 @@ module.exports = {
         }
     }
 }
-{% endhighlight %}
+```
 {% include code-block-end.html %}
 
 There are three visual themes that are defined under `[data-theme]` selector in the `source-variables.css` file
