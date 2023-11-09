@@ -1,5 +1,5 @@
 ---
-title: Home Page
+title: Tailwind CSS
 layout: base
 toc: true
 ---

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>{{ page.title }}</title>
+    <title>Source Foundation / {{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./styles/main.css" rel="stylesheet">
     <link href="./styles/default.css" rel="stylesheet">
@@ -26,12 +26,11 @@
 <div class="grid-layout">
 
 <div class="grid-left flex xl:hidden px-2 py-2 bg-fill-base-100 rounded-lg border border-alt-base-300 bg-clip-padding flex-row justify-between items-center gap-md sticky top-xs3 shadow-5 shadow-utility-shade-200">
-
     <button class="button-toolbar" id="openOptionsPanelButton">
         <span class="icon icon-sliders"></span>
         <span class="">Customize</span>
     </button>
-    <h1 class="text-md font-bold m-0 hidden md:block">Source DS Foundation</h1>
+    <h1 class="text-md font-bold m-0 hidden md:block">{{ page.title }}</h1>
     <button class="button-toolbar" id="openTOCButton">
         <span class="icon icon-list"></span>
         <span class="">On this page</span>
