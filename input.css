@@ -128,6 +128,16 @@ h5+h6 {
     @apply text-sm ml-xs;
 }
 
+.toc-list,
+.toc-list li,
+.toc-list ul {
+    @apply flex flex-col gap-xs3;
+}
+
+.toc-list li > ul {
+    padding-left: var(--spacing-base);
+}
+
 @media (max-width: 1280px) {
     #iconSet .icon-frame {
         width: 33%;

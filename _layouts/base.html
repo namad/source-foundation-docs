@@ -25,15 +25,15 @@
 
 <div class="grid-layout">
 
-<div class="grid-left flex xl:hidden px-2 py-2 bg-fill-base-100 rounded-lg border border-alt-base-300 bg-clip-padding flex-row justify-between items-center gap-md sticky top-xs3 shadow-5 shadow-utility-shade-200">
+<div class="grid-left flex xl:hidden px-2 py-2 bg-fill-base-100 rounded-lg border border-alt-base-300 bg-clip-padding flex-row justify-between items-center gap-md sticky z-10 top-xs3 shadow-5 shadow-utility-shade-200">
     <button class="button-toolbar" id="openOptionsPanelButton">
         <span class="icon icon-sliders"></span>
-        <span class="">Customize</span>
+        <span class="color-text-base-500">Customize</span>
     </button>
     <h1 class="text-md font-bold m-0 hidden md:block">{{ page.title }}</h1>
     <button class="button-toolbar" id="openTOCButton">
         <span class="icon icon-list"></span>
-        <span class="">On this page</span>
+        <span class="color-text-base-500">On this page</span>
     </button>
 </div>
 
@@ -76,7 +76,7 @@
             <span class="icon icon-x"></span>
         </button>
     </div>
-    {{ content | toc_only }}
+   {% include toc.html html=content h_min=2 h_max=3 class="toc-list" %}
 </div>
 
 </div>
