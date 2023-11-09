@@ -45,7 +45,6 @@ body {
 .grid-layout {
     display: grid;
     grid-template-areas:
-        'navbar navbar navbar'
         'left navs navs'
         'left content right';
     grid-gap: var(--spacing-base);
