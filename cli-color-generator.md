@@ -1,6 +1,6 @@
 ---
 title: Home Page
-layout: base
+layout: grid
 toc: true
 ---
 

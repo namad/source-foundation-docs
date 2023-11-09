@@ -2,6 +2,6 @@
     <input type="radio" class="input" name="{{ include.name }}" value="{{ include.value }}" {% if include.checked %}checked="true"{% endif %} />
     <span class="flex flex-row justify-between items-baseline flex-1 gap-5">
         <span>{{ include.caption }}</span>
-        <span class="text-sm text-right color-text-base-500 color-opacity-30 group-hover:color-opacity-100">{{ include.value }}</span>
+        <span class="hidden xl:block text-sm text-right color-text-base-500 color-opacity-30 group-hover:color-opacity-100">{{ include.value }}</span>
     </span>
 </label>

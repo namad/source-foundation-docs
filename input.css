@@ -22,6 +22,7 @@
     --ads-colors: url('data:image/svg+xml,<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.5"><path d="M45.6568 50.3431L54.3431 41.6569C54.5002 41.4998 54.6493 41.3379 54.7905 41.1716H25.1716L34.3431 50.3431C37.4673 53.4673 42.5327 53.4673 45.6568 50.3431Z" fill="white"/><path d="M6.67144 54.0215L6.69842 54.1429C7.45892 57.5651 10.4943 60 14 60C17.5057 60 20.5411 57.5651 21.3016 54.1429L21.3286 54.0215C21.7592 52.0838 21.4182 50.0545 20.3778 48.364L14 38L7.62218 48.364C6.58185 50.0545 6.24083 52.0838 6.67144 54.0215Z" fill="white"/></g><path fill-rule="evenodd" clip-rule="evenodd" d="M39.75 5.77539V13.2754L55.5806 29.106C59.3882 32.9136 59.3882 39.0869 55.5806 42.8946L46.8943 51.5809C43.0867 55.3885 36.9133 55.3885 33.1057 51.5808L13.5251 32.0003L39.75 5.77539ZM36 14.4751L18.4749 32.0003L35.5806 49.106C38.0214 51.5467 41.9786 51.5468 44.4194 49.106L53.1057 40.4197C55.5465 37.9789 55.5465 34.0216 53.1057 31.5808L36 14.4751Z" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M55.2374 15.2377C55.9209 14.5543 55.9209 13.4462 55.2374 12.7628C54.554 12.0794 53.446 12.0794 52.7626 12.7628L39.6364 25.889C38.8467 25.4808 37.9503 25.2503 37 25.2503C33.8244 25.2503 31.25 27.8246 31.25 31.0003C31.25 34.1759 33.8244 36.7503 37 36.7503C40.1756 36.7503 42.75 34.1759 42.75 31.0003C42.75 30.05 42.5195 29.1536 42.1113 28.3638L55.2374 15.2377ZM34.75 31.0003C34.75 29.7576 35.7574 28.7503 37 28.7503C38.2426 28.7503 39.25 29.7576 39.25 31.0003C39.25 32.2429 38.2426 33.2503 37 33.2503C35.7574 33.2503 34.75 32.2429 34.75 31.0003Z" fill="white"/></svg>');
 
 }
+
 :focus-visible {
     outline: 0 none;
     box-shadow: inset 0 0 0 1px var(--primary-500), 0 0 0 3px color-mix(in srgb, var(--primary-600) 100%, transparent 70%);
@@ -33,29 +34,70 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;;
-}
-
-
-
-#controls {
-    min-width: 220px;
-    max-width: 296px;
+    text-decoration: underline;
+    ;
 }
 
 body {
-    @apply bg-fill-base-300 p-md color-text-base-600 text-base flex flex-row gap-md items-start justify-center;
+    @apply bg-fill-base-300 p-md color-text-base-600 text-base;
 }
+
+.grid-layout {
+    display: grid;
+    grid-template-areas:
+        'navbar navbar navbar'
+        'left navs navs'
+        'left content right';
+    grid-gap: var(--spacing-base);
+    max-width: 1440px;
+    margin: auto;
+}
+
+.options-panel {
+    grid-area: left;
+}
+
+.grid-navbar {
+    grid-area: navbar;
+}
+
+.grid-navs {
+    grid-area: navs;
+}
+
+.grid-content {
+    grid-area: content;
+}
+
+.grid-right {
+    grid-area: right;
+}
+
+.grid-left {
+    grid-area: left;
+}
+
+
 
 #main {
-    max-width: 960px;
+    max-width: 1200px;
+
 }
 
-#controls { 
+#navbar {
+    grid-area: navbar;
+}
+
+#controls {
     height: calc(100vh - 2 * var(--spacing-md));
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     @apply mt-sm;
 
     &:first-child {
@@ -63,156 +105,164 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-h1 + h2,
-h2 + h3,
-h3 + h4,
-h4 + h5,
-h5 + h6 {
+h1+h2,
+h2+h3,
+h3+h4,
+h4+h5,
+h5+h6 {
     margin: 0;
 }
 
+.toc {
+    height: calc(100vh - var(--spacing-md));
+    overflow: auto;
+}
+
+#toc .toc-h2 {
+    @apply mb-xs4;
+}
+
+#toc .toc-h2 ul {}
+
+#toc .toc-h3 {
+    @apply text-sm ml-xs;
+}
+
 @media (max-width: 1280px) {
-    #controls {
-        position: static;
-        flex-flow: row;
-        flex-wrap: wrap;
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-    }
-
-    #main {
-        max-width: 100%;
-    }
-
-    #icons .icon-frame{
+    #iconSet .icon-frame {
         width: 33%;
     }
 
-   body {
-        flex-flow: column;
-        padding: var(--spacing-base);
-   }
+    body {
+        padding: var(--spacing-xs3);
+    }
+
+    #controls {
+        display: flex;
+        grid-area: unset;
+        position: fixed;
+        left: var(--spacing-xs3);
+        top: var(--spacing-xs3);
+        height: calc(100vh - 2 * var(--spacing-xs3));
+        z-index: 10;
+        transform: translate(-70%, 0px) scale(0.8);
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
+        pointer-events: none;
+
+        &.show {
+            transform: translate(0) scale(1);
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+
+    .toc {
+        display: flex;
+        grid-area: unset;
+        position: fixed;
+        right: var(--spacing-xs3);
+        top: var(--spacing-xs3);
+        height: calc(100vh - 2 * var(--spacing-xs3));
+        z-index: 10;
+        transform: translate(70%, 0px) scale(0.8);
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
+        pointer-events: none;
+
+        @apply px-md py-minor-md bg-fill-base-100 rounded-lg border border-alt-base-300 bg-clip-padding flex flex-col gap-base shadow-5 shadow-utility-shade-200;
+
+        &.show {
+            transform: translate(0) scale(1);
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+
+    .grid-layout {
+        grid-gap: var(--spacing-xs3);
+        grid-template-areas:
+            'navs navs'
+            'left left'
+            'content content';
+    }
+
 }
 
 @media (max-width: 400px) {
-   body {
+    body {
         padding: var(--spacing-xs2);
-        gap: var(--spacing-xs2);
-   }
+    }
 }
 
 @layer components {
-    h1 { @apply text-xl3 font-bold; }
-    h2 { @apply text-xl2 font-bold; }
-    h3 { @apply text-xl font-bold; }
-    h4 { @apply text-lg font-bold; }
-    h5 { @apply text-md font-bold; }
+    section h1 {
+        @apply text-xl3 font-bold;
+    }
+
+    section h2 {
+        @apply text-xl2 font-bold;
+    }
+
+    section h3 {
+        @apply text-xl font-bold;
+    }
+
+    section h4 {
+        @apply text-lg font-bold;
+    }
+
+    section h5 {
+        @apply text-md font-bold;
+    }
 
     .button-default {
-        @apply ui-element
-                inline-flex
-                gap-xs2
-                shadows 
-                inner-shadow-1 
-                inner-shadow-alt-contrast-500 
-                shadow-2 
-                shadow-utility-shade-200 
-                bg-utility-tint-600 
-                gradient-mix-utility-tint-600 
-                rounded 
-                outline-1 
-                outline-utility-shade-300 
-                outline 
-                px-sm 
-                py-minor-xs    
+        @apply ui-element inline-flex gap-xs2 shadows inner-shadow-1 inner-shadow-alt-contrast-500 shadow-2 shadow-utility-shade-200 bg-utility-tint-600 gradient-mix-utility-tint-600 rounded outline-1 outline-utility-shade-300 outline px-sm py-minor-xs
     }
 
     .button-toolbar {
-        @apply ui-element 
-                inline-flex
-                gap-xs2
-                rounded 
-                px-sm 
-                py-minor-xs    
+        @apply ui-element inline-flex gap-xs2 rounded px-sm py-minor-xs items-center;
     }
 
     .button-cta {
         --bg: var(--primary-400);
         --color: var(--text-base-action);
         background-color: var(--bg);
-        @apply color-text-base-600
-                px-sm
-                py-minor-xs
-                gradient-shade-20
-                hover:gradient-shade-30
-                active:gradient-tint-0
-                active:bg-primary-300
-                active:gradient-mix-primary-400
-                color-text-contrast-600 
-                inner-shadow-1 
-                inner-shadow-alt-contrast-500 
-                outline-1 
-                outline-utility-shade-100 
-                rounded;
+        @apply color-text-base-600 px-sm py-minor-xs gradient-shade-20 hover:gradient-shade-30 active:gradient-tint-0 active:bg-primary-300 active:gradient-mix-primary-400 color-text-contrast-600 inner-shadow-1 inner-shadow-alt-contrast-500 outline-1 outline-utility-shade-100 rounded;
 
         &.outline {
             border: 1px solid var(--color);
             color: var(--color);
-            @apply bg-utility-transparent
-                    border
-                    gradient-tint-0
-                    hover:bg-primary-100
-                    active:bg-primary-200
-                    inner-shadow-utility-transparent
-                    px-[sm/1]
-                    py-[minor-xs/1]
+            @apply bg-utility-transparent border gradient-tint-0 hover:bg-primary-100 active:bg-primary-200 inner-shadow-utility-transparent px-[sm/1] py-[minor-xs/1]
         }
     }
 
     .button-primary {
         --bg: var(--primary-400);
         --color: var(--text-base-action);
+
         &.outline {
-            @apply hover:bg-primary-100
-                    active:bg-primary-200;
+            @apply hover:bg-primary-100 active:bg-primary-200;
         }
     }
 
     .button-danger {
         --bg: var(--danger-400);
-        --color: var(--text-base-danger); 
+        --color: var(--text-base-danger);
+
         &.outline {
-            @apply hover:bg-danger-100
-                    active:bg-danger-200;
-        }      
+            @apply hover:bg-danger-100 active:bg-danger-200;
+        }
     }
 
     .input {
-        @apply bg-fill-base-100 
-                px-[xs/1] 
-                py-[minor-xs/1] 
-                border  
-                border-stroke-base-400 
-                shadows 
-                inner-shadow-2 
-                shadow-1
-                mix-alt-contrast-100
-                rounded
-                hover:border-primary-500;
+        @apply bg-fill-base-100 px-[xs/1] py-[minor-xs/1] border border-stroke-base-400 shadows inner-shadow-2 shadow-1 mix-alt-contrast-100 rounded hover:border-primary-500;
         border-top-color: var(--stroke-base-500);
     }
 
     .input[type=radio] {
-        @apply appearance-none
-                border-stroke-base-500
-                p-0
-                rounded-round
-                w-line-base
-                h-line-base
-                m-0
-                align-middle;
-        
+        @apply appearance-none border-stroke-base-500 p-0 rounded-round w-line-base h-line-base m-0 align-middle;
+
         &:checked {
             --width: calc(var(--line-height-base)/4);
             background-color: var(--utility-white);
@@ -221,21 +271,12 @@ h5 + h6 {
     }
 
     .input[type="checkbox"] {
-        @apply appearance-none
-                border-stroke-base-500
-                p-0
-                rounded-sm
-                w-line-base
-                h-line-base
-                m-0
-                align-middle;
+        @apply appearance-none border-stroke-base-500 p-0 rounded-sm w-line-base h-line-base m-0 align-middle;
+
         &:checked {
             --width: calc(var(--line-height-base)/4);
             background-image: url('data:image/svg+xml,<svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.0694 3.83539C13.4364 4.14989 13.4788 4.70227 13.1643 5.06918L6.54942 12.7866L2.88128 9.11846C2.53957 8.77675 2.53957 8.22273 2.88128 7.88102C3.22299 7.53931 3.77701 7.53931 4.11872 7.88102L6.45058 10.2129L11.8357 3.9303C12.1501 3.56339 12.7025 3.5209 13.0694 3.83539Z" fill="white"/></svg>');
-            @apply border-primary-400
-                    bg-primary-400
-                    inner-shadow-primary-400
-                    bg-cover;
+            @apply border-primary-400 bg-primary-400 inner-shadow-primary-400 bg-cover;
         }
     }
 
@@ -244,4 +285,5 @@ h5 + h6 {
         @apply inline text-sm bg-alt-base-200 px-xs3 py-minor-xs3 rounded-sm font-mono;
     }
 }
+
 

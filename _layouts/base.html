@@ -22,10 +22,67 @@
 </head>
 
 <body>
-{% include options-panel.html %}
-<div class="flex-1 flex flex-col gap-md overflow-hidden" id="main">
-{{ content }}
+
+<div class="grid-layout">
+
+<div class="grid-left flex xl:hidden px-2 py-2 bg-fill-base-100 rounded-lg border border-alt-base-300 bg-clip-padding flex-row justify-between items-center gap-md sticky top-xs3 shadow-5 shadow-utility-shade-200">
+
+    <button class="button-toolbar" id="openOptionsPanelButton">
+        <span class="icon icon-sliders"></span>
+        <span class="">Customize</span>
+    </button>
+    <h1 class="text-md font-bold m-0 hidden md:block">Source DS Foundation</h1>
+    <button class="button-toolbar" id="openTOCButton">
+        <span class="icon icon-list"></span>
+        <span class="">On this page</span>
+    </button>
 </div>
+
+{% include options-panel.html class="grid-left hidden xl:flex" %}
+
+
+{% include section-start.html class="grid-navs" %}
+<h1>Source Design System Foundation</h1>
+<div class="flex flex-1 flex-row gap-base">
+    <div class="p-xs bg-fill-contrast-100 gradient-tint-50 shadow-4 color-text-contrast-600 rounded" title="Colors"><span class="block icon before:block icon-md" style="--icon-src: var(--ads-colors)"></span></div>
+    <div class="p-xs bg-fill-contrast-100 gradient-tint-50 shadow-4 color-text-contrast-600 rounded" title="Spacing"><span class="block icon before:block icon-md" style="--icon-src: var(--ads-spacing)"></span></div>
+    <div class="p-xs bg-fill-contrast-100 gradient-tint-50 shadow-4 color-text-contrast-600 rounded" title="Typography"><span class="block icon before:block icon-md" style="--icon-src: var(--ads-typography)"></span></div>
+    <div class="p-xs bg-fill-contrast-100 gradient-tint-50 shadow-4 color-text-contrast-600 rounded" title="Radii"><span class="block icon before:block icon-md" style="--icon-src: var(--ads-radii)"></span></div>
+    <div class="p-xs bg-fill-contrast-100 gradient-tint-50 shadow-4 color-text-contrast-600 rounded" title="Elevation"><span class="block icon before:block icon-md" style="--icon-src: var(--ads-elevation)"></span></div>
+</div>
+<ul class="flex flex-1 flex-row flex-wrap">
+    <li>
+        <a href="./index.html" class="block rounded px-sm py-minor-xs hover:decoration-none bg-primary-100">TailwindCSS</a>
+    </li>
+    <li>
+        <a href="./index.html" class="block rounded px-sm py-minor-xs hover:decoration-none hover:bg-alt-base-100">CLI Theme Generator</a>
+    </li>
+    <li>
+        <a href="./index.html" class="block rounded px-sm py-minor-xs hover:decoration-none hover:bg-alt-base-100">Figma Theme Generator</a>
+    </li>
+    <li class="flex flex-1 justify-end">
+        <a href="./color-system-guide.html" class="block rounded px-sm py-minor-xs hover:decoration-none hover:bg-alt-base-100">Color System Practical Guide</a>
+    </li>
+</ul>
+{% include section-end.html %}
+
+<div class="flex-1 flex flex-col gap-md overflow-hidden grid-content">
+    {{ content | inject_anchors }}
+</div>
+
+<div class="toc sticky top-md pl-sm flex-col gap-sm w-52 grid-right hidden xl:flex" id="TOC">
+    <div class="flex flex-row justify-between">
+        <h3 class="text-md font-bold">On this page</h3>
+        <button class="xl:hidden button-toolbar px-xs4 py-0 self-stretch" id="closeTOCButton">
+            <span class="icon icon-x"></span>
+        </button>
+    </div>
+    {{ content | toc_only }}
+</div>
+
+</div>
+
+
 <script>
 document.getElementById('controls').querySelectorAll('input[type=radio]').forEach(el => {
     el.addEventListener('click', (e) => {
@@ -34,6 +91,21 @@ document.getElementById('controls').querySelectorAll('input[type=radio]').forEac
         document.documentElement.dataset[name] = value;
     })
 });
+
+document.getElementById('openOptionsPanelButton').addEventListener('click', (e) => {
+    document.getElementById('controls').classList.add('show')
+})
+
+document.getElementById('closeOptionsPanelButton').addEventListener('click', (e) => {
+    document.getElementById('controls').classList.remove('show')
+})
+document.getElementById('openTOCButton').addEventListener('click', (e) => {
+    document.getElementById('TOC').classList.add('show')
+})
+
+document.getElementById('closeTOCButton').addEventListener('click', (e) => {
+    document.getElementById('TOC').classList.remove('show')
+})
 
 document.querySelectorAll('[data-theme-switch]').forEach(el => {
     el.addEventListener('click', (e) => {
