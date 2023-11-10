@@ -265,10 +265,11 @@ module.exports = {
             6: '0px 16px 10px -7px var(--box-shadow-color), 0px 24px 28px -8px var(--box-shadow-color), 0px 24px 48px -10px var(--box-shadow-color)'
         },
         innerShadow: {
-            1: 'inset 0px 1px 0px 0px var(--inner-shadow-color)',
-            2: 'inset 0px 2px 2px -1px var(--inner-shadow-color)',
-            3: 'inset 0px 6px 3px -4px var(--inner-shadow-color)',
-            4: 'inset 0px 8px 4px -2px var(--inner-shadow-color)',
+            0: 'inset 0px 0px 0px 1px var(--box-inner-shadow-color)',
+            1: 'inset 0px 1px 0px 0px var(--box-inner-shadow-color)',
+            2: 'inset 0px 2px 2px -1px var(--box-inner-shadow-color)',
+            3: 'inset 0px 6px 3px -4px var(--box-inner-shadow-color)',
+            4: 'inset 0px 8px 4px -2px var(--box-inner-shadow-color)',
         }
     },
     plugins: [

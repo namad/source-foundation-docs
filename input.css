@@ -155,7 +155,7 @@ h5+h6 {
         top: var(--spacing-xs3);
         height: calc(100vh - 2 * var(--spacing-xs3));
         z-index: 10;
-        transform: translate(-70%, 0px) scale(0.8);
+        transform: translate(-70%, 0px);
         opacity: 0;
         transition: all 0.2s ease-in-out;
         pointer-events: none;
@@ -164,6 +164,7 @@ h5+h6 {
             transform: translate(0) scale(1);
             opacity: 1;
             pointer-events: all;
+            @apply shadow-utility-shade-200;
         }
     }
 
@@ -175,7 +176,7 @@ h5+h6 {
         top: var(--spacing-xs3);
         height: calc(100vh - 2 * var(--spacing-xs3));
         z-index: 10;
-        transform: translate(70%, 0px) scale(0.8);
+        transform: translate(70%, 0px);
         opacity: 0;
         transition: all 0.2s ease-in-out;
         pointer-events: none;
@@ -186,6 +187,7 @@ h5+h6 {
             transform: translate(0) scale(1);
             opacity: 1;
             pointer-events: all;
+            @apply shadow-utility-shade-200;
         }
     }
 
@@ -201,7 +203,7 @@ h5+h6 {
 }
 
 .nav-list {
-    @apply flex flex-row flex-wrap gap-md;
+    @apply flex flex-row flex-wrap gap-x-md;
 }
 
 .nav-list .nav-list-link {
@@ -210,7 +212,18 @@ h5+h6 {
     padding: var(--spacing-minor-xs) 0;
 }
 .nav-list .active .nav-list-link {
-    color: var(--text-base-action)
+    color: var(--text-base-action);
+    font-weight: bold;
+}
+
+.sticky-panel::after {
+    content: '';
+    position: absolute;
+    inset: calc(-1 * var(--spacing-xs3));
+    z-index: -1;
+    pointer-events: none;
+    @apply gradient-mix-fill-base-300;
+
 }
 @media (max-width: 400px) {
     body {

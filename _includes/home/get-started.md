@@ -22,11 +22,16 @@ Create your `./source.config.json` This file lists all the parameters to generat
 ### Create CSS variables
 
 Now you need add CSS file with custom properties. You can either build from your custom
-`./source.config.json` Or you can use defauls from `source-tailwindcss/source-variables.css`
+`./source.config.json` 
+
+The command below will read your `./source.config.json` and ouput CSS variables into the CSS file `./css/variables.css`
 
 {% include code-block-oneliner.html content="npx source-css ./css/variables.css" %}
 
-This command will read your `./source.config.json` and ouput CSS variables into the CSS file
+
+Alternatevely you can use defauls from `source-tailwindcss/source-variables.css`
+
+<a href="https://github.com/namad/source-tw-playground/blob/main/src/source-variables.css" target="_blank">See Default CSS Variables →</a>
 
 ### Import CSS variables
 

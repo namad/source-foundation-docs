@@ -1,47 +1,49 @@
-<div class="w-72 group px-md py-minor-md bg-fill-base-100 rounded-lg border border-alt-base-300 bg-clip-padding flex flex-col gap-base sticky top-md shadow-5 shadow-utility-shade-100 overflow-auto {{ include.class }}" id="controls">
-    <div class="flex flex-row justify-between">
+<div class="w-72 group bg-fill-base-100 rounded-lg border border-alt-base-300 bg-clip-padding flex flex-col sticky top-md shadow-5 shadow-utility-shade-100 overflow-auto {{ include.class }}" id="controls">
+    <div class="pl-md pr-minor-md py-minor-md flex flex-row justify-between">
         <h3 class="text-md font-bold">Customize</h3>
         <button class="xl:hidden button-toolbar px-xs4 py-0 self-stretch" id="closeOptionsPanelButton">
-            <span class="icon icon-x"></span>
+            <span class="icon icon-x"></span> 
         </button>
     </div>
-    <div class="flex flex-col gap-minor-sm">
-        <div class="text-base font-bold flex justify-between items-baseline">Theme <span class="text-sm text-right font-normal color-text-base-500 color-opacity-50 group-hover:color-opacity-100">html [data-theme]</span></div>
-        <div class="flex flex-col gap-xs">
-            {% include radio-button.html name="theme" caption="Light" value="light" checked="true" %}
-            {% include radio-button.html name="theme" caption="Dark Elevated" value="dark-elevated" %}
-            {% include radio-button.html name="theme" caption="Dark Deep" value="dark-base" %}
+    <div class="px-md pb-minor-md flex flex-1 flex-col gap-base overflow-auto">
+        <div class="flex flex-col gap-minor-sm">
+            <div class="text-base font-bold flex justify-between items-baseline">Theme <span class="text-sm text-right font-normal color-text-base-500 color-opacity-50 group-hover:color-opacity-100">html [data-theme]</span></div>
+            <div class="flex flex-col gap-xs">
+                {% include radio-button.html name="theme" caption="Light" value="light" checked="true" %}
+                {% include radio-button.html name="theme" caption="Dark Elevated" value="dark-elevated" %}
+                {% include radio-button.html name="theme" caption="Dark Deep" value="dark-base" %}
+            </div>
         </div>
-    </div>
-    <div class="flex flex-col gap-minor-sm">
-        <div class="text-base font-bold flex justify-between gap-4 items-baseline">Spacing <span class="text-sm text-right font-normal color-text-base-500 color-opacity-50 group-hover:color-opacity-100">html [data-spacing]</span></div>
-        <div class="flex flex-col gap-xs">
-            {% include radio-button.html name="spacing" caption="Compact" value="compact"%}
-            {% include radio-button.html name="spacing" caption="Base" value="base" checked="true" %}
-            {% include radio-button.html name="spacing" caption="Large" value="large" %}
+        <div class="flex flex-col gap-minor-sm">
+            <div class="text-base font-bold flex justify-between gap-4 items-baseline">Spacing <span class="text-sm text-right font-normal color-text-base-500 color-opacity-50 group-hover:color-opacity-100">html [data-spacing]</span></div>
+            <div class="flex flex-col gap-xs">
+                {% include radio-button.html name="spacing" caption="Compact" value="compact"%}
+                {% include radio-button.html name="spacing" caption="Base" value="base" checked="true" %}
+                {% include radio-button.html name="spacing" caption="Large" value="large" %}
+            </div>
         </div>
-    </div>
-    <div class="flex flex-col gap-minor-sm">
-        <div class="text-base font-bold flex justify-between gap-4 items-baseline">Radii <span class="text-sm font-normal color-text-base-500 color-opacity-50 group-hover:color-opacity-100">html [data-radii]</span></div>
-        <div class="flex flex-col gap-xs">
-            {% include radio-button.html name="radii" caption="Compact" value="compact"%}
-            {% include radio-button.html name="radii" caption="Base" value="base" checked="true" %}
-            {% include radio-button.html name="radii" caption="Large" value="large" %}        
+        <div class="flex flex-col gap-minor-sm">
+            <div class="text-base font-bold flex justify-between gap-4 items-baseline">Radii <span class="text-sm font-normal color-text-base-500 color-opacity-50 group-hover:color-opacity-100">html [data-radii]</span></div>
+            <div class="flex flex-col gap-xs">
+                {% include radio-button.html name="radii" caption="Compact" value="compact"%}
+                {% include radio-button.html name="radii" caption="Base" value="base" checked="true" %}
+                {% include radio-button.html name="radii" caption="Large" value="large" %}        
+            </div>
         </div>
-    </div>
-    <div class="flex flex-col gap-minor-sm">
-        <div class="text-base font-bold flex justify-between gap-4 items-baseline">Text Size <span class="text-sm text-right font-normal color-text-base-500 color-opacity-50 group-hover:color-opacity-100">html [data-typography]</span></div>
-        <div class="flex flex-col gap-xs">
-            {% include radio-button.html name="typography" caption="Compact" value="compact"%}
-            {% include radio-button.html name="typography" caption="Base" value="base" checked="true" %}
-            {% include radio-button.html name="typography" caption="Large" value="large" %}           
+        <div class="flex flex-col gap-minor-sm">
+            <div class="text-base font-bold flex justify-between gap-4 items-baseline">Text Size <span class="text-sm text-right font-normal color-text-base-500 color-opacity-50 group-hover:color-opacity-100">html [data-typography]</span></div>
+            <div class="flex flex-col gap-xs">
+                {% include radio-button.html name="typography" caption="Compact" value="compact"%}
+                {% include radio-button.html name="typography" caption="Base" value="base" checked="true" %}
+                {% include radio-button.html name="typography" caption="Large" value="large" %}           
+            </div>
         </div>
-    </div>
-    <div class="flex flex-col gap-minor-sm">
-        <div class="text-base font-bold flex justify-between gap-4 items-baseline">Icon Size <span class="text-sm text-right font-normal color-text-base-500 color-opacity-50 group-hover:color-opacity-100">html [data-icons]</span></div>
-        <div class="flex flex-col gap-xs">
-            {% include radio-button.html name="icons" caption="Base" value="base" checked="true" %}
-            {% include radio-button.html name="icons" caption="Touch" value="touch" %}      
+        <div class="flex flex-col gap-minor-sm">
+            <div class="text-base font-bold flex justify-between gap-4 items-baseline">Icon Size <span class="text-sm text-right font-normal color-text-base-500 color-opacity-50 group-hover:color-opacity-100">html [data-icons]</span></div>
+            <div class="flex flex-col gap-xs">
+                {% include radio-button.html name="icons" caption="Base" value="base" checked="true" %}
+                {% include radio-button.html name="icons" caption="Touch" value="touch" %}      
+            </div>
         </div>
     </div>
 </div>

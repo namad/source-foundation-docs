@@ -26,7 +26,6 @@ application. It could be fully desaturated, slightly colder or warmer, or even t
 support the brand.
 
 #### Fills
-{% include code-block-onetag.html tag="div" content="bg-{color}" %}
 Fills are the lightest shades in your arsenal and should be used as the main background colours.
 
 ##### Light surface colors
@@ -38,13 +37,14 @@ Fills are the lightest shades in your arsenal and should be used as the main bac
 {% include color-shades.html color="bg-fill-contrast" class="color-text-contrast-600" %}
 
 #### Strokes
-{% include code-block-onetag.html tag="div" content="border-{shade}" %}
 Strokes are not supposed to fill large areas but outline or divide them.
 
 ##### Light surface strokes
+{% include code-block-onetag.html tag="div" content="border-stroke-base-{shade}" %}
 {% include color-shades.html color="bg-stroke-base" %}
 
 ##### Dark surface strokes
+{% include code-block-onetag.html tag="div" content="border-stroke-contrast-{shade}" %}
 {% include color-shades.html color="bg-stroke-contrast" class="color-text-contrast-500" %}
 
 #### Alt Colors
@@ -61,26 +61,26 @@ Alt or alternative colours are semi-transparent ones and could be applied both a
 ### Primary / Brand Color
 Brand colour is key to the immediate brand recognition of your product
 {% include code-block-onetag.html tag="div" content="bg-primary-{shade}"%}
-{% include color-shades.html color="bg-primary" %}
+{% include color-shades-accent.html color="bg-primary" %}
 
 ### Semantics
 These colours communicate feedback, status, or urgency and should always convey important information
 
 #### Success
 {% include code-block-onetag.html tag="div" content="bg-success-{shade}" %}
-{% include color-shades.html color="bg-success" %}
+{% include color-shades-accent.html color="bg-success" %}
 
 #### Info
 {% include code-block-onetag.html tag="div" content="bg-info-{shade}" %}
-{% include color-shades.html color="bg-info" %}
+{% include color-shades-accent.html color="bg-info" %}
 
 #### Warning
 {% include code-block-onetag.html tag="div" content="bg-warning-{shade}" %}
-{% include color-shades.html color="bg-warning" %}
+{% include color-shades-accent.html color="bg-warning" %}
 
 #### Danger
 {% include code-block-onetag.html tag="div" content="bg-danger-{shade}" %}
-{% include color-shades.html color="bg-danger" %}
+{% include color-shades-accent.html color="bg-danger" %}
 
 ### Text colors
 {% include code-block-onetag.html tag="span" content="color-{color}" %}
@@ -129,31 +129,31 @@ The accent palette brings life and meaning to your product. The colour spots can
 emphasise brand connection or communicate a system state. There are ten accents to work with.
 
 {% include code-block-oneliner.html class="" content="&lt;div class='bg-accent-red-{shade} ...' />"%}
-{% include color-shades.html color="bg-accent-red" %}
+{% include color-shades-accent.html color="bg-accent-red" %}
 
 {% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-amber-{shade} ...' />"%}
-{% include color-shades.html color="bg-accent-amber" %}
+{% include color-shades-accent.html color="bg-accent-amber" %}
 
 {% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-brown-{shade} ...' />"%}
-{% include color-shades.html color="bg-accent-brown" %}
+{% include color-shades-accent.html color="bg-accent-brown" %}
 
 {% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-green-{shade} ...' />"%}
-{% include color-shades.html color="bg-accent-green" %}
+{% include color-shades-accent.html color="bg-accent-green" %}
 
 {% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-teal-{shade} ...' />"%}
-{% include color-shades.html color="bg-accent-teal" %}
+{% include color-shades-accent.html color="bg-accent-teal" %}
 
 {% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-blue-{shade} ...' />"%}
-{% include color-shades.html color="bg-accent-blue" %}
+{% include color-shades-accent.html color="bg-accent-blue" %}
 
 {% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-indigo-{shade} ...' />"%}
-{% include color-shades.html color="bg-accent-indigo" %}
+{% include color-shades-accent.html color="bg-accent-indigo" %}
 
 {% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-violet-{shade} ...' />"%}
-{% include color-shades.html color="bg-accent-violet" %}
+{% include color-shades-accent.html color="bg-accent-violet" %}
 
 {% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-purple-{shade} ...' />"%}
-{% include color-shades.html color="bg-accent-purple" %}
+{% include color-shades-accent.html color="bg-accent-purple" %}
 
 {% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-pink-{shade} ...' />"%}
-{% include color-shades.html color="bg-accent-pink" %}
+{% include color-shades-accent.html color="bg-accent-pink" %}

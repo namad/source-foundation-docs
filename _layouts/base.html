@@ -25,16 +25,18 @@
 
 <div class="grid-layout">
 
-<div class="grid-left flex xl:hidden px-2 py-2 bg-fill-base-100 rounded-lg border border-alt-base-300 bg-clip-padding flex-row justify-between items-center gap-md sticky z-10 top-xs3 shadow-5 shadow-utility-shade-200">
-    <button class="button-toolbar" id="openOptionsPanelButton">
-        <span class="icon icon-sliders"></span>
-        <span class="color-text-base-500">Customize</span>
-    </button>
-    <h1 class="text-md font-bold m-0 hidden md:block">{{ page.title }}</h1>
-    <button class="button-toolbar" id="openTOCButton">
-        <span class="icon icon-list"></span>
-        <span class="color-text-base-500">On this page</span>
-    </button>
+<div class="sticky-panel sticky z-10 top-xs3">
+    <div class=" grid-left flex xl:hidden px-2 py-2 bg-fill-base-100 rounded-lg border border-alt-base-300 bg-clip-padding flex-row justify-between items-center gap-md shadow-5 shadow-utility-shade-200">
+        <button class="button-toolbar" id="openOptionsPanelButton">
+            <span class="icon icon-sliders"></span>
+            <span class="color-text-base-500">Customize</span>
+        </button>
+        <h1 class="text-md font-bold m-0 hidden md:block">{{ page.title }}</h1>
+        <button class="button-toolbar" id="openTOCButton">
+            <span class="icon icon-list"></span>
+            <span class="color-text-base-500">On this page</span>
+        </button>
+    </div>
 </div>
 
 {% include options-panel.html class="grid-left hidden xl:flex" %}
@@ -42,16 +44,7 @@
 
 {% include section-start.html class="grid-navs" %}
 <h1>Source Design System Foundation</h1>
-<!-- <div class="flex flex-1 flex-row gap-base">
-    <div class="p-xs bg-fill-contrast-100 gradient-tint-50 shadow-4 color-text-contrast-600 rounded" title="Colors"><span class="block icon before:block icon-md" style="--icon-src: var(--ads-colors)"></span></div>
-    <div class="p-xs bg-fill-contrast-100 gradient-tint-50 shadow-4 color-text-contrast-600 rounded" title="Spacing"><span class="block icon before:block icon-md" style="--icon-src: var(--ads-spacing)"></span></div>
-    <div class="p-xs bg-fill-contrast-100 gradient-tint-50 shadow-4 color-text-contrast-600 rounded" title="Typography"><span class="block icon before:block icon-md" style="--icon-src: var(--ads-typography)"></span></div>
-    <div class="p-xs bg-fill-contrast-100 gradient-tint-50 shadow-4 color-text-contrast-600 rounded" title="Radii"><span class="block icon before:block icon-md" style="--icon-src: var(--ads-radii)"></span></div>
-    <div class="p-xs bg-fill-contrast-100 gradient-tint-50 shadow-4 color-text-contrast-600 rounded" title="Elevation"><span class="block icon before:block icon-md" style="--icon-src: var(--ads-elevation)"></span></div>
-</div> -->
-
 {% include nav.html pages=site.html_pages title=page.title %}
-
 {% include section-end.html %}
 
 <div class="flex-1 flex flex-col gap-md overflow-hidden grid-content">
