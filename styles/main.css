@@ -5818,6 +5818,10 @@ h5+h6 {
             'left'
             'content';
   }
+
+  .grid-content {
+    gap: var(--spacing-xs3);
+  }
 }
 
 .nav-list {
