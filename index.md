@@ -1,7 +1,7 @@
 ---
 title: Tailwind CSS
 layout: base
-toc: true
+nav_order: 1
 ---
 
 {% include section-start.html title='Get started' %}

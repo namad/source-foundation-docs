@@ -42,41 +42,32 @@
 
 {% include section-start.html class="grid-navs" %}
 <h1>Source Design System Foundation</h1>
-<div class="flex flex-1 flex-row gap-base">
+<!-- <div class="flex flex-1 flex-row gap-base">
     <div class="p-xs bg-fill-contrast-100 gradient-tint-50 shadow-4 color-text-contrast-600 rounded" title="Colors"><span class="block icon before:block icon-md" style="--icon-src: var(--ads-colors)"></span></div>
     <div class="p-xs bg-fill-contrast-100 gradient-tint-50 shadow-4 color-text-contrast-600 rounded" title="Spacing"><span class="block icon before:block icon-md" style="--icon-src: var(--ads-spacing)"></span></div>
     <div class="p-xs bg-fill-contrast-100 gradient-tint-50 shadow-4 color-text-contrast-600 rounded" title="Typography"><span class="block icon before:block icon-md" style="--icon-src: var(--ads-typography)"></span></div>
     <div class="p-xs bg-fill-contrast-100 gradient-tint-50 shadow-4 color-text-contrast-600 rounded" title="Radii"><span class="block icon before:block icon-md" style="--icon-src: var(--ads-radii)"></span></div>
     <div class="p-xs bg-fill-contrast-100 gradient-tint-50 shadow-4 color-text-contrast-600 rounded" title="Elevation"><span class="block icon before:block icon-md" style="--icon-src: var(--ads-elevation)"></span></div>
-</div>
-<ul class="flex flex-1 flex-row flex-wrap">
-    <li>
-        <a href="./index.html" class="block rounded px-sm py-minor-xs hover:decoration-none bg-primary-100">TailwindCSS</a>
-    </li>
-    <li>
-        <a href="./index.html" class="block rounded px-sm py-minor-xs hover:decoration-none hover:bg-alt-base-100">CLI Theme Generator</a>
-    </li>
-    <li>
-        <a href="./index.html" class="block rounded px-sm py-minor-xs hover:decoration-none hover:bg-alt-base-100">Figma Theme Generator</a>
-    </li>
-    <li class="flex flex-1 justify-end">
-        <a href="./color-system-guide.html" class="block rounded px-sm py-minor-xs hover:decoration-none hover:bg-alt-base-100">Color System Practical Guide</a>
-    </li>
-</ul>
+</div> -->
+
+{% include nav.html pages=site.html_pages title=page.title %}
+
 {% include section-end.html %}
 
 <div class="flex-1 flex flex-col gap-md overflow-hidden grid-content">
     {{ content | inject_anchors }}
 </div>
 
-<div class="toc sticky top-md pl-sm flex-col gap-sm w-52 grid-right hidden xl:flex" id="TOC">
+<div class="toc sticky top-md pl-sm flex-col gap-sm w-56 grid-right hidden xl:flex" id="TOC">
     <div class="flex flex-row justify-between">
         <h3 class="text-md font-bold">On this page</h3>
         <button class="xl:hidden button-toolbar px-xs4 py-0 self-stretch" id="closeTOCButton">
             <span class="icon icon-x"></span>
         </button>
     </div>
-   {% include toc.html html=content h_min=2 h_max=3 class="toc-list" %}
+    <div class="flex flex-1 overflow-auto">
+        {% include toc.html html=content h_min=2 h_max=3 class="toc-list" %}
+    </div>
 </div>
 
 </div>

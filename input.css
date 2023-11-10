@@ -44,6 +44,7 @@ body {
 
 .grid-layout {
     display: grid;
+    grid-template-columns: auto 1fr auto;
     grid-template-areas:
         'left navs navs'
         'left content right';
@@ -190,14 +191,27 @@ h5+h6 {
 
     .grid-layout {
         grid-gap: var(--spacing-xs3);
+        grid-template-columns: auto;
         grid-template-areas:
-            'navs navs'
-            'left left'
-            'content content';
+            'navs'
+            'left'
+            'content';
     }
 
 }
 
+.nav-list {
+    @apply flex flex-row flex-wrap gap-md;
+}
+
+.nav-list .nav-list-link {
+    display: block;
+    color: var(--text-base-600);
+    padding: var(--spacing-minor-xs) 0;
+}
+.nav-list .active .nav-list-link {
+    color: var(--text-base-action)
+}
 @media (max-width: 400px) {
     body {
         padding: var(--spacing-xs2);
