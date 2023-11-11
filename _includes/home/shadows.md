@@ -28,24 +28,20 @@ Shadow utility offers six elevation levels. examples below use `shadow-utility-s
 You can apply any color with `shadow-{color}` and set shadow opacity with `shadow-opacity-{opacity}` utilities
 
 <div class="flex flex-row flex-wrap gap-md flex-1 justify-center">
-    <div class="min-w-fit flex-1 text-center px-sm py-base bg-accent-green-400 gradient-tint-50 shadow-accent-green-300 shadow-opacity-60 shadow-4 rounded-md">
+    <div class="min-w-fit flex-1 text-center px-sm py-lg bg-accent-green-400 gradient-tint-50 shadow-accent-green-300 shadow-opacity-60 shadow-4 rounded-md">
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-accent-green-300</div>
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-opacity-60</div>
     </div>
-    <div class="min-w-fit flex-1 text-center px-sm py-base bg-accent-teal-400 gradient-tint-50 shadow-accent-teal-300 shadow-opacity-60 shadow-4 rounded-md">
+    <div class="min-w-fit flex-1 text-center px-sm py-lg bg-accent-teal-400 gradient-tint-50 shadow-accent-teal-300 shadow-opacity-60 shadow-4 rounded-md">
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-accent-teal-300</div>
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-opacity-60</div>
     </div>
-    <div class="min-w-fit flex-1 text-center px-sm py-base bg-accent-blue-400 gradient-tint-50 shadow-accent-blue-300 shadow-opacity-60 shadow-4 rounded-md">
+    <div class="min-w-fit flex-1 text-center px-sm py-lg bg-accent-blue-400 gradient-tint-50 shadow-accent-blue-300 shadow-opacity-60 shadow-4 rounded-md">
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-accent-blue-300</div>
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-opacity-60</div>
     </div>
-    <div class="min-w-fit flex-1 text-center px-sm py-base bg-accent-indigo-400 gradient-tint-50 shadow-accent-indigo-300 shadow-opacity-60 shadow-4 rounded-md">
+    <div class="min-w-fit flex-1 text-center px-sm py-lg bg-accent-indigo-400 gradient-tint-50 shadow-accent-indigo-300 shadow-opacity-60 shadow-4 rounded-md">
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-accent-indigo-300</div>
-        <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-opacity-60</div>
-    </div>
-    <div class="min-w-fit flex-1 text-center px-sm py-base bg-accent-purple-400 gradient-tint-50 shadow-accent-purple-300 shadow-opacity-60 shadow-4 rounded-md">
-        <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-accent-purple-300</div>
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-opacity-60</div>
     </div>
 </div>
@@ -55,24 +51,20 @@ Utility class `shadow-multiply` enables `mix-blend-mode: multiply` on shadows.
 <a href="#" data-theme-switch="dark-elevated">Switch theme</a> to see the difference
 
 <div class="flex flex-row flex-wrap gap-md flex-1 justify-center">
-    <div class="min-w-fit flex-1 text-center px-sm py-base bg-accent-green-400 gradient-tint-50 shadow-accent-green-300 shadow-opacity-60 shadow-4 shadow-multiply rounded-md">
+    <div class="min-w-fit flex-1 text-center px-sm py-lg bg-accent-green-400 gradient-tint-50 shadow-accent-green-300 shadow-opacity-60 shadow-4 shadow-multiply rounded-md">
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-accent-green-300</div>
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-opacity-60</div>
     </div>
-    <div class="min-w-fit flex-1 text-center px-sm py-base bg-accent-teal-400 gradient-tint-50 shadow-accent-teal-300 shadow-opacity-60 shadow-4 shadow-multiply rounded-md">
+    <div class="min-w-fit flex-1 text-center px-sm py-lg bg-accent-teal-400 gradient-tint-50 shadow-accent-teal-300 shadow-opacity-60 shadow-4 shadow-multiply rounded-md">
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-accent-teal-300</div>
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-opacity-60</div>
     </div>
-    <div class="min-w-fit flex-1 text-center px-sm py-base bg-accent-blue-400 gradient-tint-50 shadow-accent-blue-300 shadow-opacity-60 shadow-4 shadow-multiply rounded-md">
+    <div class="min-w-fit flex-1 text-center px-sm py-lg bg-accent-blue-400 gradient-tint-50 shadow-accent-blue-300 shadow-opacity-60 shadow-4 shadow-multiply rounded-md">
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-accent-blue-300</div>
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-opacity-60</div>
     </div>
-    <div class="min-w-fit flex-1 text-center px-sm py-base bg-accent-indigo-400 gradient-tint-50 shadow-accent-indigo-300 shadow-opacity-60 shadow-4 shadow-multiply rounded-md">
+    <div class="min-w-fit flex-1 text-center px-sm py-lg bg-accent-indigo-400 gradient-tint-50 shadow-accent-indigo-300 shadow-opacity-60 shadow-4 shadow-multiply rounded-md">
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-accent-indigo-300</div>
-        <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-opacity-60</div>
-    </div>
-    <div class="min-w-fit flex-1 text-center px-sm py-base bg-accent-purple-400 gradient-tint-50 shadow-accent-purple-300 shadow-opacity-60 shadow-4 shadow-multiply rounded-md">
-        <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-accent-purple-300</div>
         <div class="font-mono color-text-contrast-500 rounded-sm text-xs">shadow-opacity-60</div>
     </div>
 </div>

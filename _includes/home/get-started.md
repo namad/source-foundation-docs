@@ -10,26 +10,17 @@ npm i -D source-tailwindcss
 
 
 ### Create source.config.json
-
 {% include code-block-start.html %}
 ```en
 npx source-css init
 ```
 {% include code-block-end.html %}
 
-Create your `./source.config.json` This file lists all the parameters to generate color palettes, typography, radii and spacing tokens
+Run the command above to create your `./source.config.json`. This file has the parameters to generate color palettes, typography, radii and spacing tokens.
 
 ### Create CSS variables
-
-Now you need add CSS file with custom properties. You can either build from your custom
-`./source.config.json` 
-
-The command below will read your `./source.config.json` and ouput CSS variables into the CSS file `./css/variables.css`
-
 {% include code-block-oneliner.html content="npx source-css ./css/variables.css" %}
-
-
-Alternatevely you can use defauls from `source-tailwindcss/source-variables.css`
+The command above will read your `./source.config.json` and create the CSS file `./css/variables.css`.
 
 <a href="https://github.com/namad/source-tw-playground/blob/main/src/source-variables.css" target="_blank">See Default CSS Variables →</a>
 
@@ -47,10 +38,6 @@ Alternatevely you can use defauls from `source-tailwindcss/source-variables.css`
 
 ### Configure TailwindCSS
 #### Option 1. Import preset
-
-<a href="https://github.com/namad/source-tw-playground/blob/main/src/source-preset.js" target="_blank">Source Preset</a> 
-brings all bits together in the most simple way
-
 {% include code-block-start.html caption="tailwind.config.js" %}
 ```js
 module.exports = {
@@ -63,28 +50,12 @@ module.exports = {
 ```
 {% include code-block-end.html %}
 
-{% include code-block-start.html caption="node_moduiles/source-tailwindcss/source-preset.js" %}
-```js
-module.exports = {
-    theme: { ... },
-    colors: [
-        ...
-        "primary-600": "var(--primary-600)",
-        "fill-base-600": "var(--fill-base-600)",
-        "text-base-600": "var(--text-base-600)",
-        ...
-    ]
-}
-```
-{% include code-block-end.html %}
+Import a single <a href="https://github.com/namad/source-tw-playground/blob/main/src/source-preset.js" target="_blank">Source Preset</a> 
+to enable all the features in the most simple way
 
-<a href="https://tailwindcss.com/docs/presets" target="_blank">TailwindCSS Presets →</a>
+<a href="https://tailwindcss.com/docs/presets" target="_blank">Learn more about Tailwind CSS presets →</a>
 
 #### Option 2. Use theme
-Theme gives you more control over plugins, but somehow it compromises Tailwind CSS IntelliSense
-
-<a href="https://tailwindcss.com/docs/theme" target="_blank">TailwindCSS Themes →</a>
-
 {% include code-block-start.html caption="tailwind.config.js" %}
 ```js
 module.exports = {
@@ -102,9 +73,12 @@ module.exports = {
 ```
 {% include code-block-end.html %}
 
-### Set up HTML
-All the values are set with `[data]` atribute that you can apply to any element in your app.
+Theme gives you more control over plugins.
 
+<a href="https://tailwindcss.com/docs/theme" target="_blank">Learn more about Tailwind CSS themes →</a>
+
+
+### Set up HTML
 {% include code-block-start.html caption="index.html" %}
 ```html
 <html data-theme="light" data-radii="base" data-spacing="base" data-typography="base" data-icons="base">
@@ -121,6 +95,8 @@ All the values are set with `[data]` atribute that you can apply to any element 
 </html>
 ```
 {% include code-block-end.html %}
+
+All the values are set with `[data]` atribute that you can apply to any element in your app.
 
 {% include code-block-start.html caption="[data] attribute variants" %}
 <div class="flex flex-row gap-md">

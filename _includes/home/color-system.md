@@ -1,24 +1,8 @@
-Color system delivers seamless dark mode using CSS custom properties.
+Color system delivers seamless dark mode using CSS custom properties (a.k.a. variables).
 Source Design System completely replaces Tailwind colors with Source colors.
 It uses plugins to support CSS variables integration with Tailwind utility classes.
 
-{% include code-block-start.html caption="tailwind.config.js" %}
-```js
-module.exports = {
-    theme: {
-        colors: {
-            ..,
-            "primary-600": "var(--primary-600)",
-            "fill-base-600": "var(--fill-base-600)",
-            "text-base-600": "var(--text-base-600)",
-            ..,
-        }
-    }
-}
-```
-{% include code-block-end.html %}
-
-There are three visual themes that are defined under `[data-theme]` selector in the `source-variables.css` file
+<a href="https://medium.com/user-experience-design-1/designing-colour-system-d9d39f245e01" target="_blank">Learn more about Source Color System →</a>
 
 ### Neutrals
 Neutral colours are the foundation for the visual language that defines the overall tone of your

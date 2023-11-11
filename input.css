@@ -1,4 +1,4 @@
-@import "source-tailwindcss/source-variables.css";
+@import "./styles/variables.css";
 
 @tailwind base;
 @tailwind components;
@@ -196,8 +196,8 @@ h5+h6 {
         grid-template-columns: auto;
         grid-template-areas:
             'navs'
-            'left'
-            'content';
+            'content'
+            'left';
     }
 
     .grid-content {
@@ -226,7 +226,7 @@ h5+h6 {
     inset: calc(-1 * var(--spacing-xs3));
     z-index: -1;
     pointer-events: none;
-    @apply gradient-mix-fill-base-300;
+    @apply gradient-mix-fill-base-300 gradient-angle-0;
 
 }
 @media (max-width: 400px) {
