@@ -4,7 +4,7 @@ module.exports = plugin(function ({ matchUtilities, addUtilities, theme }) {
     matchUtilities(
         {
             'inner-shadow': (value) => ({
-                '--inner-shadow-color': 'var(--utility-shade-100)',
+                '--inner-shadow-color': 'var(--utility-shade-200)',
                 '--inner-shadow-opacity': '100%',
                 '--box-inner-shadow-color': `color-mix(in srgb, var(--inner-shadow-color), transparent calc(100% - var(--inner-shadow-opacity)))`,
                 '--box-inner-shadow': value,
@@ -19,7 +19,7 @@ module.exports = plugin(function ({ matchUtilities, addUtilities, theme }) {
     matchUtilities(
         {
             'shadow': (value) => ({
-                '--shadow-color': 'var(--utility-shade-100)',
+                '--shadow-color': 'var(--utility-shade-200)',
                 '--shadow-opacity': '100%',
                 '--box-shadow-color': `color-mix(in srgb, var(--shadow-color), transparent calc(100% - var(--shadow-opacity)))`,
                 '--box-shadow': value,

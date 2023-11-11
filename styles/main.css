@@ -1444,12 +1444,12 @@ section h5 {
   --border-color: var(--stroke-base-400);
   border-color: var(--border-color);
   background-image: linear-gradient(180deg, var(--alt-contrast-100), var(--alt-contrast-100));
-  --inner-shadow-color: var(--utility-shade-100);
+  --inner-shadow-color: var(--utility-shade-200);
   --inner-shadow-opacity: 100%;
   --box-inner-shadow-color: color-mix(in srgb, var(--inner-shadow-color), transparent calc(100% - var(--inner-shadow-opacity)));
   --box-inner-shadow: inset 0px 2px 2px -1px var(--box-inner-shadow-color);
   box-shadow: var(--box-inner-shadow);
-  --shadow-color: var(--utility-shade-100);
+  --shadow-color: var(--utility-shade-200);
   --shadow-opacity: 100%;
   --box-shadow-color: color-mix(in srgb, var(--shadow-color), transparent calc(100% - var(--shadow-opacity)));
   --box-shadow: 0px 1px 0.5px 0px var(--box-shadow-color);
@@ -1480,12 +1480,12 @@ section h5 {
   --border-color: var(--stroke-base-400);
   border-color: var(--border-color);
   background-image: linear-gradient(180deg, var(--alt-contrast-100), var(--alt-contrast-100));
-  --inner-shadow-color: var(--utility-shade-100);
+  --inner-shadow-color: var(--utility-shade-200);
   --inner-shadow-opacity: 100%;
   --box-inner-shadow-color: color-mix(in srgb, var(--inner-shadow-color), transparent calc(100% - var(--inner-shadow-opacity)));
   --box-inner-shadow: inset 0px 2px 2px -1px var(--box-inner-shadow-color);
   box-shadow: var(--box-inner-shadow);
-  --shadow-color: var(--utility-shade-100);
+  --shadow-color: var(--utility-shade-200);
   --shadow-opacity: 100%;
   --box-shadow-color: color-mix(in srgb, var(--shadow-color), transparent calc(100% - var(--shadow-opacity)));
   --box-shadow: 0px 1px 0.5px 0px var(--box-shadow-color);
@@ -3166,7 +3166,7 @@ p code,
 }
 
 .inner-shadow-1 {
-  --inner-shadow-color: var(--utility-shade-100);
+  --inner-shadow-color: var(--utility-shade-200);
   --inner-shadow-opacity: 100%;
   --box-inner-shadow-color: color-mix(in srgb, var(--inner-shadow-color), transparent calc(100% - var(--inner-shadow-opacity)));
   --box-inner-shadow: inset 0px 1px 0px 0px var(--box-inner-shadow-color);
@@ -3174,7 +3174,7 @@ p code,
 }
 
 .inner-shadow-2 {
-  --inner-shadow-color: var(--utility-shade-100);
+  --inner-shadow-color: var(--utility-shade-200);
   --inner-shadow-opacity: 100%;
   --box-inner-shadow-color: color-mix(in srgb, var(--inner-shadow-color), transparent calc(100% - var(--inner-shadow-opacity)));
   --box-inner-shadow: inset 0px 2px 2px -1px var(--box-inner-shadow-color);
@@ -3182,7 +3182,7 @@ p code,
 }
 
 .inner-shadow-3 {
-  --inner-shadow-color: var(--utility-shade-100);
+  --inner-shadow-color: var(--utility-shade-200);
   --inner-shadow-opacity: 100%;
   --box-inner-shadow-color: color-mix(in srgb, var(--inner-shadow-color), transparent calc(100% - var(--inner-shadow-opacity)));
   --box-inner-shadow: inset 0px 6px 3px -4px var(--box-inner-shadow-color);
@@ -3190,7 +3190,7 @@ p code,
 }
 
 .inner-shadow-4 {
-  --inner-shadow-color: var(--utility-shade-100);
+  --inner-shadow-color: var(--utility-shade-200);
   --inner-shadow-opacity: 100%;
   --box-inner-shadow-color: color-mix(in srgb, var(--inner-shadow-color), transparent calc(100% - var(--inner-shadow-opacity)));
   --box-inner-shadow: inset 0px 8px 4px -2px var(--box-inner-shadow-color);
@@ -3198,7 +3198,7 @@ p code,
 }
 
 .shadow-1 {
-  --shadow-color: var(--utility-shade-100);
+  --shadow-color: var(--utility-shade-200);
   --shadow-opacity: 100%;
   --box-shadow-color: color-mix(in srgb, var(--shadow-color), transparent calc(100% - var(--shadow-opacity)));
   --box-shadow: 0px 1px 0.5px 0px var(--box-shadow-color);
@@ -3206,7 +3206,7 @@ p code,
 }
 
 .shadow-2 {
-  --shadow-color: var(--utility-shade-100);
+  --shadow-color: var(--utility-shade-200);
   --shadow-opacity: 100%;
   --box-shadow-color: color-mix(in srgb, var(--shadow-color), transparent calc(100% - var(--shadow-opacity)));
   --box-shadow: 0px 2px 3px -1px var(--box-shadow-color), 0px 1px 2px -1px var(--box-shadow-color);
@@ -3214,7 +3214,7 @@ p code,
 }
 
 .shadow-3 {
-  --shadow-color: var(--utility-shade-100);
+  --shadow-color: var(--utility-shade-200);
   --shadow-opacity: 100%;
   --box-shadow-color: color-mix(in srgb, var(--shadow-color), transparent calc(100% - var(--shadow-opacity)));
   --box-shadow: 0px 2px 4px -2px var(--box-shadow-color), 0px 4px 6px -1px var(--box-shadow-color);
@@ -3222,7 +3222,7 @@ p code,
 }
 
 .shadow-4 {
-  --shadow-color: var(--utility-shade-100);
+  --shadow-color: var(--utility-shade-200);
   --shadow-opacity: 100%;
   --box-shadow-color: color-mix(in srgb, var(--shadow-color), transparent calc(100% - var(--shadow-opacity)));
   --box-shadow: 0px 4px 6px -4px var(--box-shadow-color), 0px 10px 15px -3px var(--box-shadow-color);
@@ -3230,7 +3230,7 @@ p code,
 }
 
 .shadow-5 {
-  --shadow-color: var(--utility-shade-100);
+  --shadow-color: var(--utility-shade-200);
   --shadow-opacity: 100%;
   --box-shadow-color: color-mix(in srgb, var(--shadow-color), transparent calc(100% - var(--shadow-opacity)));
   --box-shadow: 0px 8px 10px -6px var(--box-shadow-color), 0px 20px 25px -5px var(--box-shadow-color);
@@ -3238,7 +3238,7 @@ p code,
 }
 
 .shadow-6 {
-  --shadow-color: var(--utility-shade-100);
+  --shadow-color: var(--utility-shade-200);
   --shadow-opacity: 100%;
   --box-shadow-color: color-mix(in srgb, var(--shadow-color), transparent calc(100% - var(--shadow-opacity)));
   --box-shadow: 0px 16px 10px -7px var(--box-shadow-color), 0px 24px 28px -8px var(--box-shadow-color), 0px 24px 48px -10px var(--box-shadow-color);
@@ -5824,7 +5824,6 @@ h5+h6 {
     background-color: var(--bg-color);
     --border-color: var(--alt-base-300);
     border-color: var(--border-color);
-    --shadow-color: var(--utility-shade-100);
     --box-shadow-color: color-mix(in srgb, var(--shadow-color), transparent calc(100% - var(--shadow-opacity)));
     --box-shadow: 0px 8px 10px -6px var(--box-shadow-color), 0px 20px 25px -5px var(--box-shadow-color);
     box-shadow: var(--box-shadow);
@@ -5865,6 +5864,25 @@ h5+h6 {
   body {
     padding: var(--spacing-xs2);
   }
+}
+
+.hover\:shadow-3:hover {
+  --tw-shadow: 0px 2px 4px -2px var(--box-shadow-color), 0px 4px 6px -1px var(--box-shadow-color);
+  --tw-shadow-colored: 0px 2px 4px -2px var(--tw-shadow-color), 0px 4px 6px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hover\:bg-fill-base-100:hover {
+  --bg-color: var(--fill-base-100);
+  background-color: var(--bg-color);
+}
+
+.hover\:shadow-3:hover {
+  --shadow-color: var(--utility-shade-200);
+  --shadow-opacity: 100%;
+  --box-shadow-color: color-mix(in srgb, var(--shadow-color), transparent calc(100% - var(--shadow-opacity)));
+  --box-shadow: 0px 2px 4px -2px var(--box-shadow-color), 0px 4px 6px -1px var(--box-shadow-color);
+  box-shadow: var(--box-shadow);
 }
 
 .group:hover .group-hover\:color-opacity-100 {
