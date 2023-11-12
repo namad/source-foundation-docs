@@ -6,7 +6,8 @@ nav_order: 2
 
 {% include section-start.html title='Source Foundation CLI' %}
 
-This command line tool converts `./source.config.json` into `./css/variables.css` so you can use custom properties with [Tailwind CSS]({% link index.md %})
+This command line tool converts `./source.config.json` into `./css/variables.css` 
+so you can use custom properties with [Tailwind CSS](./index.md)
 
 <div class="flex flex-row flex-wrap gap-md">
 {% include code-block-start.html class="flex-1 min-w-[342px]" caption="./source.config.json" %}

@@ -8,7 +8,7 @@ npm i -D source-tailwindcss
 ```
 {% include code-block-end.html %}
 
-[Learn more about Source Foundation CLI →]({% link cli-color-generator.md %})
+[Learn more about Source Foundation CLI →](./cli-color-generator.html)
 
 
 ### Create source.config.json
