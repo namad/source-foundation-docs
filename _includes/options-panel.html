@@ -47,3 +47,35 @@
         </div>
     </div>
 </div>
+
+<script>
+const savedState = localStorage.getItem("sds-settings");
+
+const state = {
+    theme: "light",
+    radii: "base",
+    spacing: "base",
+    typography: "base",
+    icons: "base",
+    ...(savedState ? JSON.parse(savedState) : {})
+};
+
+const conrolRadios = document.getElementById('controls').querySelectorAll('input[type=radio]');
+
+conrolRadios.forEach(el => {
+    const name = el.name;
+    const value = el.value;
+    const dataset = document.documentElement.dataset[name];
+
+    if (state[name] === value) {
+        el.checked = state[name] === value;
+        document.documentElement.dataset[name] = value;
+    }
+
+    el.addEventListener('click', (e) => {
+        document.documentElement.dataset[name] = value;
+        state[name] = value;
+        localStorage.setItem("sds-settings", JSON.stringify(state));
+    })
+});
+</script>

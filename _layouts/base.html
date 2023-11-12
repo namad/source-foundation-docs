@@ -67,14 +67,6 @@
 
 
 <script>
-document.getElementById('controls').querySelectorAll('input[type=radio]').forEach(el => {
-    el.addEventListener('click', (e) => {
-        const name = el.name;
-        const value = el.value;
-        document.documentElement.dataset[name] = value;
-    })
-});
-
 document.getElementById('openOptionsPanelButton').addEventListener('click', (e) => {
     document.getElementById('controls').classList.add('show')
 })
