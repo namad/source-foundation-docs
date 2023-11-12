@@ -371,9 +371,10 @@ h5+h6 {
 
     .radio-segment input[type=radio]:checked+.container {
         background-color: var(--utility-tint-600);
-        outline: 1px solid var(--utility-shade-100);
-        box-shadow: var(--elevation-2);
+        outline: 1px solid var(--utility-shade-200);
         opacity: 1;
+
+        @apply shadow-2;
     }
 
     .radio-segment input[type=radio]:focus-visible+.container {
