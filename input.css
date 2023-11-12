@@ -20,7 +20,7 @@
     --ads-spacing: url('data:image/svg+xml,<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M56 8C52.6863 8 50 10.6863 50 14V50C50 53.3137 52.6863 56 56 56H64V52H56C54.8954 52 54 51.1046 54 50V14C54 12.8954 54.8954 12 56 12H64V8H56Z" fill="white"/><path d="M14 14C14 10.6863 11.3137 8 8 8H0V12H8C9.10457 12 10 12.8954 10 14V50C10 51.1046 9.10457 52 8 52H0V56H8C11.3137 56 14 53.3137 14 50V14Z" fill="white"/><path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M27.2374 24.7626C27.9208 25.446 27.9208 26.554 27.2374 27.2374L24.2249 30.25H39.7751L36.7626 27.2374C36.0791 26.554 36.0791 25.446 36.7626 24.7626C37.446 24.0791 38.554 24.0791 39.2374 24.7626L46.4749 32L39.2374 39.2374C38.554 39.9209 37.446 39.9209 36.7626 39.2374C36.0791 38.554 36.0791 37.446 36.7626 36.7626L39.7751 33.75H24.2249L27.2374 36.7626C27.9208 37.446 27.9208 38.554 27.2374 39.2374C26.554 39.9209 25.446 39.9209 24.7626 39.2374L17.5251 32L24.7626 24.7626C25.446 24.0791 26.554 24.0791 27.2374 24.7626Z" fill="white"/></svg>');
     --ads-typography: url('data:image/svg+xml,<svg viewBox="0 0 64 66" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.3888 9.49512L32.1549 51.5378C32.6028 52.7324 31.9976 54.0639 30.803 54.5119C29.6085 54.9598 28.277 54.3546 27.829 53.16L23.8567 42.5673H8.92092L4.94864 53.16C4.50069 54.3546 3.16918 54.9598 1.97463 54.5119C0.780081 54.0639 0.174848 52.7324 0.622803 51.5378L16.3888 9.49512ZM10.6534 37.9473H22.1242L16.3888 22.6529L10.6534 37.9473Z" fill="white"/><path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M50.4198 28.9628C46.1324 28.9628 42.1496 33.0428 42.1496 38.7444C42.1496 44.4461 46.1324 48.5261 50.4198 48.5261C54.6728 48.5261 58.626 44.5113 58.6892 38.8815V38.6074C58.626 32.9775 54.6728 28.9628 50.4198 28.9628ZM58.6892 27.6844C56.4888 25.6163 53.6344 24.3428 50.4198 24.3428C43.0206 24.3428 37.5296 31.09 37.5296 38.7444C37.5296 46.3988 43.0206 53.1461 50.4198 53.1461C53.6344 53.1461 56.4888 51.8726 58.6892 49.8044V53.859C58.6892 57.2705 55.3334 60.6177 50.419 60.6177C47.2539 60.6177 44.6209 59.1685 43.2401 57.2043C42.5064 56.1606 41.0655 55.9093 40.0218 56.643C38.9781 57.3767 38.7268 58.8175 39.4605 59.8612C41.7825 63.1642 45.8868 65.2377 50.419 65.2377C57.1912 65.2377 63.3092 60.4645 63.3092 53.859V38.9013C63.3097 38.849 63.31 38.7967 63.31 38.7444C63.31 38.6921 63.3097 38.6398 63.3092 38.5876V26.6528C63.3092 25.377 62.275 24.3428 60.9992 24.3428C59.7234 24.3428 58.6892 25.377 58.6892 26.6528V27.6844Z" fill="white"/></svg>');
     --ads-colors: url('data:image/svg+xml,<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.5"><path d="M45.6568 50.3431L54.3431 41.6569C54.5002 41.4998 54.6493 41.3379 54.7905 41.1716H25.1716L34.3431 50.3431C37.4673 53.4673 42.5327 53.4673 45.6568 50.3431Z" fill="white"/><path d="M6.67144 54.0215L6.69842 54.1429C7.45892 57.5651 10.4943 60 14 60C17.5057 60 20.5411 57.5651 21.3016 54.1429L21.3286 54.0215C21.7592 52.0838 21.4182 50.0545 20.3778 48.364L14 38L7.62218 48.364C6.58185 50.0545 6.24083 52.0838 6.67144 54.0215Z" fill="white"/></g><path fill-rule="evenodd" clip-rule="evenodd" d="M39.75 5.77539V13.2754L55.5806 29.106C59.3882 32.9136 59.3882 39.0869 55.5806 42.8946L46.8943 51.5809C43.0867 55.3885 36.9133 55.3885 33.1057 51.5808L13.5251 32.0003L39.75 5.77539ZM36 14.4751L18.4749 32.0003L35.5806 49.106C38.0214 51.5467 41.9786 51.5468 44.4194 49.106L53.1057 40.4197C55.5465 37.9789 55.5465 34.0216 53.1057 31.5808L36 14.4751Z" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M55.2374 15.2377C55.9209 14.5543 55.9209 13.4462 55.2374 12.7628C54.554 12.0794 53.446 12.0794 52.7626 12.7628L39.6364 25.889C38.8467 25.4808 37.9503 25.2503 37 25.2503C33.8244 25.2503 31.25 27.8246 31.25 31.0003C31.25 34.1759 33.8244 36.7503 37 36.7503C40.1756 36.7503 42.75 34.1759 42.75 31.0003C42.75 30.05 42.5195 29.1536 42.1113 28.3638L55.2374 15.2377ZM34.75 31.0003C34.75 29.7576 35.7574 28.7503 37 28.7503C38.2426 28.7503 39.25 29.7576 39.25 31.0003C39.25 32.2429 38.2426 33.2503 37 33.2503C35.7574 33.2503 34.75 32.2429 34.75 31.0003Z" fill="white"/></svg>');
-
+    scroll-behavior: smooth;
 }
 
 :focus-visible {
@@ -39,6 +39,7 @@ a:hover {
 }
 
 body {
+
     @apply bg-fill-base-300 p-md color-text-base-600 text-base;
 }
 
@@ -164,15 +165,19 @@ h5+h6 {
 
 .icons-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(160px, 1fr));
-  grid-gap: 8px;
+  grid-template-columns: repeat(auto-fit,minmax(160px, 1fr));
+  grid-auto-rows: min-content;
+  grid-gap: var(--spacing-sm);
     /* @apply flex flex-row flex-wrap flex-1 gap-1; */
 }
 
-.icons-grid .icon {
+.icon-size-inherit .icon {
     --icon-size: inherit;
 }
 
+#iconSizeGrid {
+    grid-template-columns: repeat(auto-fill,minmax(160px, 1fr));
+}
 @media (max-width: 1280px) {
     body {
         padding: var(--spacing-xs3);
@@ -331,6 +336,49 @@ h5+h6 {
     p code,
     .code {
         @apply inline text-sm bg-alt-base-200 px-xs3 py-minor-xs3 rounded-sm font-mono;
+    }
+
+    .radio-segment {
+        display: flex;
+        flex-flow: row;
+        background-color: var(--alt-base-100);
+        border-radius: var(--radii-base);
+        outline: solid var(--alt-base-100);
+    }
+
+    .radio-segment input[type=radio] {
+        opacity: 0;
+        position: absolute;
+    }
+
+    .radio-segment .container {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+        gap: var(--spacing-xs2);
+        padding: var(--spacing-minor-xs) var(--spacing-sm);
+        min-height: var(--line-height-base);
+        min-width: var(--line-height-base);
+        border-radius: var(--radii-base);
+        opacity: 0.8;
+    }
+
+    .radio-segment .container:hover {
+        background-color: var(--alt-base-100);
+        opacity: 1;
+    }
+
+    .radio-segment input[type=radio]:checked+.container {
+        background-color: var(--utility-tint-600);
+        outline: 1px solid var(--utility-shade-100);
+        box-shadow: var(--elevation-2);
+        opacity: 1;
+    }
+
+    .radio-segment input[type=radio]:focus-visible+.container {
+        outline: 2px auto var(--primary-500);
+        outline-offset: 2px;
     }
 }
 
