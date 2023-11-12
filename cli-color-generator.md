@@ -8,8 +8,8 @@ nav_order: 2
 
 This command line tool converts `./source.config.json` into `./css/variables.css` so you can use custom properties with [Tailwind CSS]({% link index.md %})
 
-<div class="flex flex-row gap-md">
-{% include code-block-start.html class="flex-1" caption="./source.config.json" %}
+<div class="flex flex-row flex-wrap gap-md">
+{% include code-block-start.html class="flex-1 min-w-[342px]" caption="./source.config.json" %}
 ```js
 {
     "hue": 190,
@@ -28,7 +28,7 @@ This command line tool converts `./source.config.json` into `./css/variables.css
 
 ```
 {% include code-block-end.html %}
-{% include code-block-start.html class="flex-1" caption="./css/variables.css" %}
+{% include code-block-start.html class="flex-1 min-w-[342px]" caption="./css/variables.css" %}
 ```css
 [data-theme=light], .theme-light {
     --accent-blue-100: hsla(194.4,84.03%,46.67%,0.125);

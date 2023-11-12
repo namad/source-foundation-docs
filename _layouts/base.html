@@ -74,13 +74,6 @@ document.getElementById('controls').querySelectorAll('input[type=radio]').forEac
         document.documentElement.dataset[name] = value;
     })
 });
-document.getElementById('iconSizeControl').querySelectorAll('input[type=radio]').forEach(el => {
-    el.addEventListener('click', (e) => {
-        const name = el.name;
-        const value = el.value;
-        document.getElementById('iconSet').style.setProperty('--icon-size', `var(--icon-size-${value})`)
-    })
-});
 
 document.getElementById('openOptionsPanelButton').addEventListener('click', (e) => {
     document.getElementById('controls').classList.add('show')

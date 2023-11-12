@@ -35,5 +35,13 @@ well recognised style. It was refined for lower DPI screens and extended with fi
         </span>
     </label>
 </div>
-
+<script>
+document.getElementById('iconSizeControl').querySelectorAll('input[type=radio]').forEach(el => {
+    el.addEventListener('click', (e) => {
+        const name = el.name;
+        const value = el.value;
+        document.getElementById('iconSet').style.setProperty('--icon-size', `var(--icon-size-${value})`)
+    })
+});
+</script>
 {% include home/icon-names.html %}

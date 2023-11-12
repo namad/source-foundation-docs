@@ -1976,6 +1976,14 @@ p code,
   min-width: fit-content;
 }
 
+.min-w-\[342\] {
+  min-width: 342;
+}
+
+.min-w-\[342px\] {
+  min-width: 342px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
