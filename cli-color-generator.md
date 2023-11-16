@@ -112,7 +112,7 @@ There are three parameters that control how your neutrals feel.
 <a href="https://codepen.io/oxn-krtv/full/ExOwLBz" target="_blank">See example on CodePen →</a>
 
 #### Accents
-Each accent is defined with tree values. The color is defined by its initial HUE value. 
+The color is defined by its initial HUE value. 
 {% include code-block-start.html class="min-w-[342px]" caption="./source.config.json" %}
 ```js
 {
