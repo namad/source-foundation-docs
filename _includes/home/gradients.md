@@ -3,7 +3,7 @@
 {% include code-block-onetag.html tag="div" content="gradient-tint-{opacity} gradient-angle-{angle}" %}
 
 Tint gradient makes a gradient on top of any color using `background-blend-mode: overlay`
-By default it creates tint on top of the surface, you can change graient andgle with `gradient-angle`
+By default it creates tint on top of the surface, you can change gradient angle with `gradient-angle`
 
 
 Examples below demonstrate `gradient-tint-50` on top of different accents

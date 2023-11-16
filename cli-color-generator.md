@@ -51,7 +51,7 @@ so you can use custom properties with [Tailwind CSS](./index.md)
 {% include code-block-end.html %}
 </div>
 
-## How it works
+## Get started
 
 ### Install npm package
 
@@ -89,4 +89,89 @@ The command above will read your `./source.config.json` and create the CSS file 
 @tailwind utilities;
 ```
 {% include code-block-end.html %}
+{% include section-end.html %}
+
+
+{% include section-start.html title='How it works' %}
+### Colors
+#### Neutrals
+
+There are three parameters that control how your neutrals feel.
+
+{% include code-block-start.html class="flex-1 min-w-[342px]" caption="./source.config.json" %}
+```js
+{
+    "hue":        190,   // Number from 0 to 360
+    "saturation": 0.2,   // Number from 0.0 to 1.0
+    "distance":   0.02,  // One of three values 0.02 | 0.03 | 0.04
+}
+
+```
+{% include code-block-end.html %}
+
+<a href="https://codepen.io/oxn-krtv/full/ExOwLBz" target="_blank">See example on CodePen →</a>
+
+#### Accents
+Each accent is defined with tree values. The color is defined by its initial HUE value. 
+{% include code-block-start.html class="min-w-[342px]" caption="./source.config.json" %}
+```js
+{
+    "red":    4,
+    "amber":  25,
+    "brown":  33,
+    "green":  130,
+    "teal":   180,
+    "blue":   210,
+    "indigo": 240,
+    "violet": 260,
+    "purple": 280,
+    "pink":   340,
+}
+```
+{% include code-block-end.html %}
+
+To generate shades there are three additional parameters.
+
+{% include code-block-start.html class="min-w-[342px]" caption="./source.config.json" %}
+```js
+{
+    "accentSaturation":   0.90,  // sets overal saturation
+    "accentMaxLuminance": 0.45,  // lightest shade
+    "accentMidLuminance": 0.18,  // base shade, 18% luminance will make 4.5 : 1 contrast ratio 
+    "accentMinLuminance": 0.10,  // the darkest shade
+}
+```
+{% include code-block-end.html %}
+
+<a href="https://codepen.io/oxn-krtv/full/ExOwmaq" target="_blank">See example on CodePen →</a>
+
+#### Semantics
+
+Assign accents for semantics by name.
+
+{% include code-block-start.html class="min-w-[342px]" caption="./source.config.json" %}
+```js
+{
+    "primary": "blue",
+    "info":    "teal",
+    "success": "green",
+    "warning": "amber",
+    "danger":  "red",
+}
+```
+{% include code-block-end.html %}
+
+### Typography
+Overall typography scale is set with `typeScale` parameter. 
+
+{% include code-block-start.html class="min-w-[342px]" caption="./source.config.json" %}
+```js
+{
+    "typeScale":  "majorThird" | "minorThird" | "majorSecond"
+}
+```
+{% include code-block-end.html %}
+
+<a href="https://designcode.io/typographic-scales" target="_blank">Learn more about typographic scale →</a>
+
 {% include section-end.html %}
