@@ -130,7 +130,7 @@ The color is defined by its initial HUE value.
 ```
 {% include code-block-end.html %}
 
-To generate shades there are three additional parameters.
+To generate shades there are four additional parameters.
 
 {% include code-block-start.html class="min-w-[342px]" caption="./source.config.json" %}
 ```js
