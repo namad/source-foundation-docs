@@ -94,6 +94,9 @@ The command above will read your `./source.config.json` and create the CSS file 
 
 {% include section-start.html title='How it works' %}
 ### Colors
+
+Both neutrals and accents use global colour values that are dynamically generated using parameters from the config file. Design tokens reference these values as ‘{global.grey-100}’ and ‘{global.accent.red.200}’ respectively.
+
 #### Neutrals
 
 There are three parameters that control how your neutrals feel.
