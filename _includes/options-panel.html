@@ -4,7 +4,7 @@
         <button class="xl:hidden button-toolbar px-xs4 py-0 self-stretch" id="closeOptionsPanelButton">
             <span class="icon icon-x"></span> 
         </button>
-    </div>
+    </div>  
     <div class="px-md pb-minor-md flex flex-1 flex-col gap-base overflow-auto">
         <div class="flex flex-col gap-minor-sm">
             <div class="text-base font-bold flex justify-between items-baseline">Theme <span class="text-sm text-right font-normal color-text-base-500 color-opacity-50 group-hover:color-opacity-100">[data-theme]</span></div>
@@ -12,6 +12,17 @@
                 {% include radio-button.html name="theme" caption="Light" value="light" checked="true" %}
                 {% include radio-button.html name="theme" caption="Dark Elevated" value="dark-elevated" %}
                 {% include radio-button.html name="theme" caption="Dark Deep" value="dark-base" %}
+            </div>
+        </div>
+        <div class="flex flex-col gap-minor-sm">
+            <div class="text-base font-bold flex justify-between items-baseline">Brand <span class="text-sm text-right font-normal color-text-base-500 color-opacity-50 group-hover:color-opacity-100">[data-brand]</span></div>
+            <div class="flex flex-col gap-xs">
+                {% include radio-button.html name="brand" caption="Amber" value="amber" %}
+                {% include radio-button.html name="brand" caption="Teal" value="teal" %}
+                {% include radio-button.html name="brand" caption="Blue" value="blue" checked="true" %}
+                {% include radio-button.html name="brand" caption="Royal Blue" value="royal-blue"  %}
+                {% include radio-button.html name="brand" caption="Indigo" value="indigo" %}
+                {% include radio-button.html name="brand" caption="Pink" value="pink" %}
             </div>
         </div>
         <div class="flex flex-col gap-minor-sm">
@@ -31,11 +42,30 @@
             </div>
         </div>
         <div class="flex flex-col gap-minor-sm">
+            <div class="text-base font-bold flex justify-between items-baseline">Type Scale <span class="text-sm text-right font-normal color-text-base-500 color-opacity-50 group-hover:color-opacity-100">[data-typescale]</span></div>
+            <div class="flex flex-col gap-xs">
+                {% include radio-button.html name="typescale" caption="Major Third" value="major-third" %}
+                {% include radio-button.html name="typescale" caption="Minor Third" value="minor-third" checked="true" %}
+                {% include radio-button.html name="typescale" caption="Major Second" value="major-second" %}
+            </div>
+        </div>
+        <div class="flex flex-col gap-minor-sm">
             <div class="text-base font-bold flex justify-between gap-4 items-baseline">Text Size <span class="text-sm text-right font-normal color-text-base-500 color-opacity-50 group-hover:color-opacity-100">[data-typography]</span></div>
             <div class="flex flex-col gap-xs">
                 {% include radio-button.html name="typography" caption="Compact" value="compact"%}
                 {% include radio-button.html name="typography" caption="Base" value="base" checked="true" %}
                 {% include radio-button.html name="typography" caption="Large" value="large" %}           
+            </div>
+        </div>
+        <div class="flex flex-col gap-minor-sm">
+            <div class="text-base font-bold flex justify-between gap-4 items-baseline">Font<span class="text-sm text-right font-normal color-text-base-500 color-opacity-50 group-hover:color-opacity-100">[data-font]</span></div>
+            <div class="flex flex-col gap-xs">
+                {% include radio-button.html name="font" caption="System" value="system" checked="true" %}
+                {% include radio-button.html name="font" caption="Inter" value="inter"%}
+                {% include radio-button.html name="font" caption="Lato" value="lato" %}
+                {% include radio-button.html name="font" caption="Open Sans" value="open-sans" %}           
+                {% include radio-button.html name="font" caption="DM Sans" value="dm-sans" %}           
+                {% include radio-button.html name="font" caption="Montserrat" value="montserrat" %}           
             </div>
         </div>
         <div class="flex flex-col gap-minor-sm">

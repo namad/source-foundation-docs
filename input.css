@@ -1,4 +1,35 @@
 @import "./styles/variables.css";
+@import "./styles/variables-amber.css";
+@import "./styles/variables-indigo.css";
+@import "./styles/variables-royal-blue.css";
+@import "./styles/variables-teal.css";
+@import "./styles/variables-pink.css";
+@import "./styles/variables-major-second.css";
+@import "./styles/variables-major-third.css";
+@import "./styles/variables-minor-third.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter');
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
+[data-font=inter] {
+    font-family: Inter;
+}
+[data-font=lato] {
+    font-family: Lato;
+}
+[data-font=open-sans] {
+    font-family: "Open Sans";
+}
+[data-font=dm-sans] {
+    font-family: "DM Sans";
+}
+
+[data-font=montserrat] {
+    font-family: "Montserrat";
+}
 
 @tailwind base;
 @tailwind components;
@@ -145,7 +176,7 @@ h5+h6 {
 
 .nav-list .nav-list-link {
     display: block;
-    color: var(--text-base-600);
+    color: var(--text-base-500);
     padding: var(--spacing-minor-xs) 0;
 }
 .nav-list .active .nav-list-link {
@@ -267,6 +298,10 @@ h5+h6 {
 
     section h5 {
         @apply text-md font-bold;
+    }
+
+    section p {
+        line-height: var(--line-height-md);
     }
 
     .button-default {

@@ -98,15 +98,12 @@ The command above will read your `./source.config.json` and create the CSS file 
 
 Global Colours are a set of swatches that define a visual language for an application. Never exposed directly, globals are the source of the colour system.
 
-All global colour values are dynamically generated using parameters from the config file. System colour tokens reference these values as `{global.grey-100}` and `{global.accent.red.200}` respectively.
-
-During the build time global colors replaced with stored values. For example, `$value: {global.grey-98}` becomes `$value: hsl(200deg 9% 98%)`.  
-
-You can change colour opacity with `rbga({global.grey-98}, 0.65)` which resolves to `hsla(200deg 9% 98% / 65%)`
 
 ### System colours
 
 #### Neutrals
+
+There is global colour plette that is dynamically generated using parameters from the config file. All neutral colours reference these values as `{global.grey-100} ... {global.grey-4}`
 
 There are three parameters that control how your neutrals feel.
 
@@ -123,7 +120,13 @@ There are three parameters that control how your neutrals feel.
 
 <a href="https://codepen.io/oxn-krtv/full/ExOwLBz" target="_blank">See example on CodePen →</a>
 
+During the build time global colors replaced with stored values. For example, `$value: {global.grey-98}` becomes `$value: hsl(200deg 9% 98%)`.
+You can change colour opacity with `rbga({global.grey-98}, 0.65)` which resolves to `hsla(200deg 9% 98% / 65%)`.
+
 #### Accents
+
+There are global accents too! There is a sligntly wider set of parameters, but it's the same replaceable moduloe. Accents also dynamically generated using parameters from the config file. All neutral colours reference these values as `{global.grey-100} ... {global.grey-4}`
+
 The color is defined by its initial HUE value. 
 {% include code-block-start.html class="min-w-[342px]" caption="./source.config.json" %}
 ```js
