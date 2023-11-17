@@ -97,6 +97,8 @@ The command above will read your `./source.config.json` and create the CSS file 
 
 Both neutrals and accents use global colour values that are dynamically generated using parameters from the config file. Design tokens reference these values as `{global.grey-100}` and `{global.accent.red.200}` respectively.
 
+During the build time global colors replaced with stored values. For example, `$value: {global.grey-98}` becomes `$value: hsl(200deg 9% 98%)`.  You can change colour opacity with `rbga({global.grey-98}, 0.65)` which resolves to`hsla(200deg 9% 98% / 65%)`
+
 #### Neutrals
 
 There are three parameters that control how your neutrals feel.
