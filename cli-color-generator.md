@@ -170,7 +170,7 @@ Semantic colours reference values from the accents.
 {% include code-block-end.html %}
 
 ### Typography
-Overall typography scale is set with `typeScale` parameter. There are [three pre-calculated](https://github.com/namad/source-tokens/tree/main/tokens/typography) typography scales where values are rounded to the nearest integer that is even to four. This way text fits into 4px grid
+Typography scale is set with `typeScale` parameter. There are [three pre-calculated](https://github.com/namad/source-tokens/tree/main/tokens/typography) typography scales where values are rounded to the nearest integer that is even to four. This way text fits into 4px grid
 
 {% include code-block-start.html class="min-w-[342px]" caption="./source.config.json" %}
 ```js
@@ -183,6 +183,10 @@ Overall typography scale is set with `typeScale` parameter. There are [three pre
 <a href="https://designcode.io/typographic-scales" target="_blank">Learn more about typographic scale →</a>
 
 ### Spacing & radii
+
+Both spacing and radii use sets of pre-calculated values
+
+<a href="https://github.com/namad/source-tokens/tree/main/tokens/radii" target="_blank">Radii tokens →</a> <span class="inline-block w-2"></span> <a href="https://github.com/namad/source-tokens/tree/main/tokens/spacing" target="_blank">Spacing tokens →</a>
 
 {% include section-end.html %}
 
