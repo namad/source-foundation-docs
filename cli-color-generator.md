@@ -182,7 +182,8 @@ Overall typography scale is set with `typeScale` parameter. There are [three pre
 
 <a href="https://designcode.io/typographic-scales" target="_blank">Learn more about typographic scale →</a>
 
+### Spacing & radii
+
 {% include section-end.html %}
 
-### Spacing & radii
 
