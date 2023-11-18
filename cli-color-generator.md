@@ -94,18 +94,10 @@ The command above will read your `./source.config.json` and create the CSS file 
 
 {% include section-start.html title='How it works' %}
 
-### Global colours
-
-Global Colours are a set of swatches that define a visual language for an application. Never exposed directly, globals are the source of the colour system.
-
-
-### System colours
+### Colours
 
 #### Neutrals
-
-There is global colour plette that is dynamically generated using parameters from the config file. All neutral colours reference these values as `{global.grey-100} ... {global.grey-4}`
-
-There are three parameters that control how your neutrals feel.
+Neutral colours are made with these parameters. Hue and saturation to set the tone and distance define the difference between adjacent shades.
 
 {% include code-block-start.html class="flex-1 min-w-[342px]" caption="./source.config.json" %}
 ```js
@@ -120,14 +112,11 @@ There are three parameters that control how your neutrals feel.
 
 <a href="https://codepen.io/oxn-krtv/full/ExOwLBz" target="_blank">See example on CodePen →</a>
 
-During the build time global colors replaced with stored values. For example, `$value: {global.grey-98}` becomes `$value: hsl(200deg 9% 98%)`.
-You can change colour opacity with `rbga({global.grey-98}, 0.65)` which resolves to `hsla(200deg 9% 98% / 65%)`.
 
 #### Accents
 
-There are global accents too! There is a sligntly wider set of parameters, but it's the same replaceable moduloe. Accents also dynamically generated using parameters from the config file. All neutral colours reference these values as `{global.grey-100} ... {global.grey-4}`
+Accent colours are a bit more complex than neutrals. Each colour is defined by its initial hue value.
 
-The color is defined by its initial HUE value. 
 {% include code-block-start.html class="min-w-[342px]" caption="./source.config.json" %}
 ```js
 {
@@ -158,11 +147,15 @@ To generate shades there are four additional parameters.
 ```
 {% include code-block-end.html %}
 
+Accent saturation is pretty straightforward. Three others are where the magic happens. I use the [luminance function](https://gka.github.io/chroma.js/#color-luminance) to set three key shades. 
+Mid shade is going to be the main accent colour that gives 4.5:1 contrast ratio against white. To achieve that I apply `chroma.luminance(accentMidLuminance)` where `accentMidLuminance = 0.18`. 
+The other two parameters are for the lightest and darkest shades in the series. With three key shades, it is super easy to fill other spots with a simple [colour scale function](https://gka.github.io/chroma.js/#chroma-scale)
+
 <a href="https://codepen.io/oxn-krtv/full/ExOwmaq" target="_blank">See example on CodePen →</a>
 
 #### Semantics
 
-Assign accents for semantics by name.
+Semantic colours reference values from the accents.
 
 {% include code-block-start.html class="min-w-[342px]" caption="./source.config.json" %}
 ```js
@@ -177,7 +170,7 @@ Assign accents for semantics by name.
 {% include code-block-end.html %}
 
 ### Typography
-Overall typography scale is set with `typeScale` parameter. 
+Overall typography scale is set with `typeScale` parameter. There are [three pre-calculated](https://github.com/namad/source-tokens/tree/main/tokens/typography) typography scales where values are rounded to the nearest integer that is even to four. This way text fits into 4px grid
 
 {% include code-block-start.html class="min-w-[342px]" caption="./source.config.json" %}
 ```js
@@ -190,3 +183,6 @@ Overall typography scale is set with `typeScale` parameter.
 <a href="https://designcode.io/typographic-scales" target="_blank">Learn more about typographic scale →</a>
 
 {% include section-end.html %}
+
+### Spacing & radii
+
