@@ -3,7 +3,7 @@
 
 Shadow utility offers six elevation levels. examples below use `shadow-utility-shade-300` color
 
-<div class="flex flex-row flex-wrap flex-1 gap-md ">
+<div class="icons-grid">
     <div class="min-w-fit p-md bg-fill-base-100 shadow-1 shadow-utility-shade-300 rounded-md flex-1 items-center justify-center flex">
         <span class="font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">shadow-1</span>
     </div>
@@ -21,6 +21,29 @@ Shadow utility offers six elevation levels. examples below use `shadow-utility-s
     </div>
     <div class="min-w-fit p-md bg-fill-base-100 shadow-6 shadow-utility-shade-300 rounded-md flex-1 items-center justify-center flex">
         <span class="font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">shadow-6</span>
+    </div>
+</div>
+
+#### Shadow colour
+There is a special colour for shadows `utility-shade-{100...600}`
+<div class="icons-grid">
+    <div class="min-w-fit p-md bg-fill-base-100 shadow-6 shadow-utility-shade-100 rounded-md flex-1 items-center justify-center flex">
+        <span class="font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">shadow-utility-shade-100</span>
+    </div>
+    <div class="min-w-fit p-md bg-fill-base-100 shadow-6 shadow-utility-shade-200 rounded-md flex-1 items-center justify-center flex">
+        <span class="font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">shadow-utility-shade-200</span>
+    </div>
+    <div class="min-w-fit p-md bg-fill-base-100 shadow-6 shadow-utility-shade-300 rounded-md flex-1 items-center justify-center flex">
+        <span class="font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">shadow-utility-shade-300</span>
+    </div>
+    <div class="min-w-fit p-md bg-fill-base-100 shadow-6 shadow-utility-shade-400 rounded-md flex-1 items-center justify-center flex">
+        <span class="font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">shadow-utility-shade-400</span>
+    </div>
+    <div class="min-w-fit p-md bg-fill-base-100 shadow-6 shadow-utility-shade-500 rounded-md flex-1 items-center justify-center flex">
+        <span class="font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">shadow-utility-shade-500</span>
+    </div>
+    <div class="min-w-fit p-md bg-fill-base-100 shadow-6 shadow-utility-shade-600 rounded-md flex-1 items-center justify-center flex">
+        <span class="font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">shadow-utility-shade-600</span>
     </div>
 </div>
 

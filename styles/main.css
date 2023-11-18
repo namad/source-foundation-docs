@@ -5972,6 +5972,21 @@ p code,
   --shadow-opacity: 100%;
 }
 
+.shadow-utility-shade-400{
+  --shadow-color: var(--utility-shade-400);
+  --shadow-opacity: 100%;
+}
+
+.shadow-utility-shade-500{
+  --shadow-color: var(--utility-shade-500);
+  --shadow-opacity: 100%;
+}
+
+.shadow-utility-shade-600{
+  --shadow-color: var(--utility-shade-600);
+  --shadow-opacity: 100%;
+}
+
 .shadow-opacity-60{
   --shadow-opacity: 60%;
 }
