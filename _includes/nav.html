@@ -28,7 +28,7 @@
     | where_exp: "item", "item.grand_parent != nil" -%}
 
 
-<ul class="nav-list">
+<ul class="nav-list {{ include.class }}">
 {%- for node in first_level_pages -%}
 {%- assign active="" -%}
 {%- if include.title == node.title -%}
