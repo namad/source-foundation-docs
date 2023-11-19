@@ -186,11 +186,11 @@ h5+h6 {
 
 .nav-list .nav-list-link {
     display: block;
-    color: var(--text-base-500);
+    color: var(--text-contrast-500);
     padding: var(--spacing-minor-xs) 0;
 }
 .nav-list .active .nav-list-link {
-    color: var(--text-base-action);
+    color: var(--text-contrast-600);
     font-weight: bold;
 }
 

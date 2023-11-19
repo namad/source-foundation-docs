@@ -1,4 +1,4 @@
-[data-brand=royal-blue][data-theme=light] {
+[data-theme=light], .theme-light {
     --accent-red-100: hsla(4.2,82.66%,66.08%,0.125);
     --accent-red-200: hsla(4.2,82.66%,66.08%,0.25);
     --accent-red-300: hsl(4,78.95%,55.29%);
@@ -157,7 +157,7 @@
     --stroke-contrast-500: hsl(198.75,6.4%,49.02%);
     --stroke-contrast-600: hsl(201.18,7.42%,55.1%);
 }
-[data-brand=royal-blue][data-theme=dark-base] {
+[data-theme=dark-base], .theme-dark-base {
     --accent-red-100: hsla(3.81,74.12%,66.67%,0.2);
     --accent-red-200: hsla(3.81,74.12%,66.67%,0.4);
     --accent-red-300: hsl(3.4,72.6%,57.06%);
@@ -316,7 +316,7 @@
     --stroke-contrast-500: hsl(200,6.85%,42.94%);
     --stroke-contrast-600: hsl(198.75,6.4%,49.02%);
 }
-[data-brand=royal-blue][data-theme=dark-elevated] {
+[data-theme=dark-elevated], .theme-dark-elevated {
     --accent-red-100: hsla(3.81,74.12%,66.67%,0.2);
     --accent-red-200: hsla(3.81,74.12%,66.67%,0.4);
     --accent-red-300: hsl(3.4,72.6%,57.06%);

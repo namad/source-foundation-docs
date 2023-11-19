@@ -45,26 +45,26 @@ Alt or alternative colours are semi-transparent ones and could be applied both a
 ### Primary / Brand Color
 Brand colour is key to the immediate brand recognition of your product
 {% include code-block-onetag.html tag="div" content="bg-primary-{shade}"%}
-{% include color-shades-accent.html color="bg-primary" %}
+{% include color-shades-accent.html color="bg-primary" class="border-shadow-primary-100" %}
 
 ### Semantics
 These colours communicate feedback, status, or urgency and should always convey important information
 
 #### Success
 {% include code-block-onetag.html tag="div" content="bg-success-{shade}" %}
-{% include color-shades-accent.html color="bg-success" %}
+{% include color-shades-accent.html color="bg-success" class="border-shadow-success-100" %}
 
 #### Info
 {% include code-block-onetag.html tag="div" content="bg-info-{shade}" %}
-{% include color-shades-accent.html color="bg-info" %}
+{% include color-shades-accent.html color="bg-info" class="border-shadow-info-100" %}
 
 #### Warning
 {% include code-block-onetag.html tag="div" content="bg-warning-{shade}" %}
-{% include color-shades-accent.html color="bg-warning" %}
+{% include color-shades-accent.html color="bg-warning" class="border-shadow-warning-100" %}
 
 #### Danger
 {% include code-block-onetag.html tag="div" content="bg-danger-{shade}" %}
-{% include color-shades-accent.html color="bg-danger" %}
+{% include color-shades-accent.html color="bg-danger" class="border-shadow-danger-100" %}
 
 ### Text colors
 {% include code-block-onetag.html tag="span" content="color-{color}" %}
@@ -113,31 +113,31 @@ The accent palette brings life and meaning to your product. The colour spots can
 emphasise brand connection or communicate a system state. There are ten accents to work with.
 
 {% include code-block-oneliner.html class="" content="&lt;div class='bg-accent-red-{shade} ...' />"%}
-{% include color-shades-accent.html color="bg-accent-red" %}
+{% include color-shades-accent.html color="bg-accent-red" class="border-outline-accent-red-100" %}
 
 {% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-amber-{shade} ...' />"%}
-{% include color-shades-accent.html color="bg-accent-amber" %}
+{% include color-shades-accent.html color="bg-accent-amber" class="border-outline-accent-amber-100" %}
 
 {% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-brown-{shade} ...' />"%}
-{% include color-shades-accent.html color="bg-accent-brown" %}
+{% include color-shades-accent.html color="bg-accent-brown" class="border-outline-accent-brown-100" %}
 
 {% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-green-{shade} ...' />"%}
-{% include color-shades-accent.html color="bg-accent-green" %}
+{% include color-shades-accent.html color="bg-accent-green" class="border-outline-accent-green-100" %}
 
 {% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-teal-{shade} ...' />"%}
-{% include color-shades-accent.html color="bg-accent-teal" %}
+{% include color-shades-accent.html color="bg-accent-teal" class="border-outline-accent-teal-100" %}
 
 {% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-blue-{shade} ...' />"%}
-{% include color-shades-accent.html color="bg-accent-blue" %}
+{% include color-shades-accent.html color="bg-accent-blue" class="border-outline-accent-blue-100" %}
 
 {% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-indigo-{shade} ...' />"%}
-{% include color-shades-accent.html color="bg-accent-indigo" %}
+{% include color-shades-accent.html color="bg-accent-indigo" class="border-outline-accent-indigo-100" %}
 
 {% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-violet-{shade} ...' />"%}
-{% include color-shades-accent.html color="bg-accent-violet" %}
+{% include color-shades-accent.html color="bg-accent-violet" class="border-outline-accent-violet-100" %}
 
 {% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-purple-{shade} ...' />"%}
-{% include color-shades-accent.html color="bg-accent-purple" %}
+{% include color-shades-accent.html color="bg-accent-purple" class="border-outline-accent-purple-100" %}
 
 {% include code-block-oneliner.html class="mt-sm" content="&lt;div class='bg-accent-pink-{shade} ...' />"%}
-{% include color-shades-accent.html color="bg-accent-pink" %}
+{% include color-shades-accent.html color="bg-accent-pink" class="border-outline-accent-pink-100" %}
