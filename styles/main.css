@@ -4505,6 +4505,14 @@ p code,
   margin-bottom: var(--spacing-sm);
 }
 
+.mt-0{
+  margin-top: 0px;
+}
+
+.mt-xs{
+  margin-top: var(--spacing-xs);
+}
+
 .block{
   display: block;
 }
@@ -4750,6 +4758,10 @@ p code,
   align-items: baseline;
 }
 
+.justify-start{
+  justify-content: flex-start;
+}
+
 .justify-end{
   justify-content: flex-end;
 }
@@ -4900,6 +4912,10 @@ p code,
 
 .bg-clip-padding{
   background-clip: padding-box;
+}
+
+.fill-fill-base-100{
+  fill: var(--fill-base-100);
 }
 
 .text-center{
