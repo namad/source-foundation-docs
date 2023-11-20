@@ -26,7 +26,7 @@ Run the command above to create your `./source.config.json`. This file has the p
 {% include code-block-oneliner.html content="npx source-css ./css/variables.css" %}
 The command above will read your `./source.config.json` and create the CSS file `./css/variables.css`.
 
-<a href="https://github.com/namad/source-tw-playground/blob/main/src/source-variables.css" target="_blank">See Default CSS Variables →</a>
+<a href="https://github.com/namad/source-foundation/blob/main/tw/source-variables.css" target="_blank">See default CSS variables →</a>
 
 ### Import CSS variables
 
@@ -54,7 +54,7 @@ module.exports = {
 ```
 {% include code-block-end.html %}
 
-Import a single <a href="https://github.com/namad/source-tw-playground/blob/main/src/source-preset.js" target="_blank">Source Preset</a> 
+Import a single <a href="https://github.com/namad/source-foundation/blob/main/tw/source-preset.js" target="_blank">Source Preset</a> 
 to enable all the features in the most simple way
 
 <a href="https://tailwindcss.com/docs/presets" target="_blank">Learn more about Tailwind CSS presets →</a>
