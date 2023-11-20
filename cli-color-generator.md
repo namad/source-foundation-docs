@@ -110,7 +110,7 @@ Neutral colours are made with these parameters. Hue and saturation to set the to
 ```
 {% include code-block-end.html %}
 
-<a href="https://codepen.io/oxn-krtv/full/ExOwLBz" target="_blank">See example on CodePen →</a>
+<a href="https://codepen.io/oxn-krtv/full/ExOwLBz" class="icon icon-codepen gap-xs2" target="_blank">See example on CodePen</a>
 
 
 #### Accents
@@ -151,7 +151,7 @@ Accent saturation is pretty straightforward. Three others are where the magic ha
 Mid shade is going to be the main accent colour that gives 4.5:1 contrast ratio against white. To achieve that I apply `chroma.luminance(accentMidLuminance)` where `accentMidLuminance = 0.18`. 
 The other two parameters are for the lightest and darkest shades in the series. With three key shades, it is super easy to fill other spots with a simple [colour scale function](https://gka.github.io/chroma.js/#chroma-scale)
 
-<a href="https://codepen.io/oxn-krtv/full/ExOwmaq" target="_blank">See example on CodePen →</a>
+<a href="https://codepen.io/oxn-krtv/full/ExOwmaq" class="icon icon-codepen gap-xs2" target="_blank">See example on CodePen</a>
 
 #### Semantics
 

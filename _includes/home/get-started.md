@@ -86,16 +86,7 @@ Theme gives you more control over plugins.
 {% include code-block-start.html caption="index.html" %}
 ```html
 <html data-theme="light" data-radii="base" data-spacing="base" data-typography="base" data-icons="base">
-<head>
     ...
-</head>
-<body>
-    ...
-    <div data-theme="dark-elevated">
-        ...
-    </div>
-    ...
-</body>
 </html>
 ```
 {% include code-block-end.html %}
