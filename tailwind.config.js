@@ -6,6 +6,6 @@ module.exports = {
         './**/*.{ts, html, css, md}',
     ],
     presets: [
-        require('source-tailwindcss')
+        require('source-tailwindcss/source-preset')
     ]
 }
