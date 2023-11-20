@@ -4510,6 +4510,14 @@ p code,
   margin-top: var(--spacing-sm);
 }
 
+.mt-xs{
+  margin-top: var(--spacing-xs);
+}
+
+.mt-xs2{
+  margin-top: var(--spacing-xs2);
+}
+
 .block{
   display: block;
 }
@@ -4913,6 +4921,10 @@ p code,
 
 .fill-fill-base-100{
   fill: var(--fill-base-100);
+}
+
+.fill-utility-white{
+  fill: var(--utility-white);
 }
 
 .text-center{
