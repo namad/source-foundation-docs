@@ -3,7 +3,7 @@
 
 Shadow utility offers six elevation levels. examples below use `shadow-utility-shade-300` color
 
-<div class="icons-grid">
+<div class="tiles-grid">
     <div class="min-w-fit p-md bg-fill-base-100 shadow-1 shadow-utility-shade-300 rounded-md flex-1 items-center justify-center flex">
         <span class="font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">shadow-1</span>
     </div>
@@ -26,7 +26,7 @@ Shadow utility offers six elevation levels. examples below use `shadow-utility-s
 
 #### Shadow colour
 There is a special colour for shadows `utility-shade-{100...600}`
-<div class="icons-grid">
+<div class="tiles-grid">
     <div class="min-w-fit p-md bg-fill-base-100 shadow-6 shadow-utility-shade-100 rounded-md flex-1 items-center justify-center flex">
         <span class="font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">shadow-utility-shade-100</span>
     </div>
@@ -95,7 +95,7 @@ Utility class `shadow-multiply` enables `mix-blend-mode: multiply` on shadows.
 ### Inner Shadows
 {% include code-block-onetag.html tag="div" content="inner-shadow-{elevation} inner-shadow-{color} inner-shadow-opacity-{opacity}" %}
 
-<div class="flex flex-row flex-1 flex-wrap gap-md ">
+<div class="tiles-grid ">
     <div class="min-w-fit py-base px-sm bg-fill-base-100 border border-solid border-alt-base-200 inner-shadow-1 shadow-utility-shade-300 rounded-md flex-1 items-center justify-center flex">
         <span class="font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">inner-shadow-1</span>
     </div>
@@ -114,7 +114,7 @@ Utility class `shadow-multiply` enables `mix-blend-mode: multiply` on shadows.
 Special utility class `shadows` combines both drop and inner shadows
 {% include code-block-onetag.html tag="div" content="shadows shadow-{elevation} inner-shadow-{elevation}" %}
 
-<div class="flex flex-row flex-1 flex-wrap gap-md ">
+<div class="tiles-grid ">
     <div class="min-w-fit py-base px-sm bg-fill-base-100 border border-solid border-stroke-base-200 shadows inner-shadow-2 inner-shadow-utility-shade-300 shadow-3 shadow-utility-shade-300 rounded-md flex-1">
         <span class="block font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">inner-shadow-2</span>
         <span class="block font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">shadow-3</span>
