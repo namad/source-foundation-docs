@@ -4494,24 +4494,12 @@ p code,
   margin-bottom: calc(var(--spacing-minor-xs) * -1);
 }
 
-.-mb-minor-xs{
-  margin-bottom: calc(var(--spacing-minor-xs) * -1);
-}
-
 .mb-minor-xs{
   margin-bottom: var(--spacing-minor-xs);
 }
 
-.mt-0{
-  margin-top: 0px;
-}
-
 .mt-sm{
   margin-top: var(--spacing-sm);
-}
-
-.mt-xs{
-  margin-top: var(--spacing-xs);
 }
 
 .mt-xs2{
@@ -7234,7 +7222,7 @@ p code,
 }
 
 .icon-layout{
-  --icon-src: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3e%3cpath fill='%230E1011' fill-rule='evenodd' d='M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zM1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v2.625H1zm0 3.375V12.5a.5.5 0 0 0 .5.5h3.625V6.875zM5.875 13H14.5a.5.5 0 0 0 .5-.5V6.875H5.875z' clip-rule='evenodd'/%3e%3c/svg%3e");
+  --icon-src: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3e%3cpath fill='%230E1011' fill-rule='evenodd' d='M2 3h12a1 1 0 0 1 1 1v2.15H1V4a1 1 0 0 1 1-1ZM1 6.85V12a1 1 0 0 0 1 1h3.15V6.85H1ZM5.85 13H14a1 1 0 0 0 1-1V6.85H5.85V13ZM0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Z' clip-rule='evenodd'/%3e%3c/svg%3e");
 }
 
 .icon-layout-filled{
@@ -8339,6 +8327,10 @@ p code,
 
 .icon-zoom-out-filled{
   --icon-src: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3e%3cpath fill='%230E1011' fill-rule='evenodd' d='M13.5 7.5c0 1.477-.534 2.83-1.42 3.875a.65.65 0 0 1 .024.021l1.75 1.75a.5.5 0 0 1-.708.708l-1.75-1.75a.65.65 0 0 1-.02-.023A6 6 0 1 1 13.5 7.5m-8-.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.icon-table-filled{
+  --icon-src: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3e%3cpath fill='%230E1011' fill-rule='evenodd' d='M0 4.5A2.5 2.5 0 0 1 2.5 2h11A2.5 2.5 0 0 1 16 4.5v7a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 0 11.5v-7ZM1 4a.25.25 0 0 1 .25-.25H4.5a.25.25 0 0 1 0 .5H1.25A.25.25 0 0 1 1 4Zm13.625 1.875h-3.75v3.25h3.75a.375.375 0 0 1 0 .75h-3.75v2.75a.375.375 0 0 1-.75 0v-2.75h-4.25v2.75a.375.375 0 0 1-.75 0v-2.75h-3.75a.375.375 0 1 1 0-.75h3.75v-3.25h-3.75a.375.375 0 1 1 0-.75h13.25a.375.375 0 0 1 0 .75Zm-8.75 3.25h4.25v-3.25h-4.25v3.25ZM6.5 3.75a.25.25 0 0 0 0 .5h3a.25.25 0 0 0 0-.5h-3Zm4.75.25a.25.25 0 0 1 .25-.25h3.25a.25.25 0 1 1 0 .5H11.5a.25.25 0 0 1-.25-.25Z' clip-rule='evenodd'/%3e%3c/svg%3e");
 }
 
 .icon-base{
