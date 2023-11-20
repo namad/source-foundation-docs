@@ -71,13 +71,13 @@ npx source-css init
 
 Run the command above to create your `./source.config.json`. This file has the parameters to generate color palettes, typography, radii and spacing tokens.
 
-<a href="https://github.com/namad/source-tw-playground/blob/main/src/source.config.json" target="_blank">See Default Config →</a>
+<a href="https://github.com/namad/source-foundation/blob/main/tw/source.config.json" target="_blank">See default config →</a>
 
 ### Generate CSS variables
 {% include code-block-oneliner.html content="npx source-css ./css/variables.css" %}
 The command above will read your `./source.config.json` and create the CSS file `./css/variables.css`.
 
-<a href="https://github.com/namad/source-tw-playground/blob/main/src/source-variables.css" target="_blank">See Default CSS Variables →</a>
+<a href="https://github.com/namad/source-foundation/blob/main/tw/source-variables.css" target="_blank">See default CSS variables →</a>
 
 ### Import CSS variables
 {% include code-block-start.html caption="main.css" %}
