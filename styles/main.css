@@ -4501,6 +4501,10 @@ p code,
   margin-top: var(--spacing-sm);
 }
 
+.mb-sm{
+  margin-bottom: var(--spacing-sm);
+}
+
 .block{
   display: block;
 }
@@ -8488,6 +8492,11 @@ p code,
   --padding-y: var(--spacing-xs4);
   padding-top: var(--padding-y);
   padding-bottom: var(--padding-y);
+}
+
+.pb-sm{
+  --padding-b: var(--spacing-sm);
+  padding-bottom: var(--padding-b);
 }
 
 :root {
