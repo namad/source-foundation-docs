@@ -17,7 +17,7 @@ Figma plugin makes the design system foundation a breathe. With a simple and con
     <img src="./favicon/figma-vars.png" alt="Figma variables preview">
 </div>
 
-<a href="https://www.figma.com/community/plugin/1297031341980383999/source-colors-lite" class="inline-block px-base py-xs rounded color-text-contrast-600 bg-primary-400 hover:no-underline hover:bg-opacity-90" target="_blank">Get Foundation Plugin</a>
+<a href="https://www.figma.com/community/plugin/1297031341980383999/source-colors-lite" class="inline-block px-base py-xs rounded-md color-text-contrast-600 bg-primary-400 hover:no-underline hover:bg-opacity-90" target="_blank">Get Foundation Plugin</a>
 {% include section-end.html %}
 
 
