@@ -1,5 +1,5 @@
-### Color opacity
-Color opacity is adjusted with color-mix() function
+### Colour opacity
+Colour opacity is adjusted with color-mix() function
 
 {% include code-block-onetag.html tag="div" content="bg-opacity-{opacity} border-opacity-{opacity} color-opacity-{opacity}" %}
 
@@ -53,8 +53,8 @@ Color opacity is adjusted with color-mix() function
     </div>
 </div>
 
-### Color tint
-Color tint adds a linear gradient with two semitransparent white color stops
+### Colour tint
+Colour tint adds a linear gradient with two semitransparent white colour stops.
 {% include code-block-onetag.html tag="div" content="tint-{opacity}" %}
 
 {% include code-block-start.html %}
@@ -82,7 +82,9 @@ Color tint adds a linear gradient with two semitransparent white color stops
         <span class="font-mono color-text-contrast-500 rounded-sm px-xs2 py-minor-xs3 text-xs">tint-50</span>
     </div>
 </div>
+
 #### Background Blend Mode
+
 {% include code-block-onetag.html tag="div" content="tint-{opacity} bg-blend-overlay" %}
 <div class="flex md:flex-row flex-col flex-1 rounded overflow-hidden">
     <div class="py-base bg-accent-purple-400 bg-blend-overlay tint-10 flex-1 items-center justify-center flex">
@@ -101,8 +103,11 @@ Color tint adds a linear gradient with two semitransparent white color stops
         <span class="font-mono color-text-contrast-500 rounded-sm px-xs2 py-minor-xs3 text-xs">tint-50</span>
     </div>
 </div>
-### Color shade
-Color shade adds a linear gradient with two semitransparent black color stops
+
+### Colour shade
+
+Colour shade adds a linear gradient with two semitransparent black colour stops.
+
 {% include code-block-onetag.html tag="div" content="shade-{opacity}" %}
 {% include code-block-start.html %}
 {% highlight css %}
@@ -128,7 +133,9 @@ Color shade adds a linear gradient with two semitransparent black color stops
         <span class="font-mono color-text-contrast-500 rounded-sm px-xs2 py-minor-xs3 text-xs">shade-50</span>
     </div>
 </div>
+
 #### Background Blend Mode
+
 {% include code-block-onetag.html tag="div" content="shade-{opacity} bg-blend-overlay" %}
 <div class="flex md:flex-row flex-col flex-1 rounded overflow-hidden">
     <div class="py-base bg-accent-green-400 bg-blend-overlay shade-10 flex-1 items-center justify-center flex">

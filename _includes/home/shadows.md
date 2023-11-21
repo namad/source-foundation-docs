@@ -1,7 +1,7 @@
 ### Drop Shadows
 {% include code-block-onetag.html tag="div" content="shadow-{elevation} shadow-{color} shadow-opacity-{opacity}" %}
 
-Shadow utility offers six elevation levels. examples below use `shadow-utility-shade-300` color
+Shadow utility offers six elevation levels. examples below use `shadow-utility-shade-300` colour.
 
 <div class="tiles-grid">
     <div class="min-w-fit p-md bg-fill-base-100 shadow-1 shadow-utility-shade-300 rounded-md flex-1 items-center justify-center flex">
@@ -25,7 +25,7 @@ Shadow utility offers six elevation levels. examples below use `shadow-utility-s
 </div>
 
 #### Shadow colour
-There is a special colour for shadows `utility-shade-{100...600}`
+By default shadows use special colour `utility-shade-{100...600}`
 <div class="tiles-grid">
     <div class="min-w-fit p-md bg-fill-base-100 shadow-6 shadow-utility-shade-100 rounded-md flex-1 items-center justify-center flex">
         <span class="font-mono color-text-base-500 rounded-sm px-xs2 py-minor-xs3 text-xs">shadow-utility-shade-100</span>
@@ -48,7 +48,7 @@ There is a special colour for shadows `utility-shade-{100...600}`
 </div>
 
 ### Color Bleed Shadows
-You can apply any color with `shadow-{color}` and set shadow opacity with `shadow-opacity-{opacity}` utilities
+You can apply any colour with `shadow-{color}` and set shadow opacity with `shadow-opacity-{opacity}` utilities.
 
 <div class="flex flex-row flex-wrap gap-md flex-1 justify-center">
     <div class="min-w-fit flex-1 text-center px-sm py-lg bg-accent-green-400 gradient-tint-50 shadow-accent-green-300 shadow-opacity-60 shadow-4 rounded-md">
@@ -70,8 +70,8 @@ You can apply any color with `shadow-{color}` and set shadow opacity with `shado
 </div>
 
 ### Multiply Shadows
-Utility class `shadow-multiply` enables `mix-blend-mode: multiply` on shadows.
-<a href="#" data-theme-switch="dark-elevated">Switch theme</a> to see the difference
+Utility class `shadow-multiply` enables `mix-blend-mode: multiply` on shadows. 
+<a href="#" data-theme-switch="dark-elevated">Switch theme</a> to see the difference.
 
 <div class="flex flex-row flex-wrap gap-md flex-1 justify-center">
     <div class="min-w-fit flex-1 text-center px-sm py-lg bg-accent-green-400 gradient-tint-50 shadow-accent-green-300 shadow-opacity-60 shadow-4 shadow-multiply rounded-md">
@@ -112,6 +112,7 @@ Utility class `shadow-multiply` enables `mix-blend-mode: multiply` on shadows.
 
 ### Combine Drop & Inner Shadows
 Special utility class `shadows` combines both drop and inner shadows
+
 {% include code-block-onetag.html tag="div" content="shadows shadow-{elevation} inner-shadow-{elevation}" %}
 
 <div class="tiles-grid ">

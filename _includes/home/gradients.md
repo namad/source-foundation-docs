@@ -2,7 +2,7 @@
 
 {% include code-block-onetag.html tag="div" content="gradient-tint-{opacity} gradient-angle-{angle}" %}
 
-Tint gradient makes a gradient on top of any color using `background-blend-mode: overlay`
+Tint gradient makes a gradient on top of any colour using `background-blend-mode: overlay`
 By default it creates tint on top of the surface, you can change gradient angle with `gradient-angle`
 
 
@@ -38,8 +38,8 @@ Examples below demonstrate `gradient-tint-50` on top of different accents
 
 ### Gradient Shade
 {% include code-block-onetag.html tag="div" content="gradient-shade-{opacity} gradient-angle-{angle}" %}
-There is another utility that shades part of the surface
-Examples below demonstrate `gradient-shade-50` on top of different accents
+There is another utility that shades part of the surface. 
+Examples below demonstrate `gradient-shade-50` on top of different accents.
 
 <div class="flex flex-row flex-1 flex-wrap gap-md ">
     <div
@@ -71,7 +71,7 @@ Examples below demonstrate `gradient-shade-50` on top of different accents
 
 ### Gradient Mix
 {% include code-block-onetag.html tag="div" content="gradient-mix-{color} gradient-angle-{angle}" %}
-This utility makes a gradient using specific color. Examples below demonstrate the mix of two accents
+This utility makes a gradient using specific colour. Examples below demonstrate the mix of two accents.
 
 <div class="flex flex-row flex-1 flex-wrap gap-md ">
     <div

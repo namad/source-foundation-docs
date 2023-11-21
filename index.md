@@ -8,11 +8,11 @@ nav_order: 1
 {% include home/get-started.md %}
 {% include section-end.html %}
 
-{% include section-start.html title='Color System' %}
+{% include section-start.html title='Colour System' %}
 {% include home/color-system.md %}
 {% include section-end.html %}
 
-{% include section-start.html title='Color Adjustments' %}
+{% include section-start.html title='Colour Adjustments' %}
 {% include home/color-adjustments.md %}
 {% include section-end.html %}
 

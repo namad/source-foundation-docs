@@ -18,7 +18,7 @@ npx source-css init
 ```
 {% include code-block-end.html %}
 
-Run the command above to create your `./source.config.json`. This file has the parameters to generate color palettes, typography, radii and spacing tokens.
+Run the command above to create your `./source.config.json`. This file has the parameters to generate colour palettes, typography, radii and spacing tokens.
 
 [Learn more about source.config.json →](./cli-color-generator.html#how-it-works)
 

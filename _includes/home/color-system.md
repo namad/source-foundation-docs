@@ -1,8 +1,8 @@
-Color system delivers seamless dark mode using CSS custom properties (a.k.a. variables).
-Source Design System completely replaces Tailwind colors with Source colors.
+Colour system delivers seamless dark mode using CSS custom properties (a.k.a. variables).
+Source Design System completely replaces Tailwind colours with Source colours.
 It uses plugins to support CSS variables integration with Tailwind utility classes.
 
-<a href="https://medium.com/user-experience-design-1/designing-colour-system-d9d39f245e01" target="_blank">Learn more about Source Color System →</a>
+<a href="https://medium.com/user-experience-design-1/designing-colour-system-d9d39f245e01" target="_blank">Learn more about Source Colour System →</a>
 
 ### Neutrals
 Neutral colours are the foundation for the visual language that defines the overall tone of your
@@ -12,11 +12,11 @@ support the brand.
 #### Fills
 Fills are the lightest shades in your arsenal and should be used as the main background colours.
 
-##### Light surface colors
+##### Light surface colours
 {% include code-block-onetag.html tag="div" content="bg-fill-base-{shade}" %}
 {% include color-shades.html color="bg-fill-base" %}
 
-##### Dark surface colors
+##### Dark surface colours
 {% include code-block-onetag.html tag="div" content="bg-fill-contrast-{shade}" %}
 {% include color-shades.html color="bg-fill-contrast" class="color-text-contrast-600" %}
 
@@ -31,7 +31,7 @@ Strokes are not supposed to fill large areas but outline or divide them.
 {% include code-block-onetag.html tag="div" content="border-stroke-contrast-{shade}" %}
 {% include color-shades.html color="bg-stroke-contrast" class="color-text-contrast-500" %}
 
-#### Alt Colors
+#### Alt Colours
 Alt or alternative colours are semi-transparent ones and could be applied both as fills and strokes.
 
 ##### Light surface tints
@@ -42,7 +42,7 @@ Alt or alternative colours are semi-transparent ones and could be applied both a
 {% include code-block-onetag.html tag="div" content="bg-alt-contrast-{shade}" %}
 {% include color-shades.html color="bg-alt-contrast" class="bg-fill-contrast-100 color-text-contrast-600"  %}
 
-### Primary / Brand Color
+### Primary / Brand Colour
 Brand colour is key to the immediate brand recognition of your product
 {% include code-block-onetag.html tag="div" content="bg-primary-{shade}"%}
 {% include color-shades-accent.html color="bg-primary" class="border-shadow-primary-100" %}
@@ -66,7 +66,7 @@ These colours communicate feedback, status, or urgency and should always convey 
 {% include code-block-onetag.html tag="div" content="bg-danger-{shade}" %}
 {% include color-shades-accent.html color="bg-danger" class="border-shadow-danger-100" %}
 
-### Text colors
+### Text colours
 {% include code-block-onetag.html tag="span" content="color-{color}" %}
 
 For the text, there are three shades for visual hierarchy and several colours for semantics. It is an

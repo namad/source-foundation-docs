@@ -4506,6 +4506,10 @@ p code,
   margin-top: var(--spacing-xs2);
 }
 
+.-mb-minor-xs{
+  margin-bottom: calc(var(--spacing-minor-xs) * -1);
+}
+
 .block{
   display: block;
 }
@@ -5169,6 +5173,11 @@ p code,
 
 .border-shadow-warning-100{
   box-shadow: inset 0 0 0 1px var(--warning-100);
+}
+
+.border-outline-alt-base-200{
+  outline: 1px solid var(--alt-base-200);
+  outline-offset: -1px;
 }
 
 .bg-accent-amber-100{
