@@ -6219,6 +6219,14 @@ p code,
   background-image: var(--bg-image);
 }
 
+.gradient-shade-30{
+  --angle: 0deg;
+  --bg-image: linear-gradient(var(--angle), rgba(0 0 0 / 0.3), transparent);
+  --bg-blend-mode: overlay;
+  background-blend-mode: var(--bg-blend-mode);
+  background-image: var(--bg-image);
+}
+
 .gradient-mix-accent-amber-300{
   --angle: 180deg;
   --bg-image: linear-gradient(var(--angle), var(--accent-amber-300), transparent);
