@@ -8,10 +8,11 @@ toc: false
 {% include section-start.html title='Figma plugin' %}
 
 <div class="width-full overflow-hidden flex items-center justify-center rounded-md">
-    <img src="./video/plugin-demo.gif" alt="Figma variables preview">
-    <!-- <video loop muted>
+    <!-- <img src="./video/plugin-demo.gif" alt="Figma variables preview"> -->
+    <video autoplay loop muted>
+        <source src="./video/plugin-demo.webm" type="video/webm" />
         <source src="./video/plugin-demo.mp4" type="video/mp4" />
-    </video> -->
+    </video>
 </div>
 
 Figma plugin makes the design system foundation a breathe. With a simple and convinient UI you can customise every aspect of the design system and connect it with [CLI generator](./cli-color-generator.html). This tool creates Figma variables for colours, spacing, radii and typography elements like font sizes and line heights. In addition it makes text styles and effects to support various elevation levels.
