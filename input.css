@@ -100,6 +100,13 @@ body {
     margin: auto;
 }
 
+.no-toc {
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+        'left navs'
+        'left content';
+}
+
 .options-panel {
     grid-area: left;
 }
