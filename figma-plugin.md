@@ -12,6 +12,7 @@ toc: false
     <video autoplay loop muted>
         <source src="./video/plugin-demo.webm" type="video/webm" />
         <source src="./video/plugin-demo.mp4" type="video/mp4" />
+        <img src="./video/plugin-demo.jpg" alt="Plugin UI preview">
     </video>
 </div>
 

@@ -4525,14 +4525,6 @@ p code,
   height: 1.5rem;
 }
 
-.h-\[480\]{
-  height: 480;
-}
-
-.h-\[480px\]{
-  height: 480px;
-}
-
 .min-h-\[--icon-size-lg\]{
   min-height: var(--icon-size-lg);
 }
@@ -4673,10 +4665,6 @@ p code,
   width: var(--spacing-xs4);
 }
 
-.w-auto{
-  width: auto;
-}
-
 .min-w-\[320px\]{
   min-width: 320px;
 }
@@ -4692,10 +4680,6 @@ p code,
 
 .max-w-sm{
   max-width: 24rem;
-}
-
-.max-w-none{
-  max-width: none;
 }
 
 .flex-1{
@@ -8564,7 +8548,7 @@ body{
 }
 
 #controls {
-  height: calc(100vh - 2 * var(--spacing-md));
+  height: calc(100dvh - 2 * var(--spacing-md));
 }
 
 h1,
@@ -8588,7 +8572,7 @@ h5+h6 {
 }
 
 .toc {
-  height: calc(100vh - var(--spacing-md));
+  height: calc(100dvh - var(--spacing-md));
   overflow: auto;
 }
 

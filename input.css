@@ -85,7 +85,6 @@ a:hover {
 }
 
 body {
-
     @apply bg-fill-base-300 p-md color-text-base-600 text-base;
 }
 
@@ -143,7 +142,7 @@ body {
 }
 
 #controls {
-    height: calc(100vh - 2 * var(--spacing-md));
+    height: calc(100dvh - 2 * var(--spacing-md));
 }
 
 h1,
@@ -168,7 +167,7 @@ h5+h6 {
 }
 
 .toc {
-    height: calc(100vh - var(--spacing-md));
+    height: calc(100dvh - var(--spacing-md));
     overflow: auto;
 }
 
