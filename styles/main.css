@@ -4481,6 +4481,10 @@ p code,
   margin-top: var(--spacing-xs2);
 }
 
+.mt-xs{
+  margin-top: var(--spacing-xs);
+}
+
 .block{
   display: block;
 }
@@ -4523,6 +4527,22 @@ p code,
 
 .h-6{
   height: 1.5rem;
+}
+
+.h-8{
+  height: 2rem;
+}
+
+.h-7{
+  height: 1.75rem;
+}
+
+.h-10{
+  height: 2.5rem;
+}
+
+.h-12{
+  height: 3rem;
 }
 
 .min-h-\[--icon-size-lg\]{
@@ -4663,6 +4683,18 @@ p code,
 
 .w-xs4{
   width: var(--spacing-xs4);
+}
+
+.w-7{
+  width: 1.75rem;
+}
+
+.w-10{
+  width: 2.5rem;
+}
+
+.w-12{
+  width: 3rem;
 }
 
 .min-w-\[320px\]{
