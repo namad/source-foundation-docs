@@ -10,10 +10,8 @@ toc: false
 <div class="width-full overflow-hidden flex items-center justify-center rounded-md">
     <!-- <img src="./video/plugin-demo.gif" alt="Figma variables preview"> -->
     <video autoplay loop muted>
-        <source src="./video/plugin-demo.mv4" type="video/x-mv4" />
         <source src="./video/plugin-demo.mp4" type="video/mp4" />
         <source src="./video/plugin-demo.webm" type="video/webm" />
-        <img src="./video/plugin-demo.jpg" alt="Plugin UI preview">
     </video>
 </div>
 
