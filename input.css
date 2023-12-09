@@ -146,7 +146,7 @@ body {
 }
 
 #controls {
-    height: calc(100dvh - 2 * var(--spacing-md));
+    height: calc(100svh - 2 * var(--spacing-md));
 }
 
 h1,
@@ -171,7 +171,7 @@ h5+h6 {
 }
 
 .toc {
-    height: calc(100dvh - var(--spacing-md));
+    height: calc(100svh - var(--spacing-md));
     overflow: auto;
 }
 
@@ -252,7 +252,7 @@ h5+h6 {
         position: fixed;
         left: var(--spacing-xs3);
         top: var(--spacing-xs3);
-        height: calc(100vh - 2 * var(--spacing-xs3));
+        height: calc(100svh - 2 * var(--spacing-xs3));
         z-index: 10;
         transform: translate(-70%, 0px);
         opacity: 0;
@@ -273,7 +273,7 @@ h5+h6 {
         position: fixed;
         right: var(--spacing-xs3);
         top: var(--spacing-xs3);
-        height: calc(100vh - 2 * var(--spacing-xs3));
+        height: calc(100svh - 2 * var(--spacing-xs3));
         z-index: 10;
         transform: translate(70%, 0px);
         opacity: 0;
